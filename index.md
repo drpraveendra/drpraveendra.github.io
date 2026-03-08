@@ -1,5 +1,5 @@
 # Dr. Praveendra Singh
-<img src="/assets/images/profile.jpg" width="160">
+<img src="/assets/images/profile.png" width="160">
 Assistant Professor, Department of Mathematics
 Government College Kherwara, Udaipur, Rajasthan, India
 
