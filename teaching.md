@@ -2,13 +2,13 @@
 
 ## Courses Taught
 
-Engineering Mathematics  
-Probability and Statistics  
-Numerical Optimization  
+Engineering Mathematics
+Probability and Statistics
+Numerical Optimization
 Soft Computing
 
 ## Teaching Philosophy
 
-My teaching approach emphasizes conceptual understanding, problem solving, and connecting mathematical theory with real-world applications.
+My teaching focuses on building strong conceptual understanding and connecting mathematical theory with practical applications.
 
-I encourage students to develop analytical thinking and computational skills through problem-based learning.
+Students are encouraged to develop analytical thinking and problem-solving skills through structured examples and real-world case studies.
