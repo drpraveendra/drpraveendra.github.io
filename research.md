@@ -1,25 +1,23 @@
 # Research
 
-My research focuses on mathematical modeling and intelligent optimization techniques for real-world decision systems.
+My research focuses on mathematical modeling and intelligent optimization methods for complex decision systems.
 
-## Research Areas
+## Inventory Control
 
-### Inventory Control
+Development of inventory models for deteriorating items with pricing policies, preservation investment, and real-world constraints.
 
-Mathematical models for deteriorating items, pricing policies, and preservation strategies.
+## Supply Chain Management
 
-### Supply Chain Management
+Optimization of production and distribution systems using mathematical modeling and computational techniques.
 
-Optimization of production, inventory, and distribution systems under uncertainty.
+## Metaheuristic Algorithms
 
-### Metaheuristic Optimization
+Use of nature-inspired algorithms such as:
 
-Nature-inspired algorithms such as:
+• Differential Evolution
+• Bat Algorithm
+• Hybrid Optimization Methods
 
-• Differential Evolution  
-• Bat Algorithm  
-• Hybrid Metaheuristics  
+## Sustainability
 
-### Sustainable Systems
-
-Integration of sustainability and environmental considerations in supply chain models.
+Integration of environmental and economic sustainability considerations in supply chain decision systems.
