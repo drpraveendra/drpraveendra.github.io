@@ -1,42 +1,30 @@
 # Dr. Praveendra Singh
 
-Assistant Professor  
-Department of Mathematics  
-Government College Kherwara, Udaipur, Rajasthan, India
-
----
-
-## About Me
-
-I am an Assistant Professor of Mathematics at Government College Kherwara, Rajasthan. I completed my Ph.D. in Mathematics from the Indian Institute of Technology Roorkee.
-
-My research focuses on mathematical modeling and intelligent optimization methods for real-world systems, particularly in inventory control and supply chain management.
-
-My work emphasizes nature-inspired metaheuristic algorithms for solving complex optimization problems involving deteriorating items, pricing strategies, sustainability, and real-world constraints.
+Assistant Professor of Mathematics  
+Government College Kherwara, Rajasthan
 
 ---
 
 ## Research Interests
 
-• Inventory Control  
-• Supply Chain Management  
-• Metaheuristic Optimization  
-• Optimal Control  
-• Sustainable Inventory Models  
+- Inventory Control
+- Supply Chain Management
+- Metaheuristic Optimization
+- Sustainable Inventory Systems
+
+---
+
+## About
+
+I am an Assistant Professor of Mathematics at Government College Kherwara, Rajasthan. I completed my Ph.D. in Mathematics from IIT Roorkee.
+
+My research focuses on mathematical modeling and nature-inspired optimization techniques for complex inventory and supply chain systems.
 
 ---
 
 ## Quick Links
 
-• Publications  
-• Teaching  
-• Research  
-• Problem of the Day  
-• Lecture Videos  
-
----
-
-## Contact
-
-Email: drpraveendra.singh@gmail.com  
-Email: psingh@ma.iitr.ac.in
+📄 Publications  
+🎓 Teaching  
+📊 Research  
+📬 Contact
