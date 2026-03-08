@@ -1,0 +1,52 @@
+---
+
+---
+
+@import "minima";
+
+/* Profile box */
+.profile-box {
+text-align: center;
+margin-bottom: 30px;
+}
+
+.profile-box img {
+width: 160px;
+border-radius: 50%;
+border: 4px solid #2c7be5;
+}
+
+/* Card grid */
+.card-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+gap: 20px;
+margin-top: 25px;
+}
+
+/* Cards */
+.card {
+background: #f8f9fa;
+border-radius: 10px;
+padding: 18px;
+text-align: center;
+box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+transition: transform 0.2s;
+}
+
+.card:hover {
+transform: translateY(-5px);
+}
+
+/* Card icons */
+.card h3 {
+margin-top: 10px;
+}
+
+/* Research section */
+.research-box {
+background: #eef3ff;
+padding: 18px;
+border-radius: 8px;
+margin-top: 25px;
+}
