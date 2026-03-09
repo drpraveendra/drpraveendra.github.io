@@ -4,9 +4,19 @@ Welcome to my digital classroom. Here, you will find curated playlists and lectu
 
 ---
 
-## Linear Algebra (MLSU NEP 5th Semester)
-*A complete course covering Vector Spaces, Linear Transformations, and Dual Spaces.*
+## 📚 Study Materials & Resources
+आप नीचे दिए गए लिंक्स से इन लेक्चर्स के PDF नोट्स और असाइनमेंट डाउनलोड कर सकते हैं:
 
+| Subject | PDF Notes | Telegram Support |
+| :--- | :--- | :--- |
+| **Linear Algebra** | [📄 Download PDF](#) | [💬 Join Group](https://t.me/drpraveendra) |
+| **ODE (Ordinary Differential Eq.)** | [📄 Download PDF](#) | [💬 Join Group](https://t.me/drpraveendra) |
+| **Integral Calculus** | [📄 Download PDF](#) | [💬 Join Group](https://t.me/drpraveendra) |
+| **Atomic Concepts** | [📄 Download PDF](#) | [💬 Join Group](https://t.me/drpraveendra) |
+
+---
+
+## Linear Algebra (MLSU NEP 5th Semester)
 <iframe width="560" height="315" 
 src="https://www.youtube.com/embed/videoseries?list=PLHoWYh3APMj4a6yTsHxLpb3BhhIQtFaZT" 
 title="Linear Algebra Playlist" frameborder="0" 
@@ -16,8 +26,6 @@ allowfullscreen></iframe>
 ---
 
 ## Ordinary Differential Equations (ODE)
-*From Basics to Advanced concepts for CSIR NET & University Exams.*
-
 <iframe width="560" height="315" 
 src="https://www.youtube.com/embed/videoseries?list=PLHoWYh3APMj54thTLieavfgd55873UjZP" 
 title="ODE Playlist" frameborder="0" 
@@ -27,27 +35,14 @@ allowfullscreen></iframe>
 ---
 
 ## Integral Calculus
-*Mastering Integration techniques and their applications.*
-
 <iframe width="560" height="315" 
 src="https://www.youtube.com/embed/videoseries?list=YOUR_INTEGRAL_CALCULUS_ID" 
 title="Integral Calculus Playlist" frameborder="0" 
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-allowfullscreen></iframe>
-
----
-
-## Partial Differential Equations (PDE)
-<iframe width="560" height="315" 
-src="https://www.youtube.com/embed/videoseries?list=YOUR_PDE_PLAYLIST_ID" 
-title="PDE Playlist" frameborder="0" 
 allowfullscreen></iframe>
 
 ---
 
 ## Atomic Concepts (Short Overviews)
-*Quick conceptual bites for competitive exam preparation.*
-
 <iframe width="560" height="315" 
 src="https://www.youtube.com/embed/videoseries?list=YOUR_ATOMIC_CONCEPTS_ID" 
 title="Atomic Concepts Playlist" frameborder="0" 
@@ -56,8 +51,6 @@ allowfullscreen></iframe>
 ---
 
 ## Question of the Day
-*Daily problem-solving sessions and solutions from the Telegram group.*
-
 <iframe width="560" height="315" 
 src="https://www.youtube.com/embed/videoseries?list=YOUR_QOTD_PLAYLIST_ID" 
 title="Question of the Day Playlist" frameborder="0" 
