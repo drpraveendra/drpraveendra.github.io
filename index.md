@@ -2,31 +2,33 @@
 
 <div class="sidebar">
 
-<img src="/assets/images/profile.png" class="profile">
+<img src="/assets/images/profile.jpg" class="profile">
 
 <h2>Dr. Praveendra Singh</h2>
 
 <p class="position">
-Assistant Professor  
-Department of Mathematics  
-Government College Kherwara  
+Assistant Professor<br>
+Department of Mathematics<br>
+Government College Kherwara<br>
 Rajasthan, India
 </p>
 
 <hr>
 
 <p>
-🔬 Inventory Optimization  
-📦 Supply Chain Modeling  
-🧠 Metaheuristic Algorithms  
+🔬 Inventory Optimization<br>
+📦 Supply Chain Modeling<br>
+🧠 Metaheuristic Algorithms<br>
 🌱 Sustainable Systems
 </p>
 
 <hr>
 
-### Academic Profiles
-
-<a href="https://scholar.google.com">Google Scholar</a> <a href="https://orcid.org">ORCID</a> <a href="https://researchgate.net">ResearchGate</a>
+<p>
+<a href="https://scholar.google.com">Google Scholar</a><br>
+<a href="https://orcid.org">ORCID</a><br>
+<a href="https://researchgate.net">ResearchGate</a>
+</p>
 
 <hr>
 
@@ -36,75 +38,50 @@ Rajasthan, India
 
 <div class="content">
 
-# Welcome
+<h1>Welcome</h1>
 
-I am an **Assistant Professor of Mathematics** specializing in **inventory control, supply chain optimization, and intelligent metaheuristic algorithms**.
+<p>
+I am an <strong>Assistant Professor of Mathematics</strong> specializing in
+inventory control, supply chain optimization, and metaheuristic algorithms.
+</p>
 
-My research focuses on **nature-inspired optimization techniques for real-world decision systems involving deteriorating inventory and sustainable supply chains**.
-
----
-
-## Research Highlights
+<h2>Research Highlights</h2>
 
 <div class="research-grid">
 
 <div class="research-card">
-
-### Inventory Control
-
-Mathematical models for deteriorating items and optimal policies.
-
+<h3>Inventory Control</h3>
+Mathematical models for deteriorating items.
 </div>
 
 <div class="research-card">
-
-### Supply Chain Systems
-
+<h3>Supply Chain Systems</h3>
 Optimization of production and distribution systems.
-
 </div>
 
 <div class="research-card">
-
-### Metaheuristic Algorithms
-
-Differential Evolution, Bat Algorithm, and hybrid techniques.
-
+<h3>Metaheuristic Algorithms</h3>
+Differential Evolution, Bat Algorithm, hybrid techniques.
 </div>
 
 <div class="research-card">
-
-### Sustainable Systems
-
-Integration of sustainability in supply chain decision models.
-
+<h3>Sustainable Systems</h3>
+Sustainability in supply chain models.
 </div>
 
 </div>
 
----
-
-## Featured Publications
+<h2>Featured Publications</h2>
 
 <div class="pub-card">
-
-Singh & Jain (2025)
-Inventory optimization for deteriorating items
-*Knowledge and Information Systems*
-
+Singh & Jain (2025) — Knowledge and Information Systems
 </div>
 
 <div class="pub-card">
-
-Jain & Singh (2024)
-Pricing and preservation strategy for inventory models
-*Soft Computing*
-
+Jain & Singh (2024) — Soft Computing
 </div>
 
----
-
-## Explore
+<h2>Explore</h2>
 
 <div class="nav-grid">
 
