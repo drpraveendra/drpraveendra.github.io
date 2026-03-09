@@ -1,5 +1,4 @@
 ---
-
 ---
 
 @import "minima";
@@ -83,7 +82,11 @@ box-shadow:0 3px 8px rgba(0,0,0,0.08);
 font-weight:500;
 }
 
-.nav-card:hover
+.nav-card:hover{
+background:#eef3ff;
+transform:translateY(-4px);
+transition:0.2s;
+}
 
 /* MOBILE */
 
