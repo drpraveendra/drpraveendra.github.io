@@ -9,10 +9,10 @@ Welcome to my digital classroom. Here, you will find curated playlists and lectu
 
 | Subject | PDF Notes | Telegram Support |
 | :--- | :--- | :--- |
-| **Linear Algebra** | [📄 Download PDF](#) | [💬 Join Group](https://t.me/drpraveendra) |
-| **ODE (Ordinary Differential Eq.)** | [📄 Download PDF](#) | [💬 Join Group](https://t.me/drpraveendra) |
-| **Integral Calculus** | [📄 Download PDF](#) | [💬 Join Group](https://t.me/drpraveendra) |
-| **Atomic Concepts** | [📄 Download PDF](#) | [💬 Join Group](https://t.me/drpraveendra) |
+| **Linear Algebra** | [📄 Download PDF](#) | [💬 Join Group](https://t.me/fractalfrontiermaths) |
+| **ODE (Ordinary Differential Eq.)** | [📄 Download PDF](#) | [💬 Join Group](https://t.me/fractalfrontiermaths) |
+| **Integral Calculus** | [📄 Download PDF](#) | [💬 Join Group](https://t.me/fractalfrontiermaths) |
+| **Atomic Concepts** | [📄 Download PDF](#) | [💬 Join Group](https://t.me/fractalfrontiermaths) |
 
 ---
 
@@ -36,7 +36,7 @@ allowfullscreen></iframe>
 
 ## Integral Calculus
 <iframe width="560" height="315" 
-src="https://www.youtube.com/embed/videoseries?list=YOUR_INTEGRAL_CALCULUS_ID" 
+src="https://youtube.com/playlist?list=PLHoWYh3APMj74ok4qgjUFjE71n1qu0P8A&si=9WLgXk4JHUoZYXJY" 
 title="Integral Calculus Playlist" frameborder="0" 
 allowfullscreen></iframe>
 
@@ -44,7 +44,7 @@ allowfullscreen></iframe>
 
 ## Atomic Concepts (Short Overviews)
 <iframe width="560" height="315" 
-src="https://www.youtube.com/embed/videoseries?list=YOUR_ATOMIC_CONCEPTS_ID" 
+src="https://youtube.com/playlist?list=PLHoWYh3APMj5gsVCai92jWWAk71L9a4SM&si=82P1mK6N8Ohxi-De" 
 title="Atomic Concepts Playlist" frameborder="0" 
 allowfullscreen></iframe>
 
@@ -52,13 +52,13 @@ allowfullscreen></iframe>
 
 ## Question of the Day
 <iframe width="560" height="315" 
-src="https://www.youtube.com/embed/videoseries?list=YOUR_QOTD_PLAYLIST_ID" 
+src="https://youtube.com/playlist?list=PLHoWYh3APMj4q3kXc6Zuclcu5RhGWh_n6&si=Ihst38_QwZXDUCi_" 
 title="Question of the Day Playlist" frameborder="0" 
 allowfullscreen></iframe>
 
 ---
 
-## Optimization Lecture
+## Mohan Lal Sukhadiya University Previous Year Problems
 <iframe width="560" height="315" 
 src="https://www.youtube.com/embed/n7RGQNZf4Eg" 
 title="Optimization Video" frameborder="0" 
