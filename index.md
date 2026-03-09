@@ -1,6 +1,6 @@
 <div class="hero">
 
-<img src="/assets/images/profile.png" class="profile-img">
+<img src="/assets/images/profile1.png" class="profile-img">
 
 <div class="hero-text">
 
