@@ -2,7 +2,7 @@
 
 <div class="sidebar">
 
-<img src="/assets/images/profile.jpg" class="profile">
+<img src="/assets/images/profile.png" class="profile">
 
 <h2>Dr. Praveendra Singh</h2>
 
@@ -24,12 +24,13 @@ Rajasthan, India
 
 <hr>
 
-<p>
+### Academic Profiles
+
+<a href="https://scholar.google.com">Google Scholar</a> <a href="https://orcid.org">ORCID</a> <a href="https://researchgate.net">ResearchGate</a>
+
+<hr>
 
 📧 [drpraveendra.singh@gmail.com](mailto:drpraveendra.singh@gmail.com)
-📧 [psingh@ma.iitr.ac.in](mailto:psingh@ma.iitr.ac.in)
-
-</p>
 
 </div>
 
@@ -39,43 +40,43 @@ Rajasthan, India
 
 I am an **Assistant Professor of Mathematics** specializing in **inventory control, supply chain optimization, and intelligent metaheuristic algorithms**.
 
-My research focuses on **nature-inspired optimization techniques for real-world decision systems involving deteriorating inventory, pricing strategies, and sustainable supply chains**.
+My research focuses on **nature-inspired optimization techniques for real-world decision systems involving deteriorating inventory and sustainable supply chains**.
 
 ---
 
-## Research Areas
+## Research Highlights
 
 <div class="research-grid">
 
 <div class="research-card">
 
-### 📦 Inventory Control
+### Inventory Control
 
-Mathematical models for deteriorating items, preservation investment, and optimal inventory policies.
-
-</div>
-
-<div class="research-card">
-
-### 🚚 Supply Chain Systems
-
-Optimization of production, inventory, and distribution systems under real-world constraints.
+Mathematical models for deteriorating items and optimal policies.
 
 </div>
 
 <div class="research-card">
 
-### 🧠 Metaheuristic Algorithms
+### Supply Chain Systems
 
-Nature-inspired optimization methods including Differential Evolution and Bat Algorithm.
+Optimization of production and distribution systems.
 
 </div>
 
 <div class="research-card">
 
-### 🌱 Sustainable Modeling
+### Metaheuristic Algorithms
 
-Integration of environmental and economic sustainability in supply chain systems.
+Differential Evolution, Bat Algorithm, and hybrid techniques.
+
+</div>
+
+<div class="research-card">
+
+### Sustainable Systems
+
+Integration of sustainability in supply chain decision models.
 
 </div>
 
@@ -87,43 +88,27 @@ Integration of environmental and economic sustainability in supply chain systems
 
 <div class="pub-card">
 
-**Singh, P. & Jain, M. (2025)**
-Intelligent optimization and inventory control of deteriorating items
+Singh & Jain (2025)
+Inventory optimization for deteriorating items
 *Knowledge and Information Systems*
 
 </div>
 
 <div class="pub-card">
 
-**Jain, M. & Singh, P. (2024)**
-Pricing, prepayment and preservation strategy for inventory models
+Jain & Singh (2024)
+Pricing and preservation strategy for inventory models
 *Soft Computing*
 
 </div>
 
-<div class="pub-card">
-
-**Jain, M. & Singh, P. (2022)**
-Optimal inspection and advance payment policy using differential evolution
-*Applied Soft Computing*
-
-</div>
-
 ---
-### Academic Profiles
-
-[Google Scholar]
-<a href="https://scholar.google.com/citations?user=xhzb-RoAAAAJ&hl=enr">
-<img src="https://img.shields.io/badge/Google-Scholar-blue">
-</a>
-[ResearchGate](https://www.researchgate.net/profile/Praveendra-Singh)
-[ORCID](https://orcid.org/my-orcid?orcid=0000-0001-6069-5762)
 
 ## Explore
 
 <div class="nav-grid">
 
-<a href="about"><div class="nav-card">👤 About</div></a> <a href="research"><div class="nav-card">🔬 Research</div></a> <a href="publications"><div class="nav-card">📄 Publications</div></a> <a href="teaching"><div class="nav-card">🎓 Teaching</div></a> <a href="resources"><div class="nav-card">📘 Resources</div></a> <a href="videos"><div class="nav-card">🎥 Videos</div></a> <a href="contact"><div class="nav-card">📬 Contact</div></a>
+<a href="research"><div class="nav-card">Research</div></a> <a href="publications"><div class="nav-card">Publications</div></a> <a href="projects"><div class="nav-card">Projects</div></a> <a href="videos"><div class="nav-card">Videos</div></a> <a href="blog"><div class="nav-card">Blog</div></a> <a href="problems"><div class="nav-card">Problem Archive</div></a>
 
 </div>
 
