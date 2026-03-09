@@ -27,7 +27,7 @@ allowfullscreen></iframe>
 
 ## Ordinary Differential Equations (ODE)
 <iframe width="560" height="315" 
-src="https://youtube.com/playlist?list=PLHoWYh3APMj7WoIoQ7IzCoU-iNdRfGI0v&si=FMNA-yHTC_lgoue4" 
+src="https://www.youtube.com/embed/videoseries?list=PLHoWYh3APMj7WoIoQ7IzCoU-iNdRfGI0v&si=FMNA-yHTC_lgoue4" 
 title="ODE Playlist" frameborder="0" 
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
 allowfullscreen></iframe>
@@ -36,7 +36,7 @@ allowfullscreen></iframe>
 
 ## Integral Calculus
 <iframe width="560" height="315" 
-src="https://youtube.com/playlist?list=PLHoWYh3APMj74ok4qgjUFjE71n1qu0P8A&si=9WLgXk4JHUoZYXJY" 
+src="https://www.youtube.com/embed/videoseries?list=PLHoWYh3APMj74ok4qgjUFjE71n1qu0P8A&si=9WLgXk4JHUoZYXJY" 
 title="Integral Calculus Playlist" frameborder="0" 
 allowfullscreen></iframe>
 
@@ -44,7 +44,7 @@ allowfullscreen></iframe>
 
 ## Atomic Concepts (Short Overviews)
 <iframe width="560" height="315" 
-src="https://youtube.com/playlist?list=PLHoWYh3APMj5gsVCai92jWWAk71L9a4SM&si=82P1mK6N8Ohxi-De" 
+src="https://www.youtube.com/embed/videoseries?list=PLHoWYh3APMj5gsVCai92jWWAk71L9a4SM&si=82P1mK6N8Ohxi-De" 
 title="Atomic Concepts Playlist" frameborder="0" 
 allowfullscreen></iframe>
 
@@ -52,7 +52,7 @@ allowfullscreen></iframe>
 
 ## Question of the Day
 <iframe width="560" height="315" 
-src="https://youtube.com/playlist?list=PLHoWYh3APMj4q3kXc6Zuclcu5RhGWh_n6&si=Ihst38_QwZXDUCi_" 
+src="https://www.youtube.com/embed/videoseries?list=PLHoWYh3APMj4q3kXc6Zuclcu5RhGWh_n6&si=Ihst38_QwZXDUCi_" 
 title="Question of the Day Playlist" frameborder="0" 
 allowfullscreen></iframe>
 
@@ -60,6 +60,6 @@ allowfullscreen></iframe>
 
 ## Mohan Lal Sukhadiya University Previous Year Problems
 <iframe width="560" height="315" 
-src="https://youtube.com/playlist?list=PLHoWYh3APMj5kqruCuZ-dc8JrmPKdP8eH&si=qCSEjR-fUtG5rTXc" 
+src="https://www.youtube.com/embed/videoseries?list=LHoWYh3APMj5kqruCuZ-dc8JrmPKdP8eH&si=qCSEjR-fUtG5rTXc" 
 title="Optimization Video" frameborder="0" 
 allowfullscreen></iframe>
