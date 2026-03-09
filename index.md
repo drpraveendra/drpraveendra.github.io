@@ -112,7 +112,10 @@ Optimal inspection and advance payment policy using differential evolution
 ---
 ### Academic Profiles
 
-[Google Scholar](https://scholar.google.com/citations?user=xhzb-RoAAAAJ&hl=enr)
+[Google Scholar]
+<a href="https://scholar.google.com/citations?user=xhzb-RoAAAAJ&hl=enr">
+<img src="https://img.shields.io/badge/Google-Scholar-blue">
+</a>
 [ResearchGate](https://www.researchgate.net/profile/Praveendra-Singh)
 [ORCID](https://orcid.org/my-orcid?orcid=0000-0001-6069-5762)
 
