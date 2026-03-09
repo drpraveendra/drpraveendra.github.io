@@ -4,48 +4,42 @@
 
 @import "minima";
 
-/* HERO SECTION */
+/* MAIN LAYOUT */
 
-.hero {
-text-align:center;
-padding:40px 20px;
-background:#eef3ff;
-border-radius:12px;
-margin-bottom:40px;
+.layout{
+display:grid;
+grid-template-columns:280px 1fr;
+gap:40px;
 }
 
-.profile-photo{
+/* SIDEBAR */
+
+.sidebar{
+background:#f4f7ff;
+padding:25px;
+border-radius:12px;
+text-align:center;
+}
+
+.profile{
 width:160px;
 border-radius:50%;
 border:4px solid #2c7be5;
 margin-bottom:15px;
 }
 
-.subtitle{
-font-size:18px;
+.position{
+font-size:14px;
 color:#555;
 }
 
-/* BUTTONS */
+/* CONTENT */
 
-.hero-buttons{
-margin-top:20px;
+.content{
+padding-top:10px;
 }
 
-.btn{
-display:inline-block;
-padding:10px 18px;
-margin:6px;
-background:#2c7be5;
-color:white;
-border-radius:6px;
-text-decoration:none;
-font-weight:500;
-}
-
-.btn:hover
-
-/* RESEARCH CARDS */
+/* RESEARCH GRID */
 
 .research-grid{
 display:grid;
@@ -55,29 +49,29 @@ margin-top:20px;
 }
 
 .research-card{
-background:#f8f9fa;
+background:#ffffff;
 padding:18px;
 border-radius:10px;
 box-shadow:0 4px 10px rgba(0,0,0,0.08);
 }
 
-/* PUBLICATION CARDS */
+/* PUBLICATIONS */
 
 .pub-card{
-background:#f1f5ff;
-padding:16px;
+background:#eef3ff;
+padding:15px;
 border-left:5px solid #2c7be5;
 margin-top:15px;
 border-radius:6px;
 }
 
-/* NAVIGATION CARDS */
+/* NAV GRID */
 
 .nav-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
 gap:15px;
-margin-top:20px;
+margin-top:25px;
 }
 
 .nav-card{
@@ -90,3 +84,21 @@ font-weight:500;
 }
 
 .nav-card:hover
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.layout{
+grid-template-columns:1fr;
+}
+
+.sidebar{
+order:1;
+}
+
+.content{
+order:2;
+}
+
+}
