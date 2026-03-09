@@ -2,7 +2,7 @@
 
 <div class="sidebar">
 
-<img src="/assets/images/profile.jpg" class="profile">
+<img src="/assets/images/profile.png" class="profile">
 
 <h2>Dr. Praveendra Singh</h2>
 
