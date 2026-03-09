@@ -32,7 +32,9 @@ Rajasthan, India
 
 <hr>
 
-📧 [drpraveendra.singh@gmail.com](mailto:drpraveendra.singh@gmail.com)
+<a href="mailto:drpraveendra.singh@gmail.com">
+drpraveendra.singh@gmail.com
+</a>
 
 </div>
 
