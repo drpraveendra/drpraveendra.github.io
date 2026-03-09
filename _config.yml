@@ -1,7 +1,9 @@
 title: Dr. Praveendra Singh
 description: Assistant Professor of Mathematics
 theme: minima
-
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
 header_pages:
  - about.md
  - research.md
