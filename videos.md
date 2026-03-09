@@ -60,6 +60,6 @@ allowfullscreen></iframe>
 
 ## Mohan Lal Sukhadiya University Previous Year Problems
 <iframe width="560" height="315" 
-src="https://www.youtube.com/embed/videoseries?list=PLHoWYh3APMj5kqruCuZ-dc8JrmPKdP8eH&si=14ZAe3bUs02H3vOB" 
+src="https://youtu.be/n7RGQNZf4Eg?si=r--7rW5vWdPdgXZB" 
 title="MLSU Previous Year Problems" frameborder="0" 
 allowfullscreen></iframe>
