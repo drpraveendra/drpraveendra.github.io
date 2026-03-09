@@ -1,10 +1,6 @@
 # Lecture Videos
-
-Mathematics lectures and tutorials will be added here.
-
-Topics may include:
-
-• Real Analysis
-• Linear Algebra
-• Optimization Techniques
-• Mathematical Problem Solving
+<iframe width="560" height="315"
+src="https://youtu.be/n7RGQNZf4Eg?si=QQIKAy0s8KI7gFBw"
+frameborder="0"
+allowfullscreen>
+</iframe>
