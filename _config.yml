@@ -6,6 +6,9 @@ markdown: kramdown
 kramdown:
   math_engine: mathjax
 
+sass:
+  style: compressed
+
 header_pages:
  - about.md
  - research.md
@@ -17,9 +20,3 @@ header_pages:
  - problems.md
  - blog.md
  - contact.md
-
-collections:
-  projects:
-    output: true
-  problems:
-    output: true
