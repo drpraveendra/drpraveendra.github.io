@@ -18,7 +18,7 @@ Welcome to my digital classroom. Here, you will find curated playlists and lectu
 
 ## Linear Algebra (MLSU NEP 5th Semester)
 <iframe width="560" height="315" 
-src="https://youtube.com/playlist?list=PLHoWYh3APMj4a6yTsHxLpb3BhhIQtFaZT&si=vrJjkuL_xJm_2sIL" 
+src="https://www.youtube.com/embed/videoseries?list=PLHoWYh3APMj4a6yTsHxLpb3BhhIQtFaZT" 
 title="Linear Algebra Playlist" frameborder="0" 
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
 allowfullscreen></iframe>
