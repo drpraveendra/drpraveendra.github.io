@@ -1,53 +1,82 @@
-<div class="hero">
-<img src="/assets/images/profile.png" class="profile-photo">
+<div class="layout">
 
-<h1>Dr. Praveendra Singh</h1>
+<div class="sidebar">
 
-<p class="subtitle">
-Assistant Professor of Mathematics  
-Government College Kherwara, Rajasthan, India
+<img src="/assets/images/profile.jpg" class="profile">
+
+<h2>Dr. Praveendra Singh</h2>
+
+<p class="position">
+Assistant Professor  
+Department of Mathematics  
+Government College Kherwara  
+Rajasthan, India
 </p>
 
-<div class="hero-buttons">
+<hr>
 
-<a class="btn" href="research">🔬 Research</a> <a class="btn" href="publications">📄 Publications</a> <a class="btn" href="teaching">🎓 Teaching</a> <a class="btn" href="contact">📬 Contact</a>
+<p>
+🔬 Inventory Optimization  
+📦 Supply Chain Modeling  
+🧠 Metaheuristic Algorithms  
+🌱 Sustainable Systems
+</p>
+
+<hr>
+
+<p>
+
+📧 [drpraveendra.singh@gmail.com](mailto:drpraveendra.singh@gmail.com)
+📧 [psingh@ma.iitr.ac.in](mailto:psingh@ma.iitr.ac.in)
+
+</p>
 
 </div>
 
-</div>
+<div class="content">
+
+# Welcome
+
+I am an **Assistant Professor of Mathematics** specializing in **inventory control, supply chain optimization, and intelligent metaheuristic algorithms**.
+
+My research focuses on **nature-inspired optimization techniques for real-world decision systems involving deteriorating inventory, pricing strategies, and sustainable supply chains**.
 
 ---
 
-## About Me
-
-I am an Assistant Professor of Mathematics working in the areas of **inventory control, supply chain optimization, and intelligent metaheuristic algorithms**.
-
-My research focuses on **nature-inspired optimization techniques for real-world decision systems involving deteriorating items, pricing strategies, and sustainable supply chains.**
-
----
-
-## Research Interests
+## Research Areas
 
 <div class="research-grid">
 
 <div class="research-card">
-<h3>📦 Inventory Control</h3>
-Mathematical modeling for deteriorating items and optimal policies.
+
+### 📦 Inventory Control
+
+Mathematical models for deteriorating items, preservation investment, and optimal inventory policies.
+
 </div>
 
 <div class="research-card">
-<h3>🚚 Supply Chain Management</h3>
-Optimization of production and distribution systems.
+
+### 🚚 Supply Chain Systems
+
+Optimization of production, inventory, and distribution systems under real-world constraints.
+
 </div>
 
 <div class="research-card">
-<h3>🧠 Metaheuristic Algorithms</h3>
-Nature-inspired algorithms such as Differential Evolution and Bat Algorithm.
+
+### 🧠 Metaheuristic Algorithms
+
+Nature-inspired optimization methods including Differential Evolution and Bat Algorithm.
+
 </div>
 
 <div class="research-card">
-<h3>🌱 Sustainable Systems</h3>
-Integration of sustainability into inventory decision models.
+
+### 🌱 Sustainable Modeling
+
+Integration of environmental and economic sustainability in supply chain systems.
+
 </div>
 
 </div>
@@ -59,7 +88,7 @@ Integration of sustainability into inventory decision models.
 <div class="pub-card">
 
 **Singh, P. & Jain, M. (2025)**
-Intelligent optimization and inventory control of deteriorating items: An overview
+Intelligent optimization and inventory control of deteriorating items
 *Knowledge and Information Systems*
 
 </div>
@@ -82,7 +111,7 @@ Optimal inspection and advance payment policy using differential evolution
 
 ---
 
-## Quick Navigation
+## Explore
 
 <div class="nav-grid">
 
@@ -90,11 +119,6 @@ Optimal inspection and advance payment policy using differential evolution
 
 </div>
 
----
+</div>
 
-## Academic Profiles
-
-Google Scholar
-ResearchGate
-ORCID
-
+</div>
