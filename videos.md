@@ -18,7 +18,7 @@ Welcome to my digital classroom. Here, you will find curated playlists and lectu
 
 ## Linear Algebra (MLSU NEP 5th Semester)
 <iframe width="560" height="315" 
-src="https://www.youtube.com/embed/videoseries?list=PLHoWYh3APMj4a6yTsHxLpb3BhhIQtFaZT" 
+src="https://youtube.com/playlist?list=PLHoWYh3APMj4a6yTsHxLpb3BhhIQtFaZT&si=vrJjkuL_xJm_2sIL" 
 title="Linear Algebra Playlist" frameborder="0" 
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
 allowfullscreen></iframe>
@@ -27,7 +27,7 @@ allowfullscreen></iframe>
 
 ## Ordinary Differential Equations (ODE)
 <iframe width="560" height="315" 
-src="https://www.youtube.com/embed/videoseries?list=PLHoWYh3APMj54thTLieavfgd55873UjZP" 
+src="https://youtube.com/playlist?list=PLHoWYh3APMj7WoIoQ7IzCoU-iNdRfGI0v&si=FMNA-yHTC_lgoue4" 
 title="ODE Playlist" frameborder="0" 
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
 allowfullscreen></iframe>
@@ -60,6 +60,6 @@ allowfullscreen></iframe>
 
 ## Mohan Lal Sukhadiya University Previous Year Problems
 <iframe width="560" height="315" 
-src="https://www.youtube.com/embed/n7RGQNZf4Eg" 
+src="https://youtube.com/playlist?list=PLHoWYh3APMj5kqruCuZ-dc8JrmPKdP8eH&si=qCSEjR-fUtG5rTXc" 
 title="Optimization Video" frameborder="0" 
 allowfullscreen></iframe>
