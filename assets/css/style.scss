@@ -1,80 +1,114 @@
-/* HERO SECTION */
-.hero{
+/* ===============================
+   PROFILE HEADER
+================================ */
+
+.profile-header{
 display:flex;
 align-items:center;
 gap:25px;
-padding:25px;
-background:linear-gradient(135deg,#4e73df,#1cc88a);
-border-radius:12px;
-color:white;
-margin-bottom:40px;
+margin-top:25px;
+margin-bottom:35px;
+flex-wrap:wrap;
 }
 
-.hero-text h1{
+.profile-img{
+width:140px;
+height:140px;
+object-fit:cover;
+object-position:center top;
+border-radius:50%;
+border:4px solid #4e73df;
+box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+.profile-info h1{
 margin:0;
 font-size:32px;
+color:#2c3e50;
 }
 
 .designation{
 margin-top:6px;
-opacity:0.9;
+font-size:16px;
+color:#555;
+line-height:1.5;
 }
 
-/* PROFILE PHOTO */
-
-.profile-img{
-width:120px;
-height:120px;
-border-radius:50%;
-object-fit:cover;
-border:4px solid white;
-}
-
-/* HERO LINKS */
+/* ===============================
+   HERO LINKS
+================================ */
 
 .hero-links{
-margin-top:10px;
+margin-top:12px;
 }
 
 .hero-links a{
-color:white;
 margin-right:15px;
 font-weight:500;
+color:#4e73df;
+text-decoration:none;
 }
 
-.hero-links i{
-margin-right:5px;
+.hero-links a:hover{
+text-decoration:underline;
 }
 
-/* CARD GRID */
+/* ===============================
+   SECTION TITLES
+================================ */
+
+h2{
+margin-top:35px;
+border-bottom:2px solid #e5e5e5;
+padding-bottom:6px;
+}
+
+/* ===============================
+   RESEARCH CARDS
+================================ */
 
 .card-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:20px;
-margin-top:25px;
+margin-top:20px;
 }
 
 .card{
 background:white;
 padding:20px;
 border-radius:10px;
-text-align:center;
 box-shadow:0 4px 10px rgba(0,0,0,0.08);
-transition:0.2s;
+transition:all 0.25s;
+text-align:center;
 }
 
 .card i{
-font-size:30px;
+font-size:28px;
 color:#4e73df;
 margin-bottom:10px;
 }
 
 .card:hover{
 transform:translateY(-6px);
+box-shadow:0 8px 18px rgba(0,0,0,0.12);
 }
 
-/* NAVIGATION GRID */
+/* ===============================
+   PUBLICATION CARDS
+================================ */
+
+.pub-card{
+background:#eef3ff;
+padding:16px;
+border-left:5px solid #4e73df;
+border-radius:6px;
+margin-top:15px;
+}
+
+/* ===============================
+   NAVIGATION GRID
+================================ */
 
 .nav-grid{
 display:grid;
@@ -90,7 +124,7 @@ border-radius:10px;
 text-align:center;
 font-weight:500;
 box-shadow:0 3px 8px rgba(0,0,0,0.08);
-transition:0.2s;
+transition:all 0.2s;
 }
 
 .nav-card i{
@@ -108,13 +142,24 @@ transform:translateY(-4px);
 color:white;
 }
 
-/* MOBILE */
+/* ===============================
+   MOBILE
+================================ */
 
 @media(max-width:768px){
 
-.hero{
+.profile-header{
 flex-direction:column;
 text-align:center;
+}
+
+.profile-img{
+width:120px;
+height:120px;
+}
+
+.profile-info h1{
+font-size:26px;
 }
 
 }
