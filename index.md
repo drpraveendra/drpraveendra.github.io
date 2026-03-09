@@ -1,16 +1,21 @@
-<div class="hero">
+<div class="profile-header">
 
 <img src="/assets/images/profile1.png" class="profile-img">
 
-<div class="hero-text">
+<div class="profile-info">
 
 <h1>Dr. Praveendra Singh</h1>
 
 <p class="designation">
-Assistant Professor <br>
-Department of Mathematics <br>
-Government College Kherwara <br>
+Assistant Professor<br>
+Department of Mathematics<br>
+Government College Kherwara<br>
 Rajasthan, India
+</p>
+
+</div>
+
+</div>
 </p>
 
 <div class="hero-links">
