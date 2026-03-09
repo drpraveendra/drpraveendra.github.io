@@ -16,7 +16,7 @@ Welcome to my digital classroom. Here, you will find curated playlists and lectu
 
 ---
 
-## Linear Algebra (MLSU NEP 5th Semester)
+## Linear Algebra
 <iframe width="560" height="315" 
 src="https://www.youtube.com/embed/videoseries?list=PLHoWYh3APMj4a6yTsHxLpb3BhhIQtFaZT" 
 title="Linear Algebra Playlist" frameborder="0" 
@@ -61,5 +61,5 @@ allowfullscreen></iframe>
 ## Mohan Lal Sukhadiya University Previous Year Problems
 <iframe width="560" height="315" 
 src="https://www.youtube.com/embed/videoseries?list=LHoWYh3APMj5kqruCuZ-dc8JrmPKdP8eH&si=qCSEjR-fUtG5rTXc" 
-title="Optimization Video" frameborder="0" 
+title="MLSU Previous Year Problems" frameborder="0" 
 allowfullscreen></iframe>
