@@ -9,7 +9,7 @@ Welcome to my digital classroom. Here, you will find curated playlists and lectu
 
 | Subject | PDF Notes | Telegram Support |
 | :--- | :--- | :--- |
-| **Linear Algebra** | [📄 Download PDF](#) | [💬 Join Group](https://t.me/fractalfrontiermaths) |
+| **Linear Algebra** | [📄 Download PDF](https://drive.google.com/drive/folders/1j-cQ3H_yjVPkGGKq8FJAEAwRqL6Jk2HW?usp=drive_link) | [💬 Join Group](https://t.me/fractalfrontiermaths) |
 | **ODE (Ordinary Differential Eq.)** | [📄 Download PDF](#) | [💬 Join Group](https://t.me/fractalfrontiermaths) |
 | **Integral Calculus** | [📄 Download PDF](#) | [💬 Join Group](https://t.me/fractalfrontiermaths) |
 | **Atomic Concepts** | [📄 Download PDF](#) | [💬 Join Group](https://t.me/fractalfrontiermaths) |
