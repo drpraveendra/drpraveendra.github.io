@@ -57,9 +57,8 @@ title="Question of the Day Playlist" frameborder="0"
 allowfullscreen></iframe>
 
 ---
-
 ## Mohan Lal Sukhadiya University Previous Year Problems
 <iframe width="560" height="315" 
-src="https://youtu.be/n7RGQNZf4Eg?si=r--7rW5vWdPdgXZB" 
+src="https://www.youtube.com/embed/videoseries?list=PLHoWYh3APMj5gsVCai92jWWAk71L9a4SM&si=82P1mK6N8Ohxi-De"
 title="MLSU Previous Year Problems" frameborder="0" 
 allowfullscreen></iframe>
