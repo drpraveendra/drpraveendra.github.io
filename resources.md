@@ -1,5 +1,5 @@
 ---
-title: Mathematics Resources
+title: Resources
 ---
 # Mathematics Resources
 
