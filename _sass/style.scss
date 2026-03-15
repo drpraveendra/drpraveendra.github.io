@@ -183,8 +183,56 @@ font-size:26px;
 grid-template-columns:1fr;
 }
 
+
 .nav-grid{
 grid-template-columns:1fr 1fr;
 }
 
+}
+
+/* ===== Navigation Styling ===== */
+
+.site-nav .page-link{
+position:relative;
+padding:8px 14px;
+border-radius:6px;
+transition:0.25s;
+font-weight:500;
+}
+
+/* Colorful hover */
+
+.site-nav .page-link:hover{
+background:linear-gradient(135deg,#4e73df,#1cc88a);
+color:white;
+}
+
+/* Icons */
+
+.site-nav .page-link i{
+margin-right:6px;
+color:#4e73df;
+}
+
+/* Tooltip popup */
+
+.site-nav .page-link::after{
+content: attr(data-tooltip);
+position:absolute;
+bottom:-35px;
+left:50%;
+transform:translateX(-50%);
+background:#2c3e50;
+color:white;
+padding:6px 10px;
+border-radius:6px;
+font-size:12px;
+white-space:nowrap;
+opacity:0;
+pointer-events:none;
+transition:0.2s;
+}
+
+.site-nav .page-link:hover::after{
+opacity:1;
 }
