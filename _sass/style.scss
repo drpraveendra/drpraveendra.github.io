@@ -190,7 +190,9 @@ grid-template-columns:1fr 1fr;
 
 }
 
-/* ===== Navigation Styling ===== */
+/* ===============================
+   Navigation Styling
+================================ */
 
 .site-nav .page-link{
 position:relative;
@@ -200,18 +202,11 @@ transition:0.25s;
 font-weight:500;
 }
 
-/* Colorful hover */
+/* Hover color */
 
 .site-nav .page-link:hover{
 background:linear-gradient(135deg,#4e73df,#1cc88a);
 color:white;
-}
-
-/* Icons */
-
-.site-nav .page-link i{
-margin-right:6px;
-color:#4e73df;
 }
 
 /* Tooltip popup */
