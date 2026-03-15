@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "👨‍🏫 Teaching & Pedagogy"
+permalink: /teaching/
 ---
 
 # Teaching
