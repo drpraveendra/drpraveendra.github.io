@@ -30,7 +30,7 @@ layout: default
     padding-left: 15px;
   }
   
-  /* Buttons */
+ /* Buttons */
   .hero-links {
     margin-top: 25px;
     display: flex;
@@ -47,24 +47,31 @@ layout: default
     display: flex;
     align-items: center;
     gap: 8px;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     background: white;
     color: #333;
   }
   .hero-links a:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    border-color: #1e3c72;
-    color: #1e3c72;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
   }
-  .hero-links a.youtube-btn {
-    border-color: #ff0000;
-    color: #ff0000;
-  }
-  .hero-links a.youtube-btn:hover {
-    background: #ff0000;
-    color: white;
-  }
+  .hero-links a.email-btn       { border-color: #555; color: #555; }
+  .hero-links a.email-btn:hover { background: #555; color: white; }
+
+  .hero-links a.scholar-btn       { border-color: #4285F4; color: #4285F4; }
+  .hero-links a.scholar-btn:hover { background: #4285F4; color: white; }
+
+  .hero-links a.rgate-btn       { border-color: #40BA9B; color: #40BA9B; }
+  .hero-links a.rgate-btn:hover { background: #40BA9B; color: white; }
+
+  .hero-links a.youtube-btn       { border-color: #ff0000; color: #ff0000; }
+  .hero-links a.youtube-btn:hover { background: #ff0000; color: white; }
+
+  .hero-links a.telegram-btn       { border-color: #0088cc; color: #0088cc; }
+  .hero-links a.telegram-btn:hover { background: #0088cc; color: white; }
+
+  .hero-links a.instagram-btn       { border-color: #e1306c; color: #e1306c; }
+  .hero-links a.instagram-btn:hover { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: white; border-color: transparent; }
 
   /* Grids & Cards */
   .card-grid {
@@ -146,12 +153,13 @@ layout: default
       Assistant Professor of Mathematics<br>
       Government College Kherwara, Rajasthan, India
     </p>
+
 <div class="hero-links">
-  <a href="mailto:drpraveendra.singh@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-  <a href="#"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-  <a href="#"><i class="fab fa-researchgate"></i> ResearchGate</a>
+  <a href="mailto:drpraveendra.singh@gmail.com" class="email-btn"><i class="fas fa-envelope"></i> Email</a>
+  <a href="#" class="scholar-btn" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+  <a href="#" class="rgate-btn" target="_blank"><i class="fas fa-flask"></i> ResearchGate</a>
   <a href="https://www.youtube.com/@FractalFrontierMaths" class="youtube-btn" target="_blank"><i class="fab fa-youtube"></i> Fractal Frontier Maths</a>
-  <a href="https://t.me/fractalfrontiermaths" class="telegram-btn" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
+  <a href="https://t.me/fractalfrontiermaths" class="telegram-btn" target="_blank"><i class="fab fa-telegram-plane"></i> Telegram</a>
   <a href="https://www.instagram.com/mathsworld007" class="instagram-btn" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
 </div>
 </div>
