@@ -1,4 +1,5 @@
 ---
+layout: default
 title: '<i class="fas fa-user"></i> About Me'
 ---
 
