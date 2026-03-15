@@ -1,5 +1,7 @@
+---
+title: '<i class="fas fa-user"></i> About'
+---
 # About
-
 Dr. Praveendra Singh is an Assistant Professor of Mathematics at **Government College Kherwara, Rajasthan, India**.
 
 He completed his **Ph.D. in Mathematics from the Indian Institute of Technology Roorkee**. His doctoral research focused on nature-inspired optimization techniques for inventory control models involving deteriorating items.
