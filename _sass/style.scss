@@ -125,16 +125,17 @@ text-align:center;
 
 }
 
-/* =================================
-   NAVIGATION TOOLTIP FIX
-   (does not change existing design)
-================================= */
+/* =====================================
+   TOOLTIP FIX (THIS PART FIXES THE DOT)
+===================================== */
 
 .site-nav a{
 position:relative;
 }
 
-.site-nav a::after{
+/* tooltip container */
+
+.site-nav a[data-tooltip]::after{
 content: attr(data-tooltip);
 position:absolute;
 bottom:-32px;
@@ -153,12 +154,6 @@ transition:0.2s;
 
 /* show tooltip */
 
-.site-nav a:hover::after{
+.site-nav a[data-tooltip]:hover::after{
 opacity:1;
-}
-
-/* hide tooltip if empty */
-
-.site-nav a:not([data-tooltip])::after{
-display:none;
 }
