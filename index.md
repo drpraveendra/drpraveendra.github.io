@@ -155,7 +155,7 @@ layout: default
     </p>
 
 <div class="hero-links">
-  <a href="mailto:drpraveendra.singh@gmail.com" class="email-btn"><i class="fas fa-envelope"></i> Email</a>
+  <<a href="mailto:drpraveendra.singh@gmail.com" class="email-btn"><i class="fas fa-envelope"></i> Email</a>
   <a href="https://scholar.google.com/citations?user=xhzb-RoAAAAJ&hl=en" class="scholar-btn" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
   <a href="https://www.researchgate.net/profile/Praveendra-Singh?ev=hdr_xprf" class="rgate-btn" target="_blank"><i class="fas fa-flask"></i> ResearchGate</a>
   <a href="https://www.youtube.com/@FractalFrontierMaths" class="youtube-btn" target="_blank"><i class="fab fa-youtube"></i> Fractal Frontier Maths</a>
