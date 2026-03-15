@@ -121,13 +121,52 @@ permalink: /recommended-books/
 </div>
 
 <h2 class="section-title">📗 Linear Algebra</h2>
-*(Book recommendations coming soon...)*
+<div class="books-grid">
+  <div class="book-card">
+    <i class="fas fa-book book-icon"></i>
+    <div class="book-title">Linear Algebra</div>
+    <div class="book-author">Stephen H. Friedberg</div>
+    <a href="https://amzn.to/4lxoXBi" class="book-btn" target="_blank"><i class="fas fa-shopping-cart"></i> View on Amazon</a>
+  </div>
+
+    <div class="book-card">
+    <i class="fas fa-book book-icon"></i>
+    <div class="book-title">Linear Algebra And Its Applications</div>
+    <div class="book-author">Gilbert Strang</div>
+    <a href="https://amzn.to/4s6aRt7" class="book-btn" target="_blank"><i class="fas fa-shopping-cart"></i> View on Amazon</a>
+  </div>
+
+    <div class="book-card">
+    <i class="fas fa-book book-icon"></i>
+    <div class="book-title">Linear Algebra</div>
+    <div class="book-author">Kenneth M Hoffman</div>
+    <a href="https://amzn.to/4sc5cll" class="book-btn" target="_blank"><i class="fas fa-shopping-cart"></i> View on Amazon</a>
+  </div>
+
+    <div class="book-card">
+    <i class="fas fa-book book-icon"></i>
+    <div class="book-title">Schaum's Outline of Linear Algebra</div>
+    <div class="book-author">Seymour Lipschutz, Marc Lipson</div>
+    <a href="https://amzn.to/4sdGsct" class="book-btn" target="_blank"><i class="fas fa-shopping-cart"></i> View on Amazon</a>
+  </div>
 
 <h2 class="section-title">📙 Abstract Algebra</h2>
-*(Book recommendations coming soon...)*
+<div class="books-grid">
+  <div class="book-card">
+    <i class="fas fa-book book-icon"></i>
+    <div class="book-title">A Course in Abstract Algebra</div>
+    <div class="book-author">Vijay K Khanna & S K Bhambri</div>
+    <a href="https://amzn.to/4bKoVCI" class="book-btn" target="_blank"><i class="fas fa-shopping-cart"></i> View on Amazon</a>
+  </div>
 
 <h2 class="section-title">📕 Calculus & Differential Equations</h2>
-*(Book recommendations coming soon...)*
+<div class="books-grid">
+  <div class="book-card">
+    <i class="fas fa-book book-icon"></i>
+    <div class="book-title">Thomas' Calculus</div>
+    <div class="book-author">Maurice D. Weir, Joel Hass, Christopher Heil </div>
+    <a href="https://amzn.to/4ry1tNQ" class="book-btn" target="_blank"><i class="fas fa-shopping-cart"></i> View on Amazon</a>
+  </div>
 
 <br>
 <p style="font-size: 0.85rem; color: #7f8c8d; text-align: center; margin-top: 40px;">
