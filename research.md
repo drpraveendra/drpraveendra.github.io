@@ -1,3 +1,6 @@
+---
+title: '<i class="fas fa-flask"></i> Research'
+---
 # Research
 
 My research focuses on mathematical modeling and intelligent optimization methods for complex decision systems.
