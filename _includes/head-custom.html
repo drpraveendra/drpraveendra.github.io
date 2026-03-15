@@ -4,40 +4,27 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 <script>
 document.addEventListener("DOMContentLoaded", function(){
 
-const icons = {
-"About":"fa-user",
-"Research":"fa-flask",
-"Publications":"fa-book",
-"Teaching":"fa-chalkboard-teacher",
-"Mathematics Resources":"fa-square-root-variable",
-"Recommended Mathematics Books":"fa-book-open",
-"Lecture Videos":"fa-video",
-"Research Projects":"fa-diagram-project",
-"Contact":"fa-envelope"
+const tooltips = {
+"About":"About the author",
+"Research":"Research interests and work",
+"Publications":"Journal articles and papers",
+"Teaching":"Courses and lecture materials",
+"Resources":"Free mathematics resources",
+"Recommended Books":"Topic-wise book recommendations",
+"Lecture Videos":"Mathematics video lectures",
+"Research Projects":"Current and past research projects",
+"Contact":"Get in touch"
 };
 
-document.querySelectorAll(".site-nav a").forEach(link=>{
+document.querySelectorAll(".site-nav a").forEach(link => {
 
 const text = link.textContent.trim();
 
-if(icons[text]){
-link.innerHTML = `<i class="fas ${icons[text]}"></i> ` + text;
+if(tooltips[text]){
+link.setAttribute("data-tooltip", tooltips[text]);
 }
 
 });
 
 });
 </script>
-<!-- MathJax for LaTeX -->
-<script>
-window.MathJax = {
-  tex: {
-    inlineMath: [['$', '$'], ['\\(', '\\)']],
-    displayMath: [['$$','$$'], ['\\[','\\]']]
-  }
-};
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
