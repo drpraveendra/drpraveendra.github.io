@@ -1,31 +1,31 @@
-<!-- Font Awesome Icons -->
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<!-- Tooltip Script -->
 <script>
 document.addEventListener("DOMContentLoaded", function(){
 
-const tooltips = {
-"About":"Learn more about Dr. Praveendra Singh",
-"Research":"Research areas and publications",
-"Publications":"Journal articles and research papers",
-"Teaching":"Courses and lecture material",
-"Mathematics Resources":"Free mathematics learning material",
-"Recommended Mathematics Books":"Topic-wise recommended books",
-"Lecture Videos":"YouTube mathematics lectures",
-"Research Projects":"Ongoing and completed projects",
-"Contact":"Get in touch"
+const icons = {
+"About":"fa-user",
+"Research":"fa-flask",
+"Publications":"fa-book",
+"Teaching":"fa-chalkboard-teacher",
+"Mathematics Resources":"fa-square-root-variable",
+"Recommended Mathematics Books":"fa-book-open",
+"Lecture Videos":"fa-video",
+"Research Projects":"fa-diagram-project",
+"Contact":"fa-envelope"
 };
 
 document.querySelectorAll(".site-nav a").forEach(link=>{
+
 const text = link.textContent.trim();
 
-if(tooltips[text]){
-link.setAttribute("data-tooltip",tooltips[text]);
+if(icons[text]){
+link.innerHTML = `<i class="fas ${icons[text]}"></i> ` + text;
 }
 
 });
+
 });
 </script>
 <!-- MathJax for LaTeX -->
