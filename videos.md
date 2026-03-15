@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "🎥 Digital Classroom & Lecture Videos"
+permalink: /videos/
 ---
 
 <style>
