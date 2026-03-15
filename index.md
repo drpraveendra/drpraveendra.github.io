@@ -151,8 +151,8 @@ layout: default
   <a href="#"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
   <a href="#"><i class="fab fa-researchgate"></i> ResearchGate</a>
   <a href="https://www.youtube.com/@FractalFrontierMaths" class="youtube-btn" target="_blank"><i class="fab fa-youtube"></i> Fractal Frontier Maths</a>
-  <a href="https://t.me/your_telegram_link" class="telegram-btn" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
-  <a href="https://www.instagram.com/your_instagram_handle" class="instagram-btn" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+  <a href="https://t.me/fractalfrontiermaths" class="telegram-btn" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
+  <a href="https://www.instagram.com/mathsworld007" class="instagram-btn" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
 </div>
 </div>
 </div>
