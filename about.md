@@ -1,6 +1,3 @@
----
-title: '<i class="fas fa-user"></i> About'
----
 # About
 Dr. Praveendra Singh is an Assistant Professor of Mathematics at **Government College Kherwara, Rajasthan, India**.
 
@@ -18,3 +15,7 @@ University of Rajasthan
 
 **B.Sc. Physics, Chemistry, Mathematics**
 University Maharaja College, Jaipur
+
+---
+title: '<i class="fas fa-user"></i> About'
+---
