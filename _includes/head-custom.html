@@ -5,20 +5,20 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 document.addEventListener("DOMContentLoaded", function(){
 
 const tooltips = {
-"About":"About the author",
-"Research":"Research interests and work",
-"Publications":"Journal articles and papers",
-"Teaching":"Courses and lecture materials",
-"Resources":"Free mathematics resources",
-"Recommended Books":"Topic-wise book recommendations",
-"Lecture Videos":"Mathematics video lectures",
-"Research Projects":"Current and past research projects",
-"Contact":"Get in touch"
+"about":"About the author",
+"research":"Research interests and work",
+"publications":"Journal articles and research papers",
+"teaching":"Courses and lecture materials",
+"resources":"Free mathematics learning resources",
+"recommended books":"Topic-wise recommended books",
+"lecture videos":"Mathematics lecture videos",
+"research projects":"Current and past research projects",
+"contact":"Get in touch"
 };
 
 document.querySelectorAll(".site-nav a").forEach(link => {
 
-const text = link.textContent.trim();
+let text = link.textContent.replace(/\s+/g,' ').trim().toLowerCase();
 
 if(tooltips[text]){
 link.setAttribute("data-tooltip", tooltips[text]);
