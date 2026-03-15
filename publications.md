@@ -1,3 +1,6 @@
+---
+title: '<i class="fas fa-book"></i> Publications'
+---
 # Publications
 
 ## Journal Articles
