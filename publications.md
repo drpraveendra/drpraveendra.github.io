@@ -1,6 +1,3 @@
----
-title: '<i class="fas fa-book"></i> Publications'
----
 # Publications
 
 ## Journal Articles
@@ -12,3 +9,7 @@ Knowledge and Information Systems
 **Jain, M. & Singh, P. (2024)**  
 Pricing and preservation strategy for inventory models  
 Soft Computing
+
+---
+title: '<i class="fas fa-book"></i> Publications'
+---
