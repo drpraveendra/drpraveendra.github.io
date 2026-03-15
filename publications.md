@@ -1,6 +1,7 @@
 ---
 layout: default
 title: '<i class="fas fa-book"></i> Publications'
+permalink: /publications/
 ---
 
 # Publications
