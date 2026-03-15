@@ -1,3 +1,6 @@
+---
+title: Mathematics Resources
+---
 # Mathematics Resources
 
 This section will include educational materials for students.
