@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Research Projects
+permalink: /projects/
 ---
 
 # Research Projects
