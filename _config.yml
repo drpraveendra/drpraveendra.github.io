@@ -2,6 +2,14 @@ title: Dr. Praveendra Singh
 description: Assistant Professor of Mathematics
 theme: minima
 
+# Author Details & Social Links
+author:
+  name: Dr. Praveendra Singh
+  email: drpraveendra.singh@gmail.com
+  youtube: your_channel_username_here
+  telegram: your_telegram_group_link_here
+  github: drpraveendra
+
 markdown: kramdown
 kramdown:
   math_engine: mathjax
@@ -15,7 +23,7 @@ header_pages:
   - publications.md
   - teaching.md
   - resources.md
-   - videos.md
+  - videos.md
   - recommended-books.md
   - projects.md
   - contact.md
