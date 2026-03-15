@@ -1,5 +1,5 @@
 ---
-title: '<i class="fas fa-flask"></i> Research'
+title: Research
 ---
 # Research
 
