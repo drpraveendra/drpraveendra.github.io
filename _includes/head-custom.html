@@ -1,30 +1,110 @@
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<script>
-document.addEventListener("DOMContentLoaded", function(){
+<style>
+  /* Header Container Styling */
+  .custom-site-header {
+    background: #ffffff;
+    border-bottom: 2px solid #f0f4f8;
+    padding: 15px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
 
-const tooltips = {
-"about":"About the author",
-"research":"Research interests and work",
-"publications":"Journal articles and research papers",
-"teaching":"Courses and lecture materials",
-"resources":"Free mathematics learning resources",
-"recommended books":"Topic-wise recommended books",
-"lecture videos":"Mathematics lecture videos",
-"research projects":"Current and past research projects",
-"contact":"Get in touch"
-};
+  .custom-header-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
 
-document.querySelectorAll(".site-nav a").forEach(link => {
+  /* Site Title Styling */
+  .custom-site-title {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #1e3c72;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+  }
 
-let text = link.textContent.replace(/\s+/g,' ').trim().toLowerCase();
+  .custom-site-title:hover {
+    text-decoration: none;
+    color: #ff4b2b;
+  }
 
-if(tooltips[text]){
-link.setAttribute("data-tooltip", tooltips[text]);
-}
+  /* Navigation Links Styling */
+  .custom-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
 
-});
+  .custom-nav-list li a {
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #444;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
 
-});
-</script>
+  .custom-nav-list li a:hover {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  }
+
+  /* Icon Colors */
+  .nav-icon-about { color: #4e73df; }
+  .nav-icon-research { color: #1cc88a; }
+  .nav-icon-pubs { color: #f6c23e; }
+  .nav-icon-teach { color: #e74a3b; }
+  .nav-icon-res { color: #36b9cc; }
+  .nav-icon-books { color: #858796; }
+  .nav-icon-video { color: #ff0000; } /* YouTube Red */
+  .nav-icon-proj { color: #fd7e14; }
+  .nav-icon-contact { color: #6f42c1; }
+
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .custom-header-wrapper {
+      flex-direction: column;
+      text-align: center;
+      gap: 15px;
+    }
+    .custom-nav-list {
+      justify-content: center;
+    }
+  }
+</style>
+
+<header class="custom-site-header">
+  <div class="custom-header-wrapper">
+    <a class="custom-site-title" rel="author" href="/">Dr. Praveendra Singh</a>
+
+    <nav>
+      <ul class="custom-nav-list">
+        <li><a href="/about/"><i class="fas fa-user nav-icon-about"></i> About</a></li>
+        <li><a href="/research/"><i class="fas fa-flask nav-icon-research"></i> Research</a></li>
+        <li><a href="/publications/"><i class="fas fa-book nav-icon-pubs"></i> Publications</a></li>
+        <li><a href="/teaching/"><i class="fas fa-chalkboard-teacher nav-icon-teach"></i> Teaching</a></li>
+        <li><a href="/resources/"><i class="fas fa-folder-open nav-icon-res"></i> Resources</a></li>
+        <li><a href="/recommended-books/"><i class="fas fa-book-open nav-icon-books"></i> Books</a></li>
+        <li><a href="/videos/"><i class="fab fa-youtube nav-icon-video"></i> Lecture Videos</a></li>
+        <li><a href="/projects/"><i class="fas fa-project-diagram nav-icon-proj"></i> Projects</a></li>
+        <li><a href="/contact/"><i class="fas fa-envelope nav-icon-contact"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
