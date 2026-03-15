@@ -1,5 +1,4 @@
 ---
-
 title: Recommended Mathematics Books
 permalink: /recommended-books/
 ------------------------------
