@@ -146,13 +146,15 @@ layout: default
       Assistant Professor of Mathematics<br>
       Government College Kherwara, Rajasthan, India
     </p>
-    <div class="hero-links">
-      <a href="mailto:drpraveendra.singh@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-      <a href="#"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-      <a href="#"><i class="fab fa-researchgate"></i> ResearchGate</a>
-      <a href="/videos" class="youtube-btn"><i class="fab fa-youtube"></i> Fractal Frontier Maths</a>
-    </div>
-  </div>
+<div class="hero-links">
+  <a href="mailto:drpraveendra.singh@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+  <a href="#"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+  <a href="#"><i class="fab fa-researchgate"></i> ResearchGate</a>
+  <a href="https://www.youtube.com/@FractalFrontierMaths" class="youtube-btn" target="_blank"><i class="fab fa-youtube"></i> Fractal Frontier Maths</a>
+  <a href="https://t.me/your_telegram_link" class="telegram-btn" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
+  <a href="https://www.instagram.com/your_instagram_handle" class="instagram-btn" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+</div>
+</div>
 </div>
 
 ---
