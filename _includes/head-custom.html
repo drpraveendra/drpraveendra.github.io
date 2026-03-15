@@ -1,3 +1,33 @@
+<!-- Font Awesome Icons -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Tooltip Script -->
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+const tooltips = {
+"About":"Learn more about Dr. Praveendra Singh",
+"Research":"Research areas and publications",
+"Publications":"Journal articles and research papers",
+"Teaching":"Courses and lecture material",
+"Mathematics Resources":"Free mathematics learning material",
+"Recommended Mathematics Books":"Topic-wise recommended books",
+"Lecture Videos":"YouTube mathematics lectures",
+"Research Projects":"Ongoing and completed projects",
+"Contact":"Get in touch"
+};
+
+document.querySelectorAll(".site-nav a").forEach(link=>{
+const text = link.textContent.trim();
+
+if(tooltips[text]){
+link.setAttribute("data-tooltip",tooltips[text]);
+}
+
+});
+});
+</script>
 <!-- MathJax for LaTeX -->
 <script>
 window.MathJax = {
