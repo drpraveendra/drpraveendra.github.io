@@ -1,4 +1,5 @@
 ---
+layout: default
 title: Research
 ---
 # Research
@@ -17,9 +18,9 @@ Optimization of production and distribution systems using mathematical modeling 
 
 Use of nature-inspired algorithms such as:
 
-• Differential Evolution
-• Bat Algorithm
-• Hybrid Optimization Methods
+- Differential Evolution
+- Bat Algorithm
+- Hybrid Optimization Methods
 
 ## Sustainability
 
