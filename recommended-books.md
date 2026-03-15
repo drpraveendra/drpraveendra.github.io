@@ -1,170 +1,135 @@
 ---
-title: Recommended Books
+layout: default
+title: "📚 Recommended Books"
 permalink: /recommended-books/
 ---
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-
-.books-section{
-margin-top:40px;
-}
-
-.books-title{
-font-size:28px;
-margin-bottom:20px;
-color:#2c3e50;
-border-left:6px solid #4e73df;
-padding-left:10px;
-}
-
-.books-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.book-card{
-background:white;
-border-radius:12px;
-padding:20px;
-box-shadow:0 6px 15px rgba(0,0,0,0.1);
-transition:0.3s;
-text-align:center;
-}
-
-.book-card:hover{
-transform:translateY(-6px);
-}
-
-.book-title{
-font-weight:600;
-margin-top:10px;
-}
-
-.book-btn{
-display:inline-block;
-margin-top:12px;
-padding:10px 15px;
-background:#4e73df;
-color:white;
-border-radius:6px;
-text-decoration:none;
-font-weight:500;
-}
-
-.book-btn:hover{
-background:#2e59d9;
-}
-
-.book-icon{
-font-size:35px;
-color:#4e73df;
-}
-
+  .books-header {
+    background: #f8f9fa;
+    padding: 20px;
+    border-left: 6px solid #4e73df;
+    border-radius: 8px;
+    margin-bottom: 30px;
+  }
+  .books-header p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+  .books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+  }
+  
+  .book-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+    text-align: center;
+    border-top: 4px solid transparent;
+  }
+  
+  .book-card:hover {
+    transform: translateY(-6px);
+    border-top-color: #4e73df;
+  }
+  
+  .book-icon {
+    font-size: 40px;
+    color: #4e73df;
+    margin-bottom: 15px;
+  }
+  
+  .book-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+  }
+  
+  .book-author {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  
+  .book-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #4e73df;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+  }
+  
+  .book-btn:hover {
+    background: #2e59d9;
+    color: white;
+  }
+  
+  .section-title {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    color: #2c3e50;
+  }
 </style>
 
-# 📚 Recommended Mathematics Books
+<div class="books-header">
+  <p>These are <strong>high-quality, curated books</strong> highly recommended for students preparing for <strong>CSIR NET, GATE, IIT JAM</strong>, as well as <strong>B.Sc. and M.Sc. Mathematics</strong>.</p>
+</div>
 
-These are **high-quality books** useful for students preparing for:
-
-• CSIR NET Mathematics
-• GATE Mathematics
-• IIT JAM Mathematics
-• MSc / BSc Mathematics
-
----
-
-## 📘 Real Analysis
-
+<h2 class="section-title">📘 Real Analysis</h2>
 <div class="books-grid">
+  <div class="book-card">
+    <i class="fas fa-book book-icon"></i>
+    <div class="book-title">Elements of Real Analysis</div>
+    <div class="book-author">Shanti Narayan</div>
+    <a href="https://amzn.to/40wyXRM" class="book-btn" target="_blank"><i class="fas fa-shopping-cart"></i> View on Amazon</a>
+  </div>
+  
+  <div class="book-card">
+    <i class="fas fa-book book-icon"></i>
+    <div class="book-title">Principles of Math Analysis</div>
+    <div class="book-author">Walter Rudin</div>
+    <a href="https://amzn.to/4sIMxx8" class="book-btn" target="_blank"><i class="fas fa-shopping-cart"></i> View on Amazon</a>
+  </div>
 
-<div class="book-card">
+  <div class="book-card">
+    <i class="fas fa-book book-icon"></i>
+    <div class="book-title">Mathematical Analysis</div>
+    <div class="book-author">Malik & Arora</div>
+    <a href="https://amzn.to/4sLOsRU" class="book-btn" target="_blank"><i class="fas fa-shopping-cart"></i> View on Amazon</a>
+  </div>
 
-<i class="fas fa-book book-icon"></i>
-
-<div class="book-title">
-Elements of Real Analysis  
-Shanti Narayan
+  <div class="book-card">
+    <i class="fas fa-book book-icon"></i>
+    <div class="book-title">Intro to Real Analysis</div>
+    <div class="book-author">S. K. Mapa</div>
+    <a href="https://amzn.to/4s4OzrE" class="book-btn" target="_blank"><i class="fas fa-shopping-cart"></i> View on Amazon</a>
+  </div>
 </div>
 
-<a href="https://amzn.to/40wyXRM" class="book-btn" target="_blank">
-Buy on Amazon
-</a>
+<h2 class="section-title">📗 Linear Algebra</h2>
+*(Book recommendations coming soon...)*
 
-</div>
+<h2 class="section-title">📙 Abstract Algebra</h2>
+*(Book recommendations coming soon...)*
 
-<div class="book-card">
+<h2 class="section-title">📕 Calculus & Differential Equations</h2>
+*(Book recommendations coming soon...)*
 
-<i class="fas fa-book book-icon"></i>
-
-<div class="book-title">
-Principles of Mathematical Analysis  
-Walter Rudin
-</div>
-
-<a href="https://amzn.to/4sIMxx8" class="book-btn" target="_blank">
-Buy on Amazon
-</a>
-
-</div>
-
-<div class="book-card">
-
-<i class="fas fa-book book-icon"></i>
-
-<div class="book-title">
-Mathematical Analysis  
-Malik & Arora
-</div>
-
-<a href="https://amzn.to/4sLOsRU" class="book-btn" target="_blank">
-Buy on Amazon
-</a>
-
-</div>
-
-<div class="book-card">
-
-<i class="fas fa-book book-icon"></i>
-
-<div class="book-title">
-Introduction to Real Analysis  
-S. K. Mapa
-</div>
-
-<a href="https://amzn.to/4s4OzrE" class="book-btn" target="_blank">
-Buy on Amazon
-</a>
-
-</div>
-
-</div>
-
----
-
-## 📗 Linear Algebra
-
-*(Add books later)*
-
----
-
-## 📙 Abstract Algebra
-
-*(Add books later)*
-
----
-
-## 📕 Calculus
-
-*(Add books later)*
-
----
-
-## 📓 Differential Equations
-
-*(Add books later)*
-
----
-
-💡 **Note:** Some links on this page are affiliate links. If you purchase through them, it helps support this free mathematics website.
+<br>
+<p style="font-size: 0.85rem; color: #7f8c8d; text-align: center; margin-top: 40px;">
+  💡 <em>Note: Some links on this page are affiliate links. If you purchase through them, it helps support the maintenance of this free educational platform.</em>
+</p>
