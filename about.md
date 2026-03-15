@@ -1,6 +1,7 @@
 ---
 layout: default
 title: '<i class="fas fa-user"></i> About Me'
+permalink: /about/
 ---
 
 Dr. Praveendra Singh is an Assistant Professor of Mathematics at **Government College Kherwara, Rajasthan, India**. 
