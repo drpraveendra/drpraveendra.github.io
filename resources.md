@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "🗂️ Student Resources Hub"
+permalink: /resources/
 ---
 
 # 🗂️ Mathematics Resource Hub
