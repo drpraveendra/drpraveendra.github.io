@@ -27,3 +27,5 @@ header_pages:
   - recommended-books.md
   - projects.md
   - contact.md
+
+future: true
