@@ -299,10 +299,10 @@ permalink: /research/
 
 <!-- Impact Numbers -->
 <div class="impact-strip">
-  <div class="impact-item"><span class="num">9</span><span class="lbl">Publications</span></div>
-  <div class="impact-item"><span class="num">3+</span><span class="lbl">Algorithms Used</span></div>
-  <div class="impact-item"><span class="num">4</span><span class="lbl">Research Areas</span></div>
-  <div class="impact-item"><span class="num">2022–25</span><span class="lbl">Active Years</span></div>
+  <div class="impact-item"><span class="num">9+</span><span class="lbl">Publications</span></div>
+  <div class="impact-item"><span class="num">6+</span><span class="lbl">Algorithms Used</span></div>
+  <div class="impact-item"><span class="num">4+</span><span class="lbl">Research Areas</span></div>
+  <div class="impact-item"><span class="num">2021–Current</span><span class="lbl">Active Years</span></div>
 </div>
 
 <!-- Research Areas -->
