@@ -12,7 +12,8 @@ description: "Learn Dirichlet's Test and Abel's Test for series convergence — 
 ## Dirichlet's Test
 
 **Statement:** Let $\sum a_n b_n$ be a series where:
-1. The partial sums $A_N = \sum_{n=1}^N a_n$ are **bounded** (i.e., $|A_N| \leq M$ for all $N$)
+
+1. The partial sums $A_N = \sum_{n=1}^{N} a_n$ are **bounded** — i.e., $\lvert A_N \rvert \leq M$ for all $N$
 2. $b_n$ is **monotonically decreasing** to zero: $b_n \searrow 0$
 
 Then $\sum a_n b_n$ **converges**.
