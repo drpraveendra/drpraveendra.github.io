@@ -55,8 +55,9 @@ layout: default
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
   }
-  .hero-links a.email-btn       { border-color: #555; color: #555; }
-  .hero-links a.email-btn:hover { background: #555; color: white; }
+  .hero-links a.email-btn       { border-color: #EA4335; color: #333; }
+  .hero-links a.email-btn:hover { background: linear-gradient(135deg, #EA4335, #FBBC05, #34A853, #4285F4); color: white; border-color: transparent; }
+  .hero-links a.email-btn:hover i { -webkit-text-fill-color: white; }
 
   .hero-links a.scholar-btn       { border-color: #4285F4; color: #4285F4; }
   .hero-links a.scholar-btn:hover { background: #4285F4; color: white; }
@@ -155,7 +156,7 @@ layout: default
     </p>
 
 <div class="hero-links">
-  <a href="mailto:drpraveendra.singh@gmail.com" class="email-btn"><i class="fas fa-paper-plane"></i> Email</a>
+  <a href="/contact/" class="email-btn"><i class="fas fa-envelope" style="background: linear-gradient(135deg, #EA4335, #FBBC05, #34A853, #4285F4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 1.1rem;"></i> Email</a>
   <a href="https://scholar.google.com/citations?user=xhzb-RoAAAAJ&hl=en" class="scholar-btn" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
   <a href="https://www.researchgate.net/profile/Praveendra-Singh?ev=hdr_xprf" class="rgate-btn" target="_blank"><i class="fas fa-flask"></i> ResearchGate</a>
   <a href="https://www.youtube.com/@FractalFrontierMaths" class="youtube-btn" target="_blank"><i class="fab fa-youtube"></i> Fractal Frontier Maths</a>
