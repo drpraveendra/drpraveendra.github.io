@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://drpraveendra.github.io/sitemap.xml
