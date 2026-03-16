@@ -44,7 +44,6 @@
     border-radius: 2px;
   }
   
-  /* Link Styling */
   .footer-links {
     list-style: none;
     padding: 0;
@@ -69,7 +68,6 @@
     transform: translateX(5px);
   }
   
-  /* Social Buttons */
   .footer-socials {
     display: flex;
     gap: 15px;
@@ -95,11 +93,11 @@
     transform: translateY(-5px);
   }
   
-  .footer-socials .yt:hover { color: #ff0000; border: 1px solid #ff0000; }
-  .footer-socials .tg:hover { color: #0088cc; border: 1px solid #0088cc; }
-  .footer-socials .em:hover { color: #ea4335; border: 1px solid #ea4335; }
+  .footer-socials .yt:hover  { color: #ff0000; border: 1px solid #ff0000; }
+  .footer-socials .tg:hover  { color: #0088cc; border: 1px solid #0088cc; }
+  .footer-socials .em:hover  { color: #ea4335; border: 1px solid #ea4335; }
+  .footer-socials .ig:hover  { color: #e1306c; border: 1px solid #e1306c; }
   
-  /* Bottom Copyright Area */
   .footer-bottom {
     text-align: center;
     padding-top: 25px;
@@ -108,10 +106,21 @@
     font-size: 0.85rem;
     color: #6c757d;
   }
+
+  .footer-bottom a {
+    color: #6c757d;
+    text-decoration: none;
+    margin: 0 8px;
+  }
+
+  .footer-bottom a:hover {
+    color: #ff4b2b;
+  }
 </style>
 
 <footer class="custom-site-footer">
   <div class="footer-wrapper">
+
     <div class="footer-col">
       <h3>Dr. Praveendra Singh</h3>
       <p>Assistant Professor of Mathematics at Government College Kherwara. Dedicated to creating high-quality, accessible mathematical instruction for B.Sc., M.Sc., and competitive exam aspirants.</p>
@@ -122,6 +131,7 @@
       <ul class="footer-links">
         <li><a href="/"><i class="fas fa-angle-right"></i> Home</a></li>
         <li><a href="/about/"><i class="fas fa-angle-right"></i> About Me</a></li>
+        <li><a href="/blog/"><i class="fas fa-angle-right"></i> Blog</a></li>
         <li><a href="/videos/"><i class="fas fa-angle-right"></i> Lecture Videos</a></li>
         <li><a href="/resources/"><i class="fas fa-angle-right"></i> Study Materials</a></li>
         <li><a href="/recommended-books/"><i class="fas fa-angle-right"></i> Book Recommendations</a></li>
@@ -129,21 +139,37 @@
     </div>
 
     <div class="footer-col">
-      <h3>Legal & Contact</h3>
+      <h3>Legal &amp; Contact</h3>
       <ul class="footer-links">
         <li><a href="/privacy/"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+        <li><a href="/terms/"><i class="fas fa-file-alt"></i> Terms of Use</a></li>
+        <li><a href="/disclaimer/"><i class="fas fa-exclamation-circle"></i> Disclaimer</a></li>
         <li><a href="/contact/"><i class="fas fa-envelope"></i> Contact Me</a></li>
       </ul>
       
       <div class="footer-socials">
-        <a href="mailto:drpraveendra.singh@gmail.com" class="em" title="Email Dr. Singh"><i class="fas fa-envelope"></i></a>
-        <a href="https://t.me/fractalfrontiermaths" class="tg" title="Join Telegram Group" target="_blank"><i class="fab fa-telegram"></i></a>
-        <a href="https://www.youtube.com/channel/YOUR_CHANNEL_ID_HERE" class="yt" title="Fractal Frontier Maths on YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="mailto:drpraveendra.singh@gmail.com" class="em" title="Email Dr. Singh">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://t.me/fractalfrontiermaths" class="tg" title="Join Telegram Group" target="_blank">
+          <i class="fab fa-telegram"></i>
+        </a>
+        <a href="https://www.youtube.com/@FractalFrontierMaths" class="yt" title="Fractal Frontier Maths on YouTube" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/mathsworld007" class="ig" title="Instagram" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
       </div>
     </div>
+
   </div>
   
   <div class="footer-bottom">
     &copy; {{ site.time | date: '%Y' }} Dr. Praveendra Singh | Fractal Frontier Maths. All rights reserved.
+    &nbsp;|&nbsp;
+    <a href="/privacy/">Privacy Policy</a>
+    <a href="/terms/">Terms of Use</a>
+    <a href="/disclaimer/">Disclaimer</a>
   </div>
 </footer>
