@@ -229,14 +229,14 @@ Mathematics today is heavily supported by computation. I actively utilize variou
 ## 🧭 Explore the Website
 
 <div class="nav-grid">
-  <a href="about"><div class="nav-card"><i class="fas fa-user"></i><br>About</div></a>
-  <a href="research"><div class="nav-card"><i class="fas fa-flask"></i><br>Research</div></a>
-  <a href="publications"><div class="nav-card"><i class="fas fa-book"></i><br>Publications</div></a>
-  <a href="teaching"><div class="nav-card"><i class="fas fa-chalkboard-teacher"></i><br>Teaching</div></a>
-  <a href="resources"><div class="nav-card"><i class="fas fa-file-pdf"></i><br>Notes & PDFs</div></a>
-  <a href="videos"><div class="nav-card"><i class="fas fa-video"></i><br>Video Lectures</div></a>
+  <a href="/about/"><div class="nav-card"><i class="fas fa-user"></i><br>About</div></a>
+  <a href="/research/"><div class="nav-card"><i class="fas fa-flask"></i><br>Research</div></a>
+  <a href="/publications/"><div class="nav-card"><i class="fas fa-book"></i><br>Publications</div></a>
+  <a href="/problems/problem1/"><div class="nav-card"><i class="fas fa-pencil-alt"></i><br>Problems</div></a>
+  <a href="/resources/"><div class="nav-card"><i class="fas fa-file-pdf"></i><br>Notes & PDFs</div></a>
+  <a href="/videos/"><div class="nav-card"><i class="fas fa-video"></i><br>Video Lectures</div></a>
   <a href="/blog/"><div class="nav-card"><i class="fas fa-pen"></i><br>Blog</div></a>
-  <a href="contact"><div class="nav-card"><i class="fas fa-envelope"></i><br>Contact</div></a>
+  <a href="/contact/"><div class="nav-card"><i class="fas fa-envelope"></i><br>Contact</div></a>
 </div>
 
 ---
