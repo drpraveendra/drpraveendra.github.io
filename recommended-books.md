@@ -132,7 +132,7 @@ permalink: /recommended-books/
           <span class="book-tag tag-green">Paperback</span>
           <span class="book-tag tag-red">Best for CSIR NET / IIT JAM</span>
         </div>
-        <a class="amazon-btn" href="https://www.amazon.in/Introduction-Real-Analysis-Indian-Adaptation/dp/9354244610" target="_blank">
+        <a class="amazon-btn" href="https://amzn.to/4cNSKDu" target="_blank">
           <i class="fab fa-amazon"></i> Buy on Amazon.in
         </a>
       </div>
@@ -148,7 +148,7 @@ permalink: /recommended-books/
           <span class="book-tag tag-green">Paperback</span>
           <span class="book-tag tag-gold">Indian Author — Exam Focused</span>
         </div>
-        <a class="amazon-btn" href="https://www.amazon.in/Introduction-Elementary-Undergraduate-Mathematics-Undergraduates/dp/B0FB96XN4X" target="_blank">
+        <a class="amazon-btn" href="https://amzn.to/3PGUwMZ" target="_blank">
           <i class="fab fa-amazon"></i> Buy on Amazon.in
         </a>
       </div>
@@ -164,7 +164,7 @@ permalink: /recommended-books/
           <span class="book-tag tag-green">Paperback</span>
           <span class="book-tag tag-red">Practice Questions Focused</span>
         </div>
-        <a class="amazon-btn" href="https://www.amazon.in/Principles-Real-Analysis-S-Malik/dp/9385923854" target="_blank">
+        <a class="amazon-btn" href="https://amzn.to/4scweZJ" target="_blank">
           <i class="fab fa-amazon"></i> Buy on Amazon.in
         </a>
       </div>
@@ -180,7 +180,7 @@ permalink: /recommended-books/
           <span class="book-tag tag-green">Paperback</span>
           <span class="book-tag tag-gold">Classic — Rigorous Theory</span>
         </div>
-        <a class="amazon-btn" href="https://www.amazon.in/Principles-Mathematical-Analysis-3rd-Rudin/dp/B0CTRFLXT4" target="_blank">
+        <a class="amazon-btn" href="https://amzn.to/3PHL8Zx" target="_blank">
           <i class="fab fa-amazon"></i> Buy on Amazon.in
         </a>
       </div>
@@ -196,7 +196,7 @@ permalink: /recommended-books/
           <span class="book-tag tag-green">Paperback</span>
           <span class="book-tag tag-red">PYQ + Theory</span>
         </div>
-        <a class="amazon-btn" href="https://www.amazon.in/Real-Analysis-Mathematics-Book-Reference/dp/B0C5P4L9YF" target="_blank">
+        <a class="amazon-btn" href="https://amzn.to/3NEkvnM" target="_blank">
           <i class="fab fa-amazon"></i> Buy on Amazon.in
         </a>
       </div>
