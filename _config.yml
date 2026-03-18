@@ -34,3 +34,10 @@ header_pages:
   - contact.md
 
 future: true
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      category: "maths"
