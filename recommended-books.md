@@ -226,7 +226,7 @@ permalink: /recommended-books/
           <span class="book-tag tag-green">Paperback</span>
           <span class="book-tag tag-red">Standard Textbook — CSIR/GATE</span>
         </div>
-        <a class="amazon-btn" href="https://www.amazon.in/Linear-Algebra-Pearson-Stephen-Friedberg/dp/9390168139" target="_blank">
+        <a class="amazon-btn" href="https://amzn.to/4bQmyyc" target="_blank">
           <i class="fab fa-amazon"></i> Buy on Amazon.in
         </a>
       </div>
@@ -242,7 +242,7 @@ permalink: /recommended-books/
           <span class="book-tag tag-green">Paperback</span>
           <span class="book-tag tag-gold">Classic — Theorem-Proof Style</span>
         </div>
-        <a class="amazon-btn" href="https://www.amazon.in/Linear-Algebra-Second-Kenneth-Hoffman/dp/8120302702" target="_blank">
+        <a class="amazon-btn" href="https://amzn.to/41aCK7k" target="_blank">
           <i class="fab fa-amazon"></i> Buy on Amazon.in
         </a>
       </div>
@@ -258,7 +258,7 @@ permalink: /recommended-books/
           <span class="book-tag tag-green">Paperback</span>
           <span class="book-tag tag-red">Best for IIT JAM</span>
         </div>
-        <a class="amazon-btn" href="https://www.amazon.in/Linear-Algebra-Applications-David-Lay/dp/9356063079" target="_blank">
+        <a class="amazon-btn" href="https://amzn.to/4cPuKQo" target="_blank">
           <i class="fab fa-amazon"></i> Buy on Amazon.in
         </a>
       </div>
@@ -274,7 +274,7 @@ permalink: /recommended-books/
           <span class="book-tag tag-green">Paperback</span>
           <span class="book-tag tag-gold">Conceptually Deep</span>
         </div>
-        <a class="amazon-btn" href="https://www.amazon.in/Linear-Algebra-Right-Undergraduate-Mathematics/dp/3319110799" target="_blank">
+        <a class="amazon-btn" href="https://amzn.to/417Eb6C" target="_blank">
           <i class="fab fa-amazon"></i> Buy on Amazon.in
         </a>
       </div>
@@ -290,7 +290,7 @@ permalink: /recommended-books/
           <span class="book-tag tag-green">Paperback</span>
           <span class="book-tag tag-red">PYQ + Theory</span>
         </div>
-        <a class="amazon-btn" href="https://www.amazon.in/Linear-Algebra-Mathematics-Book-Reference/dp/B0C3NQXRGZ" target="_blank">
+        <a class="amazon-btn" href="https://amzn.to/4sTkCLf" target="_blank">
           <i class="fab fa-amazon"></i> Buy on Amazon.in
         </a>
       </div>
