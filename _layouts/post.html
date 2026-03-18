@@ -24,9 +24,9 @@ layout: default
     border-radius: 20px;
     margin-bottom: 14px;
   }
-  .badge-maths    { background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.35); color: white; }
-  .badge-history  { background: rgba(255,193,7,0.3);  border: 1px solid rgba(255,193,7,0.5);   color: #ffe082; }
-  .badge-general  { background: rgba(100,255,180,0.2); border: 1px solid rgba(100,255,180,0.4); color: #b2ffd8; }
+  .badge-maths   { background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.35); color: white; }
+  .badge-history { background: rgba(255,193,7,0.3);   border: 1px solid rgba(255,193,7,0.5);   color: #ffe082; }
+  .badge-general { background: rgba(100,255,180,0.2); border: 1px solid rgba(100,255,180,0.4); color: #b2ffd8; }
   .post-hero h1 {
     font-size: 2rem;
     font-weight: 800;
@@ -140,9 +140,58 @@ layout: default
   .comments-subtitle {
     font-size: 0.88rem;
     color: #888;
-    margin: 0 0 20px 0;
+    margin: 0 0 22px 0;
   }
-  .comments-subtitle a { color: #1e3c72; font-weight: 600; }
+  .tg-comment-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #0088cc;
+    color: white;
+    text-decoration: none;
+    padding: 13px 26px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 28px;
+    transition: all 0.25s;
+    box-shadow: 0 4px 14px rgba(0,136,204,0.35);
+    border: none;
+  }
+  .tg-comment-btn:hover {
+    background: #006fa6;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,136,204,0.45);
+    color: white;
+  }
+  .tg-comment-btn i { font-size: 1.15rem; }
+  .comment-divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    color: #bbb;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+  .comment-divider::before,
+  .comment-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #e0e7ff;
+  }
+  .github-note {
+    font-size: 0.82rem;
+    color: #aaa;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .github-note a { color: #1e3c72; font-weight: 600; text-decoration: none; }
+  .github-note a:hover { text-decoration: underline; }
   .share-section {
     background: #f8f9fc;
     border-radius: 12px;
@@ -166,22 +215,24 @@ layout: default
     transition: all 0.2s;
   }
   .share-btn:hover { transform: translateY(-2px); }
-  .share-telegram  { background: #e8f5ff; color: #0088cc; border: 1px solid #c5e4ff; }
-  .share-whatsapp  { background: #e8fff0; color: #25D366; border: 1px solid #b3f0cc; }
-  .share-twitter   { background: #e8f0fe; color: #1DA1F2; border: 1px solid #c5d8fc; }
-  .share-telegram:hover  { background: #0088cc; color: white; }
-  .share-whatsapp:hover  { background: #25D366; color: white; }
-  .share-twitter:hover   { background: #1DA1F2; color: white; }
+  .share-telegram { background: #e8f5ff; color: #0088cc; border: 1px solid #c5e4ff; }
+  .share-whatsapp { background: #e8fff0; color: #25D366; border: 1px solid #b3f0cc; }
+  .share-twitter  { background: #e8f0fe; color: #1DA1F2; border: 1px solid #c5d8fc; }
+  .share-telegram:hover { background: #0088cc; color: white; }
+  .share-whatsapp:hover { background: #25D366; color: white; }
+  .share-twitter:hover  { background: #1DA1F2; color: white; }
   @media (max-width: 768px) {
     .post-hero { padding: 28px 20px; }
     .post-hero h1 { font-size: 1.5rem; }
     .post-body { padding: 22px 18px; }
     .comments-section { padding: 20px 18px; }
+    .tg-comment-btn { width: 100%; justify-content: center; }
   }
 </style>
 
 <article itemscope itemtype="http://schema.org/BlogPosting">
 
+  <!-- Post Hero Header -->
   <div class="post-hero">
     {% if page.category == "history" %}
       <span class="post-category-badge badge-history"><i class="fas fa-scroll"></i> History of Mathematics</span>
@@ -206,10 +257,12 @@ layout: default
     </div>
   </div>
 
+  <!-- Post Content -->
   <div class="post-body" itemprop="articleBody">
     {{ content }}
   </div>
 
+  <!-- Share Section -->
   <div class="share-section">
     <span class="share-label"><i class="fas fa-share-alt"></i> Share this post:</span>
     <a class="share-btn share-telegram"
@@ -229,6 +282,7 @@ layout: default
     </a>
   </div>
 
+  <!-- Post Navigation -->
   <div class="post-nav">
     {% if page.previous.url %}
     <a href="{{ page.previous.url }}" class="prev-post">
@@ -244,36 +298,57 @@ layout: default
     {% endif %}
   </div>
 
+  <!-- Back to Blog -->
   <div class="back-to-blog">
     <a href="/blog/" class="back-btn">
       <i class="fas fa-th-list"></i> Back to All Posts
     </a>
   </div>
 
+  <!-- Comments Section -->
   <div class="comments-section">
+
     <div class="comments-title">
-      <i class="fas fa-comments"></i> Comments & Discussion
+      <i class="fas fa-comments"></i> Comments &amp; Discussion
     </div>
     <p class="comments-subtitle">
-      Have a question or thought? Leave a comment below. You need a free
-      <a href="https://github.com" target="_blank">GitHub account</a> to comment.
+      Have a question, doubt, or thought about this post? Choose how you want to join the discussion below.
     </p>
 
-<script src="https://giscus.app/client.js"
-        data-repo="drpraveendra/drpraveendra.github.io"
-        data-repo-id="R_kgDORhQpww"
-        data-category="Announcements"
-        data-category-id="DIC_kwDORhQpw84C4pnx"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="light"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
-</script>
+    <!-- Telegram Comment Button -->
+    <a class="tg-comment-btn"
+       href="https://t.me/fractalfrontiermaths"
+       target="_blank">
+      <i class="fab fa-telegram-plane"></i>
+      💬 Comment on Telegram &nbsp;—&nbsp; No account needed
+    </a>
+
+    <!-- OR Divider -->
+    <div class="comment-divider">OR comment with GitHub below</div>
+
+    <!-- GitHub note -->
+    <p class="github-note">
+      <i class="fab fa-github"></i>
+      Requires a free <a href="https://github.com/signup" target="_blank">GitHub account</a>
+      &nbsp;—&nbsp; takes 30 seconds to create with just an email address.
+    </p>
+
+    <!-- Giscus GitHub Comments -->
+    <script src="https://giscus.app/client.js"
+      data-repo="drpraveendra/drpraveendra.github.io"
+      data-repo-id="R_kgDORhQpww"
+      data-category="Announcements"
+      data-category-id="DIC_kwDORhQpw84C4pnx"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="bottom"
+      data-theme="light"
+      data-lang="en"
+      crossorigin="anonymous"
+      async>
+    </script>
 
   </div>
 
