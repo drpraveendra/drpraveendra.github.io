@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Srinivasa Ramanujan — The Man Who Knew Infinity"
-date: 2026-03-20
+date: 2026-03-18
 category: history
 lang: en
 lang_pair: "/blog/ramanujan-hindi/"
