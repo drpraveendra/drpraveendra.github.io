@@ -1,0 +1,26 @@
+name: Scheduled Jekyll Build
+
+on:
+  schedule:
+    - cron: '0 4 * * *'   # Every day at 4:00 AM UTC = 9:30 AM IST
+  workflow_dispatch:        # Allows manual trigger from GitHub Actions tab
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger GitHub Pages rebuild
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            await github.rest.repos.requestPagesBuild({
+              owner: context.repo.owner,
+              repo: context.repo.repo
+            });
+            console.log('GitHub Pages rebuild triggered successfully.');
