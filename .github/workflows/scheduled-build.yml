@@ -2,7 +2,7 @@ name: Scheduled Jekyll Build
 
 on:
   schedule:
-    - cron: '0 4 * * *'   # Every day at 4:00 AM UTC = 9:30 AM IST
+    - cron: '0 2 * * *'   # Every day at 4:00 AM UTC = 9:30 AM IST
   workflow_dispatch:        # Allows manual trigger from GitHub Actions tab
 
 permissions:
