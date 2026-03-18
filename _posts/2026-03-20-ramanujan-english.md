@@ -4,8 +4,7 @@ title: "Srinivasa Ramanujan — The Man Who Knew Infinity"
 date: 2026-03-20
 category: history
 lang: en
-lang_pair: "/blog/ramanujan-hindi/"
-permalink: /blog/ramanujan-english/
+lang_pair: "/2026/03/20/ramanujan-hindi-fancy.html"
 description: "A detailed account of Ramanujan's life, mathematical genius, family bonds, spiritual roots, struggles, and his lasting legacy in modern mathematics."
 ---
 
@@ -376,7 +375,7 @@ This article presents a detailed account of Ramanujan's life, his family, his st
 
 <h3>Birth</h3>
 
-Srinivasa Ramanujan Iyengar was born on **22 December 1887** in **Erode**, Tamil Nadu. His mother, Komalatammal, had come to her parents' home for the delivery. Within days, the family returned to **Kumbakonam**, where Ramanujan spent most of his childhood.
+Srinivasa Ramanujan Iyengar was born on <strong>22 December 1887</strong> in <strong>Erode</strong>, Tamil Nadu. His mother, Komalatammal, had come to her parents' home for the delivery. Within days, the family returned to <strong>Kumbakonam</strong>, where Ramanujan spent most of his childhood.
 
 <div class="info-card gold">
   <div class="info-card-header"><i class="fas fa-map-marker-alt"></i> Kumbakonam — A Sacred Town</div>
@@ -385,9 +384,9 @@ Srinivasa Ramanujan Iyengar was born on **22 December 1887** in **Erode**, Tamil
 
 <h3>Family Background</h3>
 
-Ramanujan's family was a **Brahmin family** of modest means. His father, **Srinivasa Iyengar**, worked as a clerk in a cloth merchant's shop, earning around twenty rupees a month — barely enough even then for a large family.
+Ramanujan's family was a <strong>Brahmin family</strong> of modest means. His father, <strong>Srinivasa Iyengar</strong>, worked as a clerk in a cloth merchant's shop, earning around twenty rupees a month — barely enough even then for a large family.
 
-His mother, **Komalatammal**, was a religious, spirited, and strong-willed woman. She sang devotional songs at the local Namagiri temple and was a devoted follower of the goddess Namagiri. Her influence on Ramanujan's life was immense. The bond between mother and son was extraordinarily close.
+His mother, <strong>Komalatammal</strong>, was a religious, spirited, and strong-willed woman. She sang devotional songs at the local Namagiri temple and was a devoted follower of the goddess Namagiri. Her influence on Ramanujan's life was immense. The bond between mother and son was extraordinarily close.
 
 Ramanujan had several siblings, but most died in infancy. This grief made the family centre itself even more deeply around Ramanujan.
 
@@ -435,7 +434,7 @@ Ramanujan displayed exceptional talent from a very early age. His memory was phe
   At <strong>age fifteen</strong>, Ramanujan obtained a copy of <strong>G. S. Carr's</strong> <em>"A Synopsis of Elementary Results in Pure and Applied Mathematics"</em> — a collection of over 5000 mathematical theorems and formulas, most without proofs.
 </div>
 
-An ordinary student would have been discouraged. But Ramanujan took it as a challenge. He attempted to prove every single formula himself, and wherever he found them incomplete, he developed entirely new formulas. This book became his **university of mathematics**.
+An ordinary student would have been discouraged. But Ramanujan took it as a challenge. He attempted to prove every single formula himself, and wherever he found them incomplete, he developed entirely new formulas. This book became his <strong>university of mathematics</strong>.
 
 <!-- SECTION 4: FAILURE IN FORMAL EDUCATION -->
 <h2><span class="sec-icon" style="background:#fff5f5; color:#dc2626;"><i class="fas fa-times-circle"></i></span> Failure in Formal Education — A Painful Truth</h2>
@@ -469,7 +468,7 @@ Ramanujan's obsession with mathematics meant he could not pay attention to any o
 
 <h3>Marriage to Janaki</h3>
 
-In **1909**, when Ramanujan was 21, he was married. His wife's name was **Janaki Ammal**. At the time of their marriage, Janaki was only **nine years old** (child marriage was common in that era).
+In <strong>1909</strong>, when Ramanujan was 21, he was married. His wife's name was <strong>Janaki Ammal</strong>. At the time of their marriage, Janaki was only <strong>nine years old</strong> (child marriage was common in that era).
 
 Janaki was a quiet, gentle, and devoted woman. She did not understand Ramanujan's mathematical genius, but she stood by him always. When Ramanujan left for England, Janaki stayed behind with her mother-in-law Komalatammal.
 
@@ -488,7 +487,7 @@ The relationship between Ramanujan and his mother was complex and deep. It was s
 
 <h3>Meeting Ramachandra Rao</h3>
 
-**Around 1910–11**, Ramanujan met **Diwan Bahadur Ramachandra Rao**, District Collector of Madras, and showed him his notebook. Rao was astounded.
+<strong>Around 1910–11</strong>, Ramanujan met <strong>Diwan Bahadur Ramachandra Rao</strong>, District Collector of Madras, and showed him his notebook. Rao was astounded.
 
 <div class="highlight-quote">
   "Before me sat a half-starved man holding a notebook. I opened it and saw — results I had never seen before, formulas that existed in no known text."
@@ -497,11 +496,11 @@ The relationship between Ramanujan and his mother was complex and deep. It was s
 
 <h3>Clerk at Madras Port Trust</h3>
 
-In **1912**, Ramanujan was appointed as a clerk at **Madras Port Trust**. Monthly salary — **thirty rupees**. This was his first stable income. His supervisor **S. Narayana Iyer** recognised his talent and gave him time and encouragement for mathematics, eventually presenting him to the Indian Mathematical Society.
+In <strong>1912</strong>, Ramanujan was appointed as a clerk at <strong>Madras Port Trust</strong>. Monthly salary — <strong>thirty rupees</strong>. This was his first stable income. His supervisor <strong>S. Narayana Iyer</strong> recognised his talent and gave him time and encouragement for mathematics, eventually presenting him to the Indian Mathematical Society.
 
 <h3>Connection with the Indian Mathematical Society</h3>
 
-In **1911**, Ramanujan's first research paper was published — *"On Some Properties of Bernoulli Numbers"* — in the **Journal of the Indian Mathematical Society**. This was an important milestone. His name was now known in the world of mathematics.
+In <strong>1911</strong>, Ramanujan's first research paper was published — *"On Some Properties of Bernoulli Numbers"* — in the <strong>Journal of the Indian Mathematical Society</strong>. This was an important milestone. His name was now known in the world of mathematics.
 
 <!-- SECTION 7: THE LETTER TO HARDY -->
 <h2><span class="sec-icon" style="background:#eff6ff; color:#1e3c72;"><i class="fas fa-envelope-open-text"></i></span> The Letter to Hardy — That Historic Moment</h2>
@@ -522,11 +521,11 @@ In his letter, Ramanujan wrote:
 
 <h3>Hardy's Reaction</h3>
 
-Hardy initially set the letter aside, thinking it the work of a crank. But that night he could not sleep. The formulas in the letter kept circling in his mind. In the morning he called his colleague **John Edensor Littlewood**.
+Hardy initially set the letter aside, thinking it the work of a crank. But that night he could not sleep. The formulas in the letter kept circling in his mind. In the morning he called his colleague <strong>John Edensor Littlewood</strong>.
 
 Together they examined the formulas for hours. They found:
 - Some formulas were already known — but Ramanujan had discovered them independently
-- Some formulas were **entirely new** and of astounding validity
+- Some formulas were <strong>entirely new</strong> and of astounding validity
 - Some formulas were so complex that even Hardy and Littlewood could not immediately prove them
 
 <div class="contrast-quote">
@@ -543,9 +542,9 @@ Hardy wrote back immediately and invited Ramanujan to Cambridge.
 
 Travelling to England was not easy for Ramanujan. His mother strongly objected, fearing spiritual transgression. In strict Brahmin tradition, crossing the seas was considered religiously forbidden.
 
-Eventually, **Goddess Namagiri appeared to his mother in a dream** and told her to let Ramanujan go. After this dream, she gave her blessing.
+Eventually, <strong>Goddess Namagiri appeared to his mother in a dream</strong> and told her to let Ramanujan go. After this dream, she gave her blessing.
 
-On **17 March 1914**, Ramanujan departed Madras for England. The journey was long and difficult. For a strict vegetarian Brahmin, finding suitable food on board the ship was itself a challenge.
+On <strong>17 March 1914</strong>, Ramanujan departed Madras for England. The journey was long and difficult. For a strict vegetarian Brahmin, finding suitable food on board the ship was itself a challenge.
 
 <h3>Life at Cambridge</h3>
 
@@ -593,7 +592,7 @@ The Hardy–Ramanujan partnership is one of the most remarkable in the history o
   </div>
 </div>
 
-But both shared one thing — **an indomitable love of mathematics.** Hardy taught Ramanujan the formal language of mathematics. Ramanujan gave Hardy the insight that no textbook could ever provide.
+But both shared one thing — <strong>an indomitable love of mathematics.</strong> Hardy taught Ramanujan the formal language of mathematics. Ramanujan gave Hardy the insight that no textbook could ever provide.
 
 <!-- SECTION 9: MATHEMATICAL DISCOVERIES -->
 <h2><span class="sec-icon" style="background:#fdf4ff; color:#7c3aed;"><i class="fas fa-atom"></i></span> The Great Mathematical Discoveries</h2>
@@ -692,7 +691,7 @@ But both shared one thing — **an indomitable love of mathematics.** Hardy taug
   Ramanujan was elected <strong>Fellow of the Royal Society (F.R.S.)</strong> — the <strong>first Indian</strong> ever to receive this honour. In the same year he was also elected Fellow of <strong>Trinity College, Cambridge</strong>.
 </div>
 
-In **1918**, Ramanujan was elected Fellow of the **Royal Society** (London) — the highest recognition in science and mathematics at the time, and he was the **first Indian** to receive it.
+In <strong>1918</strong>, Ramanujan was elected Fellow of the <strong>Royal Society</strong> (London) — the highest recognition in science and mathematics at the time, and he was the <strong>first Indian</strong> to receive it.
 
 The news was celebrated across India like a festival. A clerk without a degree, from a poor family, from no metropolitan city — had received the world's highest mathematical honour.
 
@@ -701,7 +700,7 @@ The news was celebrated across India like a festival. A clerk without a degree, 
 
 <h3>The Attack of Tuberculosis</h3>
 
-While in England, Ramanujan's health gradually deteriorated. In **1917**, he was admitted to **Matlock Sanatorium** with serious illness, suspected to be **tuberculosis**.
+While in England, Ramanujan's health gradually deteriorated. In <strong>1917</strong>, he was admitted to <strong>Matlock Sanatorium</strong> with serious illness, suspected to be <strong>tuberculosis</strong>.
 
 <div class="info-card red">
   <div class="info-card-header"><i class="fas fa-book-medical"></i> Mathematics Even in Hospital</div>
@@ -710,7 +709,7 @@ While in England, Ramanujan's health gradually deteriorated. In **1917**, he was
 
 <h3>Return to India</h3>
 
-On **27 February 1919**, Ramanujan left England for India. Five years had passed — and he was returning as a celebrated mathematician. But his condition on arrival was extremely weak. He went to Madras and then to **Chetput** for treatment.
+On <strong>27 February 1919</strong>, Ramanujan left England for India. Five years had passed — and he was returning as a celebrated mathematician. But his condition on arrival was extremely weak. He went to Madras and then to <strong>Chetput</strong> for treatment.
 
 <!-- SECTION 12: FINAL DAYS AND LEGACY -->
 <h2><span class="sec-icon" style="background:#1e3c72; color:white;"><i class="fas fa-star"></i></span> Final Days and Legacy</h2>
@@ -765,7 +764,7 @@ Ramanujan's discoveries live on vibrantly in today's science and technology:
 <!-- SECTION 14: INDIAN CULTURE -->
 <h2><span class="sec-icon" style="background:#fff7ed; color:#d97706;"><i class="fas fa-om"></i></span> Ramanujan and Indian Culture</h2>
 
-Ramanujan was not merely a mathematician — he was the embodiment of the **meeting point between Indian spirituality and mathematical genius**.
+Ramanujan was not merely a mathematician — he was the embodiment of the <strong>meeting point between Indian spirituality and mathematical genius</strong>.
 
 He demonstrated that mathematics and spirituality are not opposites. When he said *"the goddess gave me the formulas,"* he was speaking of the power of his intuition — that deep concentration which we call meditation or *sadhana*.
 
@@ -822,7 +821,7 @@ He was a man who turned poverty into opportunity, struggle into devotion, and fr
   <strong>22 December</strong> is celebrated as <strong>National Mathematics Day in India</strong> — in honour of Ramanujan's birthday.
 </div>
 
-Whenever you study mathematics, whenever a problem seems too difficult, whenever you feel you cannot go on — remember Ramanujan. A man who, through hunger, through illness, through loneliness — **knew infinity**.
+Whenever you study mathematics, whenever a problem seems too difficult, whenever you feel you cannot go on — remember Ramanujan. A man who, through hunger, through illness, through loneliness — <strong>knew infinity</strong>.
 
 <div class="final-quote">
   <p>"I have never met his equal, and I can compare him only with Euler or Jacobi."</p>
