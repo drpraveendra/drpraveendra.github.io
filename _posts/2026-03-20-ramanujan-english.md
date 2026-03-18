@@ -4,7 +4,8 @@ title: "Srinivasa Ramanujan — The Man Who Knew Infinity"
 date: 2026-03-20
 category: history
 lang: en
-lang_pair: "/2026/03/20/ramanujan-hindi-fancy.html"
+lang_pair: "/blog/ramanujan-hindi/"
+permalink: /blog/ramanujan-english/
 description: "A detailed account of Ramanujan's life, mathematical genius, family bonds, spiritual roots, struggles, and his lasting legacy in modern mathematics."
 ---
 
