@@ -4,7 +4,8 @@ title: "श्रीनिवास रामानुजन् — अनंत
 date: 2026-03-20
 category: history
 lang: hi
-lang_pair: "/2026/03/20/ramanujan-english.html"
+lang_pair: "/blog/ramanujan-english/"
+permalink: /blog/ramanujan-hindi/
 description: "श्रीनिवास रामानुजन् के जीवन, संघर्षों, गणितीय खोजों और भारतीय संस्कृति से गहरे जुड़ाव की विस्तृत कहानी — हिंदी में।"
 ---
 
