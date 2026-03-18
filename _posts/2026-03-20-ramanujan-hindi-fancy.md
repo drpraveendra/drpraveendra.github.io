@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "श्रीनिवास रामानुजन् — अनंत को जानने वाला महान गणितज्ञ"
-date: 2026-03-20
+date: 2026-03-18
 category: history
 lang: hi
 lang_pair: "/blog/ramanujan-english/"
