@@ -6,6 +6,7 @@ category: history
 lang: hi
 lang_pair: "/blog/ramanujan-english/"
 permalink: /blog/ramanujan-hindi/
+listed: false
 description: "श्रीनिवास रामानुजन् के जीवन, संघर्षों, गणितीय खोजों और भारतीय संस्कृति से गहरे जुड़ाव की विस्तृत कहानी — हिंदी में।"
 ---
 
