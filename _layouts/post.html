@@ -5,6 +5,62 @@ layout: default
 {% include mathjax.html %}
 
 <style>
+
+  /* ── Language Switcher ── */
+  .lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    background: #f8f9fc;
+    border: 1px solid #e0e7ff;
+    border-radius: 12px;
+    padding: 12px 18px;
+    margin-bottom: 20px;
+  }
+  .lang-label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #555;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .lang-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 18px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: 2px solid #d0d9ff;
+    color: #1e3c72;
+    background: white;
+    transition: all 0.2s;
+  }
+  .lang-btn:hover {
+    background: #1e3c72;
+    color: white;
+    border-color: #1e3c72;
+  }
+  .lang-active {
+    background: #1e3c72 !important;
+    color: white !important;
+    border-color: #1e3c72 !important;
+  }
+  .lang-note {
+    font-size: 0.78rem;
+    color: #888;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  /* ── Post Header ── */
   .post-hero {
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 70%, #ff4b2b 100%);
     border-radius: 16px;
@@ -47,6 +103,16 @@ layout: default
     align-items: center;
     gap: 6px;
   }
+  .lang-hero-badge {
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 20px;
+    padding: 2px 10px;
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+
+  /* ── Post Body ── */
   .post-body {
     background: white;
     border-radius: 14px;
@@ -72,6 +138,39 @@ layout: default
     margin: 20px 0;
     color: #555;
   }
+
+  /* ── Share Section ── */
+  .share-section {
+    background: #f8f9fc;
+    border-radius: 12px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .share-label { font-size: 0.88rem; font-weight: 700; color: #444; white-space: nowrap; }
+  .share-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 16px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  .share-btn:hover { transform: translateY(-2px); }
+  .share-telegram { background: #e8f5ff; color: #0088cc; border: 1px solid #c5e4ff; }
+  .share-whatsapp { background: #e8fff0; color: #25D366; border: 1px solid #b3f0cc; }
+  .share-twitter  { background: #e8f0fe; color: #1DA1F2; border: 1px solid #c5d8fc; }
+  .share-telegram:hover { background: #0088cc; color: white; }
+  .share-whatsapp:hover { background: #25D366; color: white; }
+  .share-twitter:hover  { background: #1DA1F2; color: white; }
+
+  /* ── Post Navigation ── */
   .post-nav {
     display: flex;
     justify-content: space-between;
@@ -102,10 +201,9 @@ layout: default
     transform: translateY(-2px);
   }
   .post-nav .next-post { justify-content: flex-end; text-align: right; }
-  .back-to-blog {
-    text-align: center;
-    margin-bottom: 30px;
-  }
+
+  /* ── Back to Blog ── */
+  .back-to-blog { text-align: center; margin-bottom: 30px; }
   .back-btn {
     display: inline-flex;
     align-items: center;
@@ -121,6 +219,8 @@ layout: default
     transition: all 0.2s;
   }
   .back-btn:hover { background: #1e3c72; color: white; }
+
+  /* ── Comments Section ── */
   .comments-section {
     background: white;
     border-radius: 14px;
@@ -137,11 +237,7 @@ layout: default
     align-items: center;
     gap: 10px;
   }
-  .comments-subtitle {
-    font-size: 0.88rem;
-    color: #888;
-    margin: 0 0 22px 0;
-  }
+  .comments-subtitle { font-size: 0.88rem; color: #888; margin: 0 0 22px 0; }
   .tg-comment-btn {
     display: inline-flex;
     align-items: center;
@@ -156,12 +252,10 @@ layout: default
     margin-bottom: 28px;
     transition: all 0.25s;
     box-shadow: 0 4px 14px rgba(0,136,204,0.35);
-    border: none;
   }
   .tg-comment-btn:hover {
     background: #006fa6;
     transform: translateY(-2px);
-    box-shadow: 0 6px 18px rgba(0,136,204,0.45);
     color: white;
   }
   .tg-comment-btn i { font-size: 1.15rem; }
@@ -173,7 +267,6 @@ layout: default
     color: #bbb;
     font-size: 0.82rem;
     font-weight: 600;
-    letter-spacing: 0.3px;
   }
   .comment-divider::before,
   .comment-divider::after {
@@ -192,48 +285,57 @@ layout: default
   }
   .github-note a { color: #1e3c72; font-weight: 600; text-decoration: none; }
   .github-note a:hover { text-decoration: underline; }
-  .share-section {
-    background: #f8f9fc;
-    border-radius: 12px;
-    padding: 20px 25px;
-    margin-bottom: 25px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    flex-wrap: wrap;
-  }
-  .share-label { font-size: 0.88rem; font-weight: 700; color: #444; white-space: nowrap; }
-  .share-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 7px 16px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.2s;
-  }
-  .share-btn:hover { transform: translateY(-2px); }
-  .share-telegram { background: #e8f5ff; color: #0088cc; border: 1px solid #c5e4ff; }
-  .share-whatsapp { background: #e8fff0; color: #25D366; border: 1px solid #b3f0cc; }
-  .share-twitter  { background: #e8f0fe; color: #1DA1F2; border: 1px solid #c5d8fc; }
-  .share-telegram:hover { background: #0088cc; color: white; }
-  .share-whatsapp:hover { background: #25D366; color: white; }
-  .share-twitter:hover  { background: #1DA1F2; color: white; }
+
   @media (max-width: 768px) {
     .post-hero { padding: 28px 20px; }
     .post-hero h1 { font-size: 1.5rem; }
     .post-body { padding: 22px 18px; }
     .comments-section { padding: 20px 18px; }
     .tg-comment-btn { width: 100%; justify-content: center; }
+    .lang-switcher { gap: 8px; }
+    .lang-note { display: none; }
   }
 </style>
 
 <article itemscope itemtype="http://schema.org/BlogPosting">
 
-  <!-- Post Hero Header -->
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- LANGUAGE SWITCHER                              -->
+  <!-- Shows only when post has lang: hi or lang: en  -->
+  <!-- ══════════════════════════════════════════════ -->
+  {% if page.lang %}
+  <div class="lang-switcher">
+    <span class="lang-label"><i class="fas fa-globe"></i> Language / भाषा :</span>
+
+    {% if page.lang == 'hi' %}
+      <a href="{{ page.url }}" class="lang-btn lang-active">🇮🇳 हिंदी</a>
+      {% if page.lang_pair %}
+        <a href="{{ page.lang_pair }}" class="lang-btn">🇬🇧 English</a>
+      {% endif %}
+      <span class="lang-note">
+        <i class="fas fa-info-circle"></i>
+        यह पोस्ट अंग्रेज़ी में भी उपलब्ध है — ऊपर English पर क्लिक करें।
+      </span>
+
+    {% elsif page.lang == 'en' %}
+      {% if page.lang_pair %}
+        <a href="{{ page.lang_pair }}" class="lang-btn">🇮🇳 हिंदी</a>
+      {% endif %}
+      <a href="{{ page.url }}" class="lang-btn lang-active">🇬🇧 English</a>
+      <span class="lang-note">
+        <i class="fas fa-info-circle"></i>
+        This post is also available in Hindi — click हिंदी above.
+      </span>
+    {% endif %}
+
+  </div>
+  {% endif %}
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- POST HERO HEADER                               -->
+  <!-- ══════════════════════════════════════════════ -->
   <div class="post-hero">
+
     {% if page.category == "history" %}
       <span class="post-category-badge badge-history"><i class="fas fa-scroll"></i> History of Mathematics</span>
     {% elsif page.category == "general" %}
@@ -251,18 +353,30 @@ layout: default
         </time>
       </span>
       <span><i class="fas fa-user"></i> Dr. Praveendra Singh</span>
+      {% if page.lang %}
+        {% if page.lang == 'hi' %}
+          <span class="lang-hero-badge">🇮🇳 हिंदी</span>
+        {% elsif page.lang == 'en' %}
+          <span class="lang-hero-badge">🇬🇧 English</span>
+        {% endif %}
+      {% endif %}
       {% if page.description %}
-      <span><i class="fas fa-align-left"></i> {{ page.description | truncate: 80 }}</span>
+        <span><i class="fas fa-align-left"></i> {{ page.description | truncate: 80 }}</span>
       {% endif %}
     </div>
+
   </div>
 
-  <!-- Post Content -->
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- POST CONTENT                                   -->
+  <!-- ══════════════════════════════════════════════ -->
   <div class="post-body" itemprop="articleBody">
     {{ content }}
   </div>
 
-  <!-- Share Section -->
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- SHARE SECTION                                  -->
+  <!-- ══════════════════════════════════════════════ -->
   <div class="share-section">
     <span class="share-label"><i class="fas fa-share-alt"></i> Share this post:</span>
     <a class="share-btn share-telegram"
@@ -282,7 +396,9 @@ layout: default
     </a>
   </div>
 
-  <!-- Post Navigation -->
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- POST NAVIGATION                                -->
+  <!-- ══════════════════════════════════════════════ -->
   <div class="post-nav">
     {% if page.previous.url %}
     <a href="{{ page.previous.url }}" class="prev-post">
@@ -298,14 +414,18 @@ layout: default
     {% endif %}
   </div>
 
-  <!-- Back to Blog -->
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- BACK TO BLOG                                   -->
+  <!-- ══════════════════════════════════════════════ -->
   <div class="back-to-blog">
     <a href="/blog/" class="back-btn">
       <i class="fas fa-th-list"></i> Back to All Posts
     </a>
   </div>
 
-  <!-- Comments Section -->
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- COMMENTS SECTION                               -->
+  <!-- ══════════════════════════════════════════════ -->
   <div class="comments-section">
 
     <div class="comments-title">
