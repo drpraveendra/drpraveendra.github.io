@@ -1,6 +1,6 @@
 # Hi there, I'm Dr. Praveendra Singh 👋
 
-I am an **Assistant Professor of Mathematics** at Government College Kherwara, Rajasthan, India, specializing in Operations Research and Supply Chain Optimization. I am also the creator of educational mathematics content for B.Sc., M.Sc., and competitive exam students.
+I am an **Assistant Professor of Mathematics** at Government College Kherwara, Udaipur, Rajasthan, India, specializing in Operations Research and Supply Chain Optimization. I am also the creator of educational mathematics content for B.Sc., M.Sc., and competitive exam students.
 
 ## 🔭 Current Focus
 - **Research:** Developing mathematical models for deteriorating inventory items using nature-inspired metaheuristic algorithms (Differential Evolution, Bat Algorithm).
