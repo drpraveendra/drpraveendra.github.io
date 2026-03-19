@@ -117,7 +117,7 @@ description: "फ़ंक्शनों की श्रृंखला का
 <div class="info-card">
   <div class="info-card-header"><i class="fas fa-book"></i> एकसमान अभिसरण — परिभाषा</div>
   $f_n \to f$ <strong>एकसमान रूप से</strong> $[a,b]$ पर अभिसरित होता है यदि:
-  $$\forall\,\varepsilon > 0,\;\exists\, N \text{ ($x$ से स्वतंत्र)}: n > N \implies \lvert f_n(x) - f(x)\rvert < \varepsilon \quad \forall\,x \in [a,b]$$
+  $$\forall\,\varepsilon > 0,\;\exists\, N \text{(x से स्वतंत्र)}: n > N \implies \lvert f_n(x) - f(x)\rvert < \varepsilon \quad \forall\,x \in [a,b]$$
   समतुल्य रूप: $\displaystyle\sup_{x \in [a,b]}\lvert f_n(x) - f(x)\rvert \to 0$ जब $n\to\infty$।
 </div>
 
