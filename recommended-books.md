@@ -336,7 +336,7 @@ permalink: /recommended-books/
           <span class="book-tag tag-green">Paperback</span>
           <span class="book-tag tag-gold">Comprehensive — CSIR NET Part C</span>
         </div>
-        <a class="amazon-btn" href="https://www.amazon.in/Abstract-Algebra-3ed-David-Dummit/dp/8126532289">
+        <a class="amazon-btn" href="https://www.amazon.in/Abstract-Algebra-3ed-David-Dummit/dp/8126532289" target="_blank">
           <i class="fab fa-amazon"></i> Buy on Amazon.in
         </a>
       </div>
@@ -352,7 +352,7 @@ permalink: /recommended-books/
           <span class="book-tag tag-green">Paperback</span>
           <span class="book-tag tag-gold">Indian Author — Syllabus Aligned</span>
         </div>
-        <a class="amazon-btn" href="https://www.amazon.in/Course-Abstract-Algebra-V-Khanna/dp/8125916717" target="_blank">
+        <a class="amazon-btn" href="https://amzn.to/4uW5IWz" target="_blank">
           <i class="fab fa-amazon"></i> Buy on Amazon.in
         </a>
       </div>
@@ -361,7 +361,7 @@ permalink: /recommended-books/
     <div class="book-card">
       <div class="book-rank">04</div>
       <div class="book-info">
-        <div class="book-title">A First Course in Abstract Algebra (7th Edition)</div>
+        <div class="book-title">A First Course in Abstract Algebra (8th Edition)</div>
         <div class="book-author">By <span>John B. Fraleigh</span></div>
         <div class="book-tags">
           <span class="book-tag tag-blue">Beginner–Intermediate</span>
