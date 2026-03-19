@@ -141,34 +141,123 @@ layout: default
 
   /* ── Share Section ── */
   .share-section {
-    background: #f8f9fc;
-    border-radius: 12px;
-    padding: 20px 25px;
-    margin-bottom: 25px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    flex-wrap: wrap;
-  }
-  .share-label { font-size: 0.88rem; font-weight: 700; color: #444; white-space: nowrap; }
-  .share-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 7px 16px;
+    background: linear-gradient(135deg, #0f172a 0%, #1e3c72 60%, #2a5298 100%);
     border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.2s;
+    padding: 32px 35px;
+    margin-bottom: 28px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(30,60,114,0.25);
   }
-  .share-btn:hover { transform: translateY(-2px); }
-  .share-telegram { background: #e8f5ff; color: #0088cc; border: 1px solid #c5e4ff; }
-  .share-whatsapp { background: #e8fff0; color: #25D366; border: 1px solid #b3f0cc; }
-  .share-twitter  { background: #e8f0fe; color: #1DA1F2; border: 1px solid #c5d8fc; }
-  .share-telegram:hover { background: #0088cc; color: white; }
-  .share-whatsapp:hover { background: #25D366; color: white; }
-  .share-twitter:hover  { background: #1DA1F2; color: white; }
+  .share-section::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 200px; height: 200px;
+    background: radial-gradient(circle, rgba(255,75,43,0.15) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .share-section::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: -40px;
+    width: 160px; height: 160px;
+    background: radial-gradient(circle, rgba(124,58,237,0.15) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .share-inner { position: relative; z-index: 1; }
+  .share-heading {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 6px;
+  }
+  .share-heading-icon {
+    width: 40px; height: 40px;
+    background: linear-gradient(135deg, #ff4b2b, #fbbf24);
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.1rem; color: white;
+    box-shadow: 0 4px 12px rgba(255,75,43,0.4);
+    flex-shrink: 0;
+  }
+  .share-title {
+    font-size: 1.15rem; font-weight: 800;
+    color: white; margin: 0; line-height: 1.2;
+  }
+  .share-subtitle {
+    font-size: 0.82rem; color: rgba(255,255,255,0.6);
+    margin: 0 0 22px 52px;
+  }
+  .share-buttons {
+    display: flex; flex-wrap: wrap; gap: 12px;
+    align-items: center;
+  }
+  .share-btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 11px 22px;
+    border-radius: 50px;
+    font-size: 0.88rem; font-weight: 700;
+    text-decoration: none;
+    border: none; cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+    position: relative; overflow: hidden;
+    letter-spacing: 0.3px;
+  }
+  .share-btn::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: rgba(255,255,255,0.15);
+    opacity: 0; transition: opacity 0.2s;
+  }
+  .share-btn:hover::before { opacity: 1; }
+  .share-btn:hover { transform: translateY(-3px) scale(1.03); }
+  .share-btn:active { transform: translateY(0) scale(0.97); }
+  .share-btn i { font-size: 1rem; }
+
+  .share-telegram {
+    background: linear-gradient(135deg, #0088cc, #00b4e6);
+    color: white;
+    box-shadow: 0 4px 15px rgba(0,136,204,0.45);
+  }
+  .share-whatsapp {
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    color: white;
+    box-shadow: 0 4px 15px rgba(37,211,102,0.45);
+  }
+  .share-twitter {
+    background: linear-gradient(135deg, #1DA1F2, #0d8bd9);
+    color: white;
+    box-shadow: 0 4px 15px rgba(29,161,242,0.45);
+  }
+  .share-copy {
+    background: linear-gradient(135deg, #7c3aed, #a855f7);
+    color: white;
+    box-shadow: 0 4px 15px rgba(124,58,237,0.45);
+    font-family: inherit;
+    font-size: 0.88rem;
+  }
+  .share-copy.copied {
+    background: linear-gradient(135deg, #059669, #10b981) !important;
+    box-shadow: 0 4px 15px rgba(5,150,105,0.45) !important;
+  }
+  .share-divider {
+    width: 1px; height: 36px;
+    background: rgba(255,255,255,0.2);
+    margin: 0 4px;
+  }
+  .share-native {
+    background: rgba(255,255,255,0.12);
+    border: 1.5px solid rgba(255,255,255,0.25);
+    color: white;
+    backdrop-filter: blur(4px);
+    box-shadow: none;
+  }
+  .share-native:hover { background: rgba(255,255,255,0.22); }
+  @media (max-width: 640px) {
+    .share-section { padding: 24px 20px; }
+    .share-subtitle { margin-left: 0; }
+    .share-btn { padding: 10px 18px; font-size: 0.83rem; }
+    .share-divider { display: none; }
+  }
 
   /* ── Post Navigation ── */
   .post-nav {
@@ -375,26 +464,100 @@ layout: default
   </div>
 
   <!-- ══════════════════════════════════════════════ -->
-  <!-- SHARE SECTION                                  -->
+  <!-- SHARE SECTION — FANCY                          -->
   <!-- ══════════════════════════════════════════════ -->
   <div class="share-section">
-    <span class="share-label"><i class="fas fa-share-alt"></i> Share this post:</span>
-    <a class="share-btn share-telegram"
-       href="https://t.me/share/url?url={{ page.url | absolute_url | uri_escape }}&text={{ page.title | uri_escape }}"
-       target="_blank">
-      <i class="fab fa-telegram-plane"></i> Telegram
-    </a>
-    <a class="share-btn share-whatsapp"
-       href="https://wa.me/?text={{ page.title | uri_escape }}%20{{ page.url | absolute_url | uri_escape }}"
-       target="_blank">
-      <i class="fab fa-whatsapp"></i> WhatsApp
-    </a>
-    <a class="share-btn share-twitter"
-       href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ page.url | absolute_url | uri_escape }}"
-       target="_blank">
-      <i class="fab fa-twitter"></i> Twitter
-    </a>
+    <div class="share-inner">
+
+      <div class="share-heading">
+        <div class="share-heading-icon">
+          <i class="fas fa-share-nodes"></i>
+        </div>
+        <p class="share-title">Share this Post</p>
+      </div>
+      <p class="share-subtitle">Found this useful? Share it with your friends and classmates!</p>
+
+      <div class="share-buttons">
+
+        <!-- Telegram -->
+        <a class="share-btn share-telegram"
+           href="https://t.me/share/url?url={{ page.url | absolute_url | uri_escape }}&text={{ page.title | uri_escape }}"
+           target="_blank" rel="noopener">
+          <i class="fab fa-telegram-plane"></i> Telegram
+        </a>
+
+        <!-- WhatsApp -->
+        <a class="share-btn share-whatsapp"
+           href="https://wa.me/?text={{ page.title | uri_escape }}%20{{ page.url | absolute_url | uri_escape }}"
+           target="_blank" rel="noopener">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+
+        <!-- Twitter / X -->
+        <a class="share-btn share-twitter"
+           href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ page.url | absolute_url | uri_escape }}&via=drpraveendra"
+           target="_blank" rel="noopener">
+          <i class="fab fa-twitter"></i> Twitter
+        </a>
+
+        <div class="share-divider"></div>
+
+        <!-- Copy Link -->
+        <button class="share-btn share-copy" id="copyLinkBtn" onclick="copyPostLink(this)">
+          <i class="fas fa-link"></i> <span id="copyBtnText">Copy Link</span>
+        </button>
+
+        <!-- Native Share (mobile) -->
+        <button class="share-btn share-native" id="nativeShareBtn" style="display:none;"
+                onclick="nativeShare('{{ page.title | escape }}', '{{ page.url | absolute_url }}')">
+          <i class="fas fa-arrow-up-from-bracket"></i> Share
+        </button>
+
+      </div>
+    </div>
   </div>
+
+  <script>
+    // Show native share button on mobile if supported
+    if (navigator.share) {
+      document.getElementById('nativeShareBtn').style.display = 'inline-flex';
+    }
+
+    // Copy link to clipboard
+    function copyPostLink(btn) {
+      const url = '{{ page.url | absolute_url }}';
+      navigator.clipboard.writeText(url).then(function() {
+        btn.classList.add('copied');
+        document.getElementById('copyBtnText').textContent = '✓ Copied!';
+        btn.querySelector('i').className = 'fas fa-check';
+        setTimeout(function() {
+          btn.classList.remove('copied');
+          document.getElementById('copyBtnText').textContent = 'Copy Link';
+          btn.querySelector('i').className = 'fas fa-link';
+        }, 2500);
+      }).catch(function() {
+        // Fallback for older browsers
+        const el = document.createElement('textarea');
+        el.value = url;
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+        document.getElementById('copyBtnText').textContent = '✓ Copied!';
+        setTimeout(function() {
+          document.getElementById('copyBtnText').textContent = 'Copy Link';
+        }, 2500);
+      });
+    }
+
+    // Native share (mobile)
+    function nativeShare(title, url) {
+      navigator.share({
+        title: title,
+        url: url
+      }).catch(function() {});
+    }
+  </script>
 
   <!-- ══════════════════════════════════════════════ -->
   <!-- POST NAVIGATION                                -->
