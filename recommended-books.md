@@ -313,14 +313,14 @@ permalink: /recommended-books/
     <div class="book-card">
       <div class="book-rank">01</div>
       <div class="book-info">
-        <div class="book-title">Contemporary Abstract Algebra (10th Edition)</div>
+        <div class="book-title">Contemporary Abstract Algebra (11th Edition)</div>
         <div class="book-author">By <span>Joseph A. Gallian</span></div>
         <div class="book-tags">
           <span class="book-tag tag-blue">Beginner–Intermediate</span>
           <span class="book-tag tag-green">Paperback</span>
           <span class="book-tag tag-red">Most Popular for CSIR NET</span>
         </div>
-        <a class="amazon-btn" href="https://www.amazon.in/Contemporary-Abstract-Algebra-Textbooks-Mathematics/dp/0367651785" target="_blank">
+        <a class="amazon-btn" href="https://amzn.to/4bwhTAi" target="_blank">
           <i class="fab fa-amazon"></i> Buy on Amazon.in
         </a>
       </div>
@@ -336,7 +336,7 @@ permalink: /recommended-books/
           <span class="book-tag tag-green">Paperback</span>
           <span class="book-tag tag-gold">Comprehensive — CSIR NET Part C</span>
         </div>
-        <a class="amazon-btn" href="https://www.amazon.in/Abstract-Algebra-3ed-David-Dummit/dp/8126532289" target="_blank">
+        <a class="amazon-btn" href="https://www.amazon.in/Abstract-Algebra-3ed-David-Dummit/dp/8126532289">
           <i class="fab fa-amazon"></i> Buy on Amazon.in
         </a>
       </div>
