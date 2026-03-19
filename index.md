@@ -152,7 +152,7 @@ layout: default
     <h1>Dr. Praveendra Singh</h1>
     <p class="designation">
       Assistant Professor of Mathematics<br>
-      Government College Kherwara, Udaipur,Rajasthan, India
+      Government College Kherwara, Udaipur, Rajasthan, India
     </p>
 
 <div class="hero-links">
