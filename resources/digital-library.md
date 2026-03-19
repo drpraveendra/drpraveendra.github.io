@@ -65,6 +65,18 @@ permalink: /resources/digital-library/
     background: #eff6ff; border: 1px solid #bfdbfe; transition: all 0.2s;
   }
   .back-link:hover { background: #1e3c72; color: white; text-decoration: none; }
+  .student-badge {
+    display: inline-flex; align-items: center; gap: 5px;
+    font-size: 0.7rem; font-weight: 700; padding: 3px 10px; border-radius: 12px;
+    margin-top: 8px;
+  }
+  .for-ug    { background: #eff6ff; color: #1e3c72; border: 1px solid #bfdbfe; }
+  .for-pg    { background: #f5f3ff; color: #7c3aed; border: 1px solid #ddd6fe; }
+  .for-csir  { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+  .for-school{ background: #ecfdf5; color: #065f46; border: 1px solid #a7f3d0; }
+  .for-all   { background: #fff1f2; color: #9f1239; border: 1px solid #fecdd3; }
+  .for-research{ background: #f0fdf4; color: #14532d; border: 1px solid #bbf7d0; }
+  .badges-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
 </style>
 
 <div class="sub-hero">
@@ -84,7 +96,8 @@ permalink: /resources/digital-library/
         <div><h3>NPTEL Mathematics</h3><span class="lib-type">Video Lectures</span></div>
       </div>
       <p>Free IIT and IISc professor lectures on Real Analysis, Linear Algebra, Differential Equations, Topology, and more. Official Government of India platform.</p>
-      <div class="lib-card-footer">
+      <div class="badges-row"><span class="student-badge for-ug">B.Sc. Students</span><span class="student-badge for-pg">M.Sc. Students</span><span class="student-badge for-csir">CSIR NET / GATE</span></div>
+      <div class="lib-card-footer" style="margin-top:12px;">
         <span class="lib-visit">Visit NPTEL <i class="fas fa-arrow-right"></i></span>
         <span class="lib-tag">Free</span>
       </div>
@@ -96,7 +109,8 @@ permalink: /resources/digital-library/
         <div><h3>MIT OpenCourseWare</h3><span class="lib-type">Courses & Notes</span></div>
       </div>
       <p>Full lecture notes, assignments, and exams from MIT mathematics courses — including Real Analysis, Algebra, Probability, and Topology. World-class content, completely free.</p>
-      <div class="lib-card-footer">
+      <div class="badges-row"><span class="student-badge for-pg">M.Sc. Students</span><span class="student-badge for-csir">CSIR NET / GATE</span><span class="student-badge for-research">Researchers</span></div>
+      <div class="lib-card-footer" style="margin-top:12px;">
         <span class="lib-visit">Visit MIT OCW <i class="fas fa-arrow-right"></i></span>
         <span class="lib-tag">Free</span>
       </div>
@@ -108,7 +122,8 @@ permalink: /resources/digital-library/
         <div><h3>Fractal Frontier Maths</h3><span class="lib-type">YouTube Channel</span></div>
       </div>
       <p>Our own YouTube channel with animated mathematics lectures in Hindi — covering Real Analysis, Linear Algebra, ODE, and exam-focused content for CSIR NET and GATE.</p>
-      <div class="lib-card-footer">
+      <div class="badges-row"><span class="student-badge for-ug">B.Sc. Students</span><span class="student-badge for-pg">M.Sc. Students</span><span class="student-badge for-csir">CSIR NET / GATE / IIT JAM</span></div>
+      <div class="lib-card-footer" style="margin-top:12px;">
         <span class="lib-visit">Watch Now <i class="fas fa-arrow-right"></i></span>
         <span class="lib-tag">Hindi</span>
       </div>
@@ -128,7 +143,8 @@ permalink: /resources/digital-library/
         <div><h3>LibreTexts Mathematics</h3><span class="lib-type">Open Textbooks</span></div>
       </div>
       <p>Thousands of free, openly licensed mathematics textbooks covering undergraduate and graduate topics. Searchable, readable online, and downloadable as PDF.</p>
-      <div class="lib-card-footer">
+      <div class="badges-row"><span class="student-badge for-ug">B.Sc. Students</span><span class="student-badge for-pg">M.Sc. Students</span></div>
+      <div class="lib-card-footer" style="margin-top:12px;">
         <span class="lib-visit">Browse Books <i class="fas fa-arrow-right"></i></span>
         <span class="lib-tag">Free PDF</span>
       </div>
@@ -140,7 +156,8 @@ permalink: /resources/digital-library/
         <div><h3>Internet Archive</h3><span class="lib-type">Classic Books</span></div>
       </div>
       <p>Millions of free books including classic mathematics textbooks by Rudin, Apostol, Royden, Herstein, and many more. Borrow or download in PDF format.</p>
-      <div class="lib-card-footer">
+      <div class="badges-row"><span class="student-badge for-pg">M.Sc. Students</span><span class="student-badge for-research">Researchers</span><span class="student-badge for-csir">CSIR NET</span></div>
+      <div class="lib-card-footer" style="margin-top:12px;">
         <span class="lib-visit">Search Archive <i class="fas fa-arrow-right"></i></span>
         <span class="lib-tag">Free</span>
       </div>
@@ -152,7 +169,8 @@ permalink: /resources/digital-library/
         <div><h3>Project Gutenberg</h3><span class="lib-type">Classic Texts</span></div>
       </div>
       <p>Public domain mathematics books — including works by Euler, Gauss, and other historical mathematicians. Free to download in multiple formats.</p>
-      <div class="lib-card-footer">
+      <div class="badges-row"><span class="student-badge for-all">All Students</span><span class="student-badge for-research">Researchers</span></div>
+      <div class="lib-card-footer" style="margin-top:12px;">
         <span class="lib-visit">Visit Gutenberg <i class="fas fa-arrow-right"></i></span>
         <span class="lib-tag">Public Domain</span>
       </div>
@@ -172,7 +190,8 @@ permalink: /resources/digital-library/
         <div><h3>arXiv Mathematics</h3><span class="lib-type">Preprints</span></div>
       </div>
       <p>Free preprints of mathematics research papers — the world's largest open-access mathematics archive. Browse by subject area including Analysis, Algebra, and Topology.</p>
-      <div class="lib-card-footer">
+      <div class="badges-row"><span class="student-badge for-pg">M.Sc. Students</span><span class="student-badge for-research">Researchers</span></div>
+      <div class="lib-card-footer" style="margin-top:12px;">
         <span class="lib-visit">Browse arXiv <i class="fas fa-arrow-right"></i></span>
         <span class="lib-tag">Free</span>
       </div>
@@ -184,7 +203,8 @@ permalink: /resources/digital-library/
         <div><h3>Google Scholar</h3><span class="lib-type">Research Search</span></div>
       </div>
       <p>Search millions of research papers, theses, and books. Many papers have free PDF links. Essential for finding references for M.Sc. projects and research.</p>
-      <div class="lib-card-footer">
+      <div class="badges-row"><span class="student-badge for-pg">M.Sc. Students</span><span class="student-badge for-research">Researchers</span></div>
+      <div class="lib-card-footer" style="margin-top:12px;">
         <span class="lib-visit">Search Papers <i class="fas fa-arrow-right"></i></span>
         <span class="lib-tag">Free</span>
       </div>
@@ -196,8 +216,125 @@ permalink: /resources/digital-library/
         <div><h3>AMS Open Math Notes</h3><span class="lib-type">Lecture Notes</span></div>
       </div>
       <p>Free lecture notes from professors around the world — contributed to the American Mathematical Society's open repository. Graduate-level coverage.</p>
-      <div class="lib-card-footer">
+      <div class="badges-row"><span class="student-badge for-pg">M.Sc. Students</span><span class="student-badge for-research">Researchers</span><span class="student-badge for-csir">CSIR NET</span></div>
+      <div class="lib-card-footer" style="margin-top:12px;">
         <span class="lib-visit">View Notes <i class="fas fa-arrow-right"></i></span>
+        <span class="lib-tag">Free PDF</span>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+
+<!-- Indian Resources -->
+<div class="lib-section">
+  <div class="section-title"><i class="fas fa-flag" style="color:#ff4b2b;"></i> Indian Digital Resources</div>
+  <div class="lib-grid">
+
+    <a class="lib-card" href="https://ndl.iitkgp.ac.in/" target="_blank" rel="noopener">
+      <div class="lib-card-header">
+        <span class="lib-card-icon">🇮🇳</span>
+        <div><h3>National Digital Library of India</h3><span class="lib-type">Government Platform</span></div>
+      </div>
+      <p>India's largest digital repository — millions of free educational resources including mathematics textbooks, lecture notes, research papers, and exam materials from Indian universities and institutions.</p>
+      <div class="badges-row">
+        <span class="student-badge for-ug">B.Sc. Students</span>
+        <span class="student-badge for-pg">M.Sc. Students</span>
+        <span class="student-badge for-csir">CSIR NET / GATE</span>
+      </div>
+      <div class="lib-card-footer" style="margin-top:12px;">
+        <span class="lib-visit">Visit NDLI <i class="fas fa-arrow-right"></i></span>
+        <span class="lib-tag">Free</span>
+      </div>
+    </a>
+
+    <a class="lib-card" href="https://ncert.nic.in/textbook.php" target="_blank" rel="noopener">
+      <div class="lib-card-header">
+        <span class="lib-card-icon">📗</span>
+        <div><h3>NCERT Mathematics</h3><span class="lib-type">School & Foundation</span></div>
+      </div>
+      <p>Official NCERT mathematics textbooks from Class 6 to Class 12 — free to download as PDF. Essential for building strong foundations in calculus, algebra, and coordinate geometry before starting B.Sc. level content.</p>
+      <div class="badges-row">
+        <span class="student-badge for-school">Class 6–12</span>
+        <span class="student-badge for-ug">B.Sc. Foundation</span>
+        <span class="student-badge for-csir">IIT JAM Basics</span>
+      </div>
+      <div class="lib-card-footer" style="margin-top:12px;">
+        <span class="lib-visit">Download NCERT <i class="fas fa-arrow-right"></i></span>
+        <span class="lib-tag">Free PDF</span>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<!-- Open Textbooks -->
+<div class="lib-section">
+  <div class="section-title"><i class="fas fa-book" style="color:#d97706;"></i> Open Textbooks</div>
+  <div class="lib-grid">
+
+    <a class="lib-card" href="https://openstax.org/subjects/math" target="_blank" rel="noopener">
+      <div class="lib-card-header">
+        <span class="lib-card-icon">📘</span>
+        <div><h3>OpenStax (Rice University)</h3><span class="lib-type">Peer-Reviewed Textbooks</span></div>
+      </div>
+      <p>High-quality, peer-reviewed, freely available textbooks from Rice University — covering Calculus (1, 2 &amp; 3), Algebra, Precalculus, Statistics, and more. Professionally written and regularly updated.</p>
+      <div class="badges-row">
+        <span class="student-badge for-ug">B.Sc. Students</span>
+        <span class="student-badge for-csir">CSIR NET / GATE Basics</span>
+      </div>
+      <div class="lib-card-footer" style="margin-top:12px;">
+        <span class="lib-visit">Browse OpenStax <i class="fas fa-arrow-right"></i></span>
+        <span class="lib-tag">Free PDF</span>
+      </div>
+    </a>
+
+    <a class="lib-card" href="https://open.umn.edu/opentextbooks/subjects/mathematics" target="_blank" rel="noopener">
+      <div class="lib-card-header">
+        <span class="lib-card-icon">📙</span>
+        <div><h3>Open Textbook Library</h3><span class="lib-type">University Textbooks</span></div>
+      </div>
+      <p>University-level mathematics textbooks with exercises, solutions, and lecture slides — peer-reviewed and freely available. Covers undergraduate and postgraduate mathematics topics comprehensively.</p>
+      <div class="badges-row">
+        <span class="student-badge for-ug">B.Sc. Students</span>
+        <span class="student-badge for-pg">M.Sc. Students</span>
+      </div>
+      <div class="lib-card-footer" style="margin-top:12px;">
+        <span class="lib-visit">Browse Library <i class="fas fa-arrow-right"></i></span>
+        <span class="lib-tag">Free</span>
+      </div>
+    </a>
+
+    <a class="lib-card" href="http://linear.ups.edu/html/fcla.html" target="_blank" rel="noopener">
+      <div class="lib-card-header">
+        <span class="lib-card-icon">📐</span>
+        <div><h3>Understanding Linear Algebra</h3><span class="lib-type">Interactive Textbook</span></div>
+      </div>
+      <p>A free, open-source, interactive Linear Algebra textbook by David Austin — built for conceptual understanding with detailed explanations, diagrams, and exercises. One of the best free resources for Linear Algebra.</p>
+      <div class="badges-row">
+        <span class="student-badge for-ug">B.Sc. Students</span>
+        <span class="student-badge for-csir">CSIR NET / GATE / IIT JAM</span>
+      </div>
+      <div class="lib-card-footer" style="margin-top:12px;">
+        <span class="lib-visit">Read Online <i class="fas fa-arrow-right"></i></span>
+        <span class="lib-tag">Free</span>
+      </div>
+    </a>
+
+    <a class="lib-card" href="http://www.e-booksdirectory.com/mathematics.php" target="_blank" rel="noopener">
+      <div class="lib-card-header">
+        <span class="lib-card-icon">📂</span>
+        <div><h3>E-Books Directory (Mathematics)</h3><span class="lib-type">Categorised PDF Collection</span></div>
+      </div>
+      <p>A categorised collection of free mathematics PDFs — covering Algebra, Topology, Number Theory, Analysis, Geometry, and more. Quick to browse and download by topic. Ideal for targeted study.</p>
+      <div class="badges-row">
+        <span class="student-badge for-ug">B.Sc. Students</span>
+        <span class="student-badge for-pg">M.Sc. Students</span>
+        <span class="student-badge for-research">Researchers</span>
+      </div>
+      <div class="lib-card-footer" style="margin-top:12px;">
+        <span class="lib-visit">Browse PDFs <i class="fas fa-arrow-right"></i></span>
         <span class="lib-tag">Free PDF</span>
       </div>
     </a>
