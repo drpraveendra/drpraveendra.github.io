@@ -78,7 +78,7 @@ permalink: /resources/digital-library/
   <div class="section-title"><i class="fas fa-video" style="color:#ff0000;"></i> Video Lecture Platforms</div>
   <div class="lib-grid">
 
-    <a class="lib-card" href="https://nptel.ac.in/courses/mathematics" target="_blank" rel="noopener">
+    <a class="lib-card" href="https://nptel.ac.in/courses" target="_blank" rel="noopener">
       <div class="lib-card-header">
         <span class="lib-card-icon">🇮🇳</span>
         <div><h3>NPTEL Mathematics</h3><span class="lib-type">Video Lectures</span></div>
@@ -146,7 +146,7 @@ permalink: /resources/digital-library/
       </div>
     </a>
 
-    <a class="lib-card" href="https://www.gutenberg.org/browse/categories/7" target="_blank" rel="noopener">
+    <a class="lib-card" href="https://www.gutenberg.org/ebooks/bookshelf/672" target="_blank" rel="noopener">
       <div class="lib-card-header">
         <span class="lib-card-icon">📜</span>
         <div><h3>Project Gutenberg</h3><span class="lib-type">Classic Texts</span></div>
