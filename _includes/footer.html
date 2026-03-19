@@ -1,15 +1,13 @@
 <style>
-  /* Footer Container Styling */
   .custom-site-footer {
-    background: #f8f9fa;
-    border-top: 3px solid #1e3c72;
-    padding: 50px 20px 20px;
+    background: linear-gradient(135deg, #0f172a 0%, #1e3c72 100%);
+    border-top: 3px solid #ff4b2b;
+    padding: 55px 20px 20px;
     margin-top: 60px;
-    color: #444;
+    color: #cbd5e1;
     font-size: 0.95rem;
-    line-height: 1.6;
+    line-height: 1.7;
   }
-  
   .footer-wrapper {
     max-width: 1100px;
     margin: 0 auto;
@@ -18,158 +16,190 @@
     justify-content: space-between;
     gap: 40px;
   }
-  
-  .footer-col {
-    flex: 1;
-    min-width: 250px;
-  }
-  
+  .footer-col { flex: 1; min-width: 220px; }
   .footer-col h3 {
-    color: #1e3c72;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 1.05rem;
+    margin-bottom: 18px;
     font-weight: 700;
     position: relative;
     padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
   }
-  
   .footer-col h3::after {
     content: '';
     position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 40px;
-    height: 3px;
+    left: 0; bottom: 0;
+    width: 35px; height: 3px;
     background: #ff4b2b;
     border-radius: 2px;
   }
-  
-  .footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-links li {
-    margin-bottom: 10px;
-  }
-  
+  .footer-col p { color: #94a3b8; font-size: 0.88rem; line-height: 1.7; }
+  .footer-links { list-style: none; padding: 0; margin: 0; }
+  .footer-links li { margin-bottom: 10px; }
   .footer-links a {
-    color: #555;
+    color: #94a3b8;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: all 0.25s;
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    font-size: 0.88rem;
   }
-  
-  .footer-links a:hover {
-    color: #ff4b2b;
-    transform: translateX(5px);
-  }
-  
-  .footer-socials {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
-  }
-  
+  .footer-links a:hover { color: #ff4b2b; padding-left: 4px; }
+  .footer-socials { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
   .footer-socials a {
+    display: flex; align-items: center; justify-content: center;
+    width: 38px; height: 38px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 50%;
+    color: #94a3b8;
+    text-decoration: none;
+    transition: all 0.25s;
+    font-size: 1rem;
+  }
+  .footer-socials a:hover { transform: translateY(-4px); }
+  .footer-socials .yt:hover  { color: #ff0000; border-color: #ff0000; background: rgba(255,0,0,0.1); }
+  .footer-socials .tg:hover  { color: #0088cc; border-color: #0088cc; background: rgba(0,136,204,0.1); }
+  .footer-socials .em:hover  { color: #ea4335; border-color: #ea4335; background: rgba(234,67,53,0.1); }
+  .footer-socials .ig:hover  { color: #e1306c; border-color: #e1306c; background: rgba(225,48,108,0.1); }
+  .footer-socials .gh:hover  { color: #ffffff; border-color: #ffffff; background: rgba(255,255,255,0.1); }
+
+  /* Copyright strip */
+  .footer-copyright-strip {
+    background: rgba(255,75,43,0.12);
+    border: 1px solid rgba(255,75,43,0.25);
+    border-radius: 10px;
+    padding: 14px 20px;
+    margin-top: 10px;
+    font-size: 0.82rem;
+    color: #fca5a5;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background: #ffffff;
-    border-radius: 50%;
-    color: #333;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .footer-copyright-strip i { color: #ff4b2b; font-size: 1rem; flex-shrink: 0; }
+
+  /* DMCA badge row */
+  .footer-badges {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  .footer-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 0.75rem; font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 20px;
     text-decoration: none;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    transition: all 0.3s ease;
-    font-size: 1.2rem;
+    letter-spacing: 0.3px;
+    transition: all 0.2s;
   }
-  
-  .footer-socials a:hover {
-    transform: translateY(-5px);
-  }
-  
-  .footer-socials .yt:hover  { color: #ff0000; border: 1px solid #ff0000; }
-  .footer-socials .tg:hover  { color: #0088cc; border: 1px solid #0088cc; }
-  .footer-socials .em:hover  { color: #ea4335; border: 1px solid #ea4335; }
-  .footer-socials .ig:hover  { color: #e1306c; border: 1px solid #e1306c; }
-  
+  .badge-dmca    { background: rgba(220,38,38,0.15); color: #fca5a5; border: 1px solid rgba(220,38,38,0.3); }
+  .badge-dmca:hover { background: rgba(220,38,38,0.3); color: white; }
+  .badge-cc      { background: rgba(5,150,105,0.15);  color: #6ee7b7; border: 1px solid rgba(5,150,105,0.3); }
+  .badge-secure  { background: rgba(59,130,246,0.15); color: #93c5fd; border: 1px solid rgba(59,130,246,0.3); }
+
   .footer-bottom {
     text-align: center;
-    padding-top: 25px;
+    padding-top: 28px;
     margin-top: 40px;
-    border-top: 1px solid #dee2e6;
-    font-size: 0.85rem;
-    color: #6c757d;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    font-size: 0.82rem;
+    color: #64748b;
   }
-
   .footer-bottom a {
-    color: #6c757d;
-    text-decoration: none;
-    margin: 0 8px;
+    color: #64748b; text-decoration: none; margin: 0 8px;
+    transition: color 0.2s;
   }
+  .footer-bottom a:hover { color: #ff4b2b; }
+  .footer-bottom .heart { color: #ff4b2b; }
 
-  .footer-bottom a:hover {
-    color: #ff4b2b;
+  @media (max-width: 768px) {
+    .footer-col { min-width: 100%; }
+    .footer-copyright-strip { flex-direction: column; align-items: flex-start; }
   }
 </style>
 
 <footer class="custom-site-footer">
   <div class="footer-wrapper">
 
+    <!-- Col 1: About -->
     <div class="footer-col">
       <h3>Dr. Praveendra Singh</h3>
-      <p>Assistant Professor of Mathematics at Government College Kherwara. Dedicated to creating high-quality, accessible mathematical instruction for B.Sc., M.Sc., and competitive exam aspirants.</p>
+      <p>Assistant Professor of Mathematics at Government College Kherwara, Udaipur, Rajasthan. Dedicated to making higher mathematics accessible to B.Sc., M.Sc., CSIR NET, GATE and IIT JAM aspirants.</p>
+      <div class="footer-socials">
+        <a href="mailto:drpraveendra.singh@gmail.com" class="em" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://t.me/fractalfrontiermaths" class="tg" title="Telegram" target="_blank" rel="noopener"><i class="fab fa-telegram"></i></a>
+        <a href="https://www.youtube.com/@FractalFrontierMaths" class="yt" title="YouTube" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/mathsworld007" class="ig" title="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/drpraveendra" class="gh" title="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+      </div>
     </div>
-    
+
+    <!-- Col 2: Quick Links -->
     <div class="footer-col">
       <h3>Quick Links</h3>
       <ul class="footer-links">
-        <li><a href="/"><i class="fas fa-angle-right"></i> Home</a></li>
-        <li><a href="/about/"><i class="fas fa-angle-right"></i> About Me</a></li>
-        <li><a href="/blog/"><i class="fas fa-angle-right"></i> Blog</a></li>
-        <li><a href="/videos/"><i class="fas fa-angle-right"></i> Lecture Videos</a></li>
-        <li><a href="/resources/"><i class="fas fa-angle-right"></i> Study Materials</a></li>
-        <li><a href="/recommended-books/"><i class="fas fa-angle-right"></i> Book Recommendations</a></li>
+        <li><a href="/"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="/about/"><i class="fas fa-user"></i> About Me</a></li>
+        <li><a href="/blog/"><i class="fas fa-pen"></i> Blog</a></li>
+        <li><a href="/publications/"><i class="fas fa-book"></i> Publications</a></li>
+        <li><a href="/videos/"><i class="fab fa-youtube"></i> Lecture Videos</a></li>
+        <li><a href="/resources/"><i class="fas fa-folder-open"></i> Study Materials</a></li>
+        <li><a href="/recommended-books/"><i class="fas fa-book-open"></i> Book Recommendations</a></li>
       </ul>
     </div>
 
+    <!-- Col 3: Legal -->
     <div class="footer-col">
-      <h3>Legal &amp; Contact</h3>
+      <h3>Legal &amp; Security</h3>
       <ul class="footer-links">
         <li><a href="/privacy/"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
-        <li><a href="/terms/"><i class="fas fa-file-alt"></i> Terms of Use</a></li>
+        <li><a href="/terms/"><i class="fas fa-file-contract"></i> Terms of Use</a></li>
         <li><a href="/disclaimer/"><i class="fas fa-exclamation-circle"></i> Disclaimer</a></li>
-        <li><a href="/contact/"><i class="fas fa-envelope"></i> Contact Me</a></li>
+        <li><a href="/copyright/"><i class="fas fa-copyright"></i> Copyright Notice</a></li>
+        <li><a href="/contact/"><i class="fas fa-envelope"></i> Contact / DMCA</a></li>
       </ul>
-      
-      <div class="footer-socials">
-        <a href="mailto:drpraveendra.singh@gmail.com" class="em" title="Email Dr. Singh">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a href="https://t.me/fractalfrontiermaths" class="tg" title="Join Telegram Group" target="_blank">
-          <i class="fab fa-telegram"></i>
-        </a>
-        <a href="https://www.youtube.com/@FractalFrontierMaths" class="yt" title="Fractal Frontier Maths on YouTube" target="_blank">
-          <i class="fab fa-youtube"></i>
-        </a>
-        <a href="https://www.instagram.com/mathsworld007" class="ig" title="Instagram" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
+
+      <!-- Security & Copyright badges -->
+      <div class="footer-badges" style="margin-top:18px;">
+        <a href="/copyright/" class="footer-badge badge-dmca"><i class="fas fa-shield-halved"></i> DMCA Protected</a>
+        <span class="footer-badge badge-secure"><i class="fas fa-lock"></i> HTTPS Secure</span>
       </div>
     </div>
 
   </div>
-  
+
+  <!-- Copyright strip -->
+  <div style="max-width:1100px;margin:30px auto 0;">
+    <div class="footer-copyright-strip">
+      <i class="fas fa-copyright"></i>
+      <span>
+        All content on this website — including blog posts, mathematical notes, solved problems, and educational materials — is the original work of
+        <strong style="color:white;">Dr. Praveendra Singh</strong> and is protected under Indian and international copyright law.
+        Unauthorised copying, reproduction, or redistribution without written permission is strictly prohibited.
+        To report content theft, email <strong style="color:white;">drpraveendra.singh@gmail.com</strong>.
+      </span>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
   <div class="footer-bottom">
-    &copy; {{ site.time | date: '%Y' }} Dr. Praveendra Singh | Fractal Frontier Maths. All rights reserved.
-    &nbsp;|&nbsp;
+    <span>© {{ site.time | date: '%Y' }} Dr. Praveendra Singh &nbsp;|&nbsp; Fractal Frontier Maths &nbsp;|&nbsp; All Rights Reserved</span>
+    <br style="margin-bottom:6px;">
     <a href="/privacy/">Privacy Policy</a>
     <a href="/terms/">Terms of Use</a>
     <a href="/disclaimer/">Disclaimer</a>
+    <a href="/copyright/">Copyright</a>
+    <br>
+    <span style="margin-top:8px;display:inline-block;">
+      Made with <span class="heart">♥</span> for mathematics students of India
+    </span>
   </div>
 </footer>
