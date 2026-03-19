@@ -4,7 +4,7 @@ title: '<i class="fas fa-user"></i> About Me'
 permalink: /about/
 ---
 
-Dr. Praveendra Singh is an Assistant Professor of Mathematics at **Government College Kherwara, Rajasthan, India**. 
+Dr. Praveendra Singh is an Assistant Professor of Mathematics at **Government College Kherwara, Udaipur, Rajasthan, India**.
 
 His research focuses on solving real-world industrial problems by integrating **operations research, supply chain modeling, and intelligent optimization algorithms**. Specifically, his doctoral research explored nature-inspired optimization techniques for complex inventory control models involving deteriorating items.
 
