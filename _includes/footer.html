@@ -120,53 +120,76 @@
   /* ── Visitor Counter ── */
   .visitor-counter-wrap {
     max-width: 1100px; margin: 28px auto 0;
-    display: flex; justify-content: center;
+    display: flex; justify-content: center; align-items: center;
   }
   .visitor-counter {
-    display: inline-flex; align-items: center; gap: 0;
+    display: inline-flex; align-items: stretch; gap: 0;
     border-radius: 50px; overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.35);
-    font-size: 0.85rem; font-weight: 700;
+    box-shadow: 0 4px 24px rgba(255,75,43,0.35);
     animation: pulse-glow 3s ease-in-out infinite;
   }
   @keyframes pulse-glow {
     0%, 100% { box-shadow: 0 4px 20px rgba(255,75,43,0.3); }
-    50%       { box-shadow: 0 4px 28px rgba(255,75,43,0.6), 0 0 40px rgba(255,75,43,0.2); }
+    50%       { box-shadow: 0 6px 32px rgba(255,75,43,0.6), 0 0 50px rgba(255,75,43,0.15); }
   }
   .vc-icon-block {
     background: linear-gradient(135deg, #ff4b2b, #ff8c00);
-    padding: 10px 16px; display: flex; align-items: center; gap: 8px;
+    padding: 12px 18px;
+    display: flex; align-items: center; gap: 8px;
     color: white; white-space: nowrap;
+    font-size: 0.88rem; font-weight: 700;
   }
-  .vc-icon-block i { font-size: 1rem; animation: heartbeat 1.5s ease-in-out infinite; }
+  .vc-icon-block i {
+    font-size: 1.1rem;
+    animation: heartbeat 1.5s ease-in-out infinite;
+  }
   @keyframes heartbeat {
     0%, 100% { transform: scale(1); }
-    50%       { transform: scale(1.2); }
+    50%       { transform: scale(1.25); }
   }
-  .vc-label-block {
+  .vc-stats {
     background: linear-gradient(135deg, #1e3c72, #2a5298);
-    padding: 10px 16px; color: white; white-space: nowrap;
+    padding: 12px 20px;
+    display: flex; align-items: center; gap: 18px;
+    color: white;
   }
-  .vc-count-block {
-    background: white; padding: 10px 18px;
-    display: flex; align-items: center; gap: 8px;
+  .vc-stat-item {
+    display: flex; flex-direction: column; align-items: center;
+    line-height: 1.2;
   }
-  .vc-count-block img {
-    height: 20px; display: block; border: none; vertical-align: middle;
+  .vc-stat-num {
+    font-size: 1.1rem; font-weight: 900; color: #fbbf24;
+    letter-spacing: 0.5px;
+  }
+  .vc-stat-label {
+    font-size: 0.62rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.8px;
+    opacity: 0.75; margin-top: 2px;
+  }
+  .vc-divider {
+    width: 1px; height: 28px;
+    background: rgba(255,255,255,0.2);
+  }
+  .vc-live-block {
+    background: #0f172a;
+    padding: 12px 18px;
+    display: flex; align-items: center; gap: 7px;
+    color: #22c55e; font-size: 0.75rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap;
   }
   .vc-live-dot {
     width: 8px; height: 8px; background: #22c55e;
     border-radius: 50%; flex-shrink: 0;
-    animation: blink-dot 1.2s ease-in-out infinite;
+    animation: blink 1.2s ease-in-out infinite;
   }
-  @keyframes blink-dot {
+  @keyframes blink {
     0%, 100% { opacity: 1; transform: scale(1); }
-    50%       { opacity: 0.3; transform: scale(0.7); }
+    50%       { opacity: 0.2; transform: scale(0.6); }
   }
-  @media (max-width: 480px) {
-    .vc-label-block { display: none; }
-    .vc-icon-block  { padding: 9px 14px; }
-    .vc-count-block { padding: 9px 14px; }
+  @media (max-width: 540px) {
+    .vc-live-block { display: none; }
+    .vc-stats { gap: 12px; padding: 12px 14px; }
+    .vc-icon-block { padding: 12px 14px; }
   }
 
 </style>
@@ -222,22 +245,58 @@
   <!-- ── Visitor Counter ── -->
   <div class="visitor-counter-wrap">
     <div class="visitor-counter">
+
       <div class="vc-icon-block">
-        <i class="fas fa-eye"></i>
+        <i class="fas fa-users"></i>
         <span>Visitors</span>
       </div>
-      <div class="vc-label-block">
-        <span>Total Visits</span>
+
+      <div class="vc-stats">
+        <div class="vc-stat-item">
+          <span class="vc-stat-num" id="vc-today">—</span>
+          <span class="vc-stat-label">Today</span>
+        </div>
+        <div class="vc-divider"></div>
+        <div class="vc-stat-item">
+          <span class="vc-stat-num" id="vc-total">—</span>
+          <span class="vc-stat-label">All Time</span>
+        </div>
       </div>
-      <div class="vc-count-block">
+
+      <div class="vc-live-block">
         <span class="vc-live-dot"></span>
-        <img
-          src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fdrpraveendra.github.io&count_bg=%231e3c72&title_bg=%23ff4b2b&icon=eye.svg&icon_color=%23ffffff&title=hits&edge_flat=true"
-          alt="Visitor Count"
-        />
+        Live
       </div>
+
     </div>
   </div>
+
+  <script>
+    // Fetch visitor counts from countapi.xyz (free, no signup)
+    (function() {
+      var site = 'drpraveendra.github.io';
+
+      // All-time counter
+      fetch('https://api.countapi.xyz/hit/' + site + '/visits')
+        .then(function(r){ return r.json(); })
+        .then(function(d){
+          var n = d.value || 0;
+          document.getElementById('vc-total').textContent =
+            n >= 1000 ? (n/1000).toFixed(1) + 'K' : n.toLocaleString();
+        })
+        .catch(function(){ document.getElementById('vc-total').textContent = '—'; });
+
+      // Today counter — keyed by date
+      var today = new Date().toISOString().slice(0,10).replace(/-/g,'');
+      fetch('https://api.countapi.xyz/hit/' + site + '/day-' + today)
+        .then(function(r){ return r.json(); })
+        .then(function(d){
+          document.getElementById('vc-today').textContent =
+            (d.value || 0).toLocaleString();
+        })
+        .catch(function(){ document.getElementById('vc-today').textContent = '—'; });
+    })();
+  </script>
 
   <div class="footer-bottom">
     &copy; {{ site.time | date: '%Y' }} Dr. Praveendra Singh | Fractal Frontier Maths. All rights reserved.
