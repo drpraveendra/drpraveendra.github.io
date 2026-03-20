@@ -815,26 +815,19 @@ layout: default
                     .toLowerCase();
     var ns = 'ffm'; // namespace prefix for counterapi
 
-    // ── GoatCounter view count ──
-    var gcPath = '{{ page.url }}';
-    fetch('https://drpraveendra.goatcounter.com/api/v0/stats/hits?path=' + encodeURIComponent(gcPath), {
-      headers: { 'Content-Type': 'application/json' }
-    })
-    .then(function(r) { return r.json(); })
-    .then(function(d) {
-      var total = 0;
-      if (d && d.hits) {
-        d.hits.forEach(function(h) { total += h.count || 0; });
-      }
-      var disp = total >= 1000 ? (total/1000).toFixed(1) + 'K' : (total || '—').toString();
-      var el = document.getElementById('hero-views');
-      if (el) el.textContent = disp;
-    })
-    .catch(function() {
-      // GoatCounter API may need authentication — show dash gracefully
-      var el = document.getElementById('hero-views');
-      if (el) el.textContent = '—';
-    });
+    // ── Page view count via CounterAPI (cross-device, no signup) ──
+    fetch('https://api.counterapi.dev/v1/' + ns + '/' + pageSlug + '-views/up')
+      .then(function(r) { return r.json(); })
+      .then(function(d) {
+        var count = (d && d.count) ? d.count : 0;
+        var disp  = count >= 1000 ? (count/1000).toFixed(1) + 'K' : count.toString();
+        var el = document.getElementById('hero-views');
+        if (el) el.textContent = disp;
+      })
+      .catch(function() {
+        var el = document.getElementById('hero-views');
+        if (el) el.textContent = '—';
+      });
 
     // ── Reaction counts via counterscale (public, no signup) ──
     var reactions = ['like','love','useful','interesting','wow'];
