@@ -384,6 +384,91 @@ layout: default
     .lang-switcher { gap: 8px; }
     .lang-note { display: none; }
   }
+
+  /* ── Visitor Count Bar (top) ── */
+  .post-stats-bar {
+    display: flex; align-items: center; gap: 20px;
+    flex-wrap: wrap; margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+  }
+  .post-stat-item {
+    display: flex; align-items: center; gap: 7px;
+    font-size: 0.82rem; opacity: 0.9;
+    color: white;
+  }
+  .post-stat-item i { font-size: 0.85rem; opacity: 0.75; }
+  .post-stat-num { font-weight: 800; font-size: 0.95rem; color: #fbbf24; }
+  .live-dot-small {
+    width: 7px; height: 7px; background: #22c55e;
+    border-radius: 50%; animation: blink-sm 1.2s ease-in-out infinite;
+    flex-shrink: 0;
+  }
+  @keyframes blink-sm {
+    0%, 100% { opacity: 1; } 50% { opacity: 0.2; }
+  }
+
+  /* ── Reactions Panel ── */
+  .reactions-panel {
+    background: white; border-radius: 16px;
+    padding: 26px 30px; margin-bottom: 28px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    border: 1px solid #f0f4ff;
+  }
+  .reactions-header {
+    display: flex; align-items: center; gap: 10px;
+    margin-bottom: 18px;
+  }
+  .reactions-header-icon {
+    width: 36px; height: 36px; border-radius: 10px;
+    background: linear-gradient(135deg, #ff4b2b, #fbbf24);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1rem; color: white; flex-shrink: 0;
+  }
+  .reactions-header-text h3 {
+    font-size: 1rem; font-weight: 800; color: #1e3c72; margin: 0 0 2px;
+  }
+  .reactions-header-text p {
+    font-size: 0.78rem; color: #888; margin: 0;
+  }
+  .reactions-row {
+    display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+  }
+  .reaction-btn {
+    display: inline-flex; align-items: center; gap: 7px;
+    padding: 10px 18px; border-radius: 50px;
+    font-size: 0.88rem; font-weight: 700;
+    background: #f8faff; border: 2px solid #e0e7ff;
+    color: #444; cursor: pointer; transition: all 0.2s;
+    font-family: inherit;
+  }
+  .reaction-btn:hover {
+    transform: translateY(-3px) scale(1.06);
+    border-color: #1e3c72; background: #eff6ff;
+  }
+  .reaction-btn.reacted {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    border-color: #1e3c72; color: white;
+    box-shadow: 0 4px 12px rgba(30,60,114,0.3);
+  }
+  .reaction-emoji { font-size: 1.2rem; line-height: 1; }
+  .reaction-count {
+    font-size: 0.82rem; font-weight: 800;
+    min-width: 16px; text-align: center;
+  }
+  .reaction-label { font-size: 0.78rem; }
+  .reactions-total {
+    font-size: 0.78rem; color: #aaa; margin-top: 12px;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .reactions-total i { color: #ff4b2b; }
+
+  @media (max-width: 600px) {
+    .reactions-panel { padding: 20px 18px; }
+    .reaction-label { display: none; }
+    .reaction-btn { padding: 9px 14px; }
+  }
+
 </style>
 
 <article itemscope itemtype="http://schema.org/BlogPosting">
@@ -454,6 +539,26 @@ layout: default
       {% endif %}
     </div>
 
+    <!-- Live visitor + reaction count strip -->
+    <div class="post-stats-bar">
+      <div class="post-stat-item">
+        <span class="live-dot-small"></span>
+        <i class="fas fa-eye"></i>
+        <span>Views:</span>
+        <span class="post-stat-num" id="hero-views">—</span>
+      </div>
+      <div class="post-stat-item">
+        <i class="fas fa-heart"></i>
+        <span>Reactions:</span>
+        <span class="post-stat-num" id="hero-reactions">—</span>
+      </div>
+      <div class="post-stat-item">
+        <i class="fas fa-clock"></i>
+        <span>Today:</span>
+        <span class="post-stat-num" id="hero-today">—</span>
+      </div>
+    </div>
+
   </div>
 
   <!-- ══════════════════════════════════════════════ -->
@@ -461,6 +566,27 @@ layout: default
   <!-- ══════════════════════════════════════════════ -->
   <div class="post-body" itemprop="articleBody">
     {{ content }}
+  </div>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- REACTIONS PANEL (bottom)                       -->
+  <!-- ══════════════════════════════════════════════ -->
+  <div class="reactions-panel" id="reactions-panel">
+    <div class="reactions-header">
+      <div class="reactions-header-icon"><i class="fas fa-heart"></i></div>
+      <div class="reactions-header-text">
+        <h3>How did you find this post?</h3>
+        <p>Your reaction helps others discover useful content.</p>
+      </div>
+    </div>
+    <div class="reactions-row" id="reactions-row">
+      <button class="reaction-btn" data-reaction="like"        onclick="handleReaction(this)"><span class="reaction-emoji">👍</span><span class="reaction-count" id="rc-like">0</span><span class="reaction-label">Like</span></button>
+      <button class="reaction-btn" data-reaction="love"        onclick="handleReaction(this)"><span class="reaction-emoji">❤️</span><span class="reaction-count" id="rc-love">0</span><span class="reaction-label">Love</span></button>
+      <button class="reaction-btn" data-reaction="useful"      onclick="handleReaction(this)"><span class="reaction-emoji">🔥</span><span class="reaction-count" id="rc-useful">0</span><span class="reaction-label">Useful</span></button>
+      <button class="reaction-btn" data-reaction="interesting" onclick="handleReaction(this)"><span class="reaction-emoji">🤔</span><span class="reaction-count" id="rc-interesting">0</span><span class="reaction-label">Interesting</span></button>
+      <button class="reaction-btn" data-reaction="wow"         onclick="handleReaction(this)"><span class="reaction-emoji">😮</span><span class="reaction-count" id="rc-wow">0</span><span class="reaction-label">Wow</span></button>
+    </div>
+    <div class="reactions-total"><i class="fas fa-star"></i> <span id="total-reactions">0</span> total reactions on this post</div>
   </div>
 
   <!-- ══════════════════════════════════════════════ -->
@@ -634,5 +760,111 @@ layout: default
     </script>
 
   </div>
+
+
+  <script>
+    (function() {
+      // Build a slug from the page URL for countapi keys
+      var pageSlug = '{{ page.url }}'.replace(/[^a-zA-Z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '').toLowerCase();
+      var site = 'drpraveendra-github-io';
+      var reactionsKey = ['like','love','useful','interesting','wow'];
+
+      // ── Page Views ──
+      fetch('https://api.countapi.xyz/hit/' + site + '/' + pageSlug + '-views')
+        .then(function(r){ return r.json(); })
+        .then(function(d){
+          var v = d.value || 0;
+          var disp = v >= 1000 ? (v/1000).toFixed(1)+'K' : v.toString();
+          var el = document.getElementById('hero-views');
+          if (el) el.textContent = disp;
+        }).catch(function(){});
+
+      // ── Today views ──
+      var today = new Date().toISOString().slice(0,10).replace(/-/g,'');
+      fetch('https://api.countapi.xyz/hit/' + site + '/' + pageSlug + '-day-' + today)
+        .then(function(r){ return r.json(); })
+        .then(function(d){
+          var el = document.getElementById('hero-today');
+          if (el) el.textContent = (d.value || 0).toString();
+        }).catch(function(){});
+
+      // ── Load reaction counts ──
+      var totalR = 0;
+      var loaded = 0;
+      reactionsKey.forEach(function(r) {
+        fetch('https://api.countapi.xyz/get/' + site + '/' + pageSlug + '-react-' + r)
+          .then(function(res){ return res.json(); })
+          .then(function(d){
+            var count = d.value || 0;
+            totalR += count;
+            var el = document.getElementById('rc-' + r);
+            if (el) el.textContent = count;
+            loaded++;
+            if (loaded === reactionsKey.length) {
+              var tr = document.getElementById('total-reactions');
+              if (tr) tr.textContent = totalR;
+              var hr = document.getElementById('hero-reactions');
+              if (hr) hr.textContent = totalR >= 1000 ? (totalR/1000).toFixed(1)+'K' : totalR;
+            }
+          }).catch(function(){ loaded++; });
+      });
+
+      // ── Check if user already reacted (localStorage) ──
+      var storageKey = 'reacted-' + pageSlug;
+      var myReaction = null;
+      try { myReaction = localStorage.getItem(storageKey); } catch(e) {}
+      if (myReaction) {
+        var btn = document.querySelector('[data-reaction="' + myReaction + '"]');
+        if (btn) btn.classList.add('reacted');
+      }
+    })();
+
+    // ── Handle Reaction Click ──
+    function handleReaction(btn) {
+      var pageSlug = '{{ page.url }}'.replace(/[^a-zA-Z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '').toLowerCase();
+      var site = 'drpraveendra-github-io';
+      var storageKey = 'reacted-' + pageSlug;
+
+      var prevReaction = null;
+      try { prevReaction = localStorage.getItem(storageKey); } catch(e) {}
+
+      var reaction = btn.getAttribute('data-reaction');
+
+      // If already reacted same button — do nothing
+      if (prevReaction === reaction) return;
+
+      // Remove reacted class from all buttons
+      document.querySelectorAll('.reaction-btn').forEach(function(b){ b.classList.remove('reacted'); });
+
+      // Add reacted class to clicked button
+      btn.classList.add('reacted');
+
+      // Save to localStorage
+      try { localStorage.setItem(storageKey, reaction); } catch(e) {}
+
+      // Hit the countapi
+      fetch('https://api.countapi.xyz/hit/' + site + '/' + pageSlug + '-react-' + reaction)
+        .then(function(r){ return r.json(); })
+        .then(function(d){
+          var el = document.getElementById('rc-' + reaction);
+          if (el) el.textContent = d.value || 0;
+
+          // Recount total
+          var total = 0;
+          document.querySelectorAll('.reaction-count').forEach(function(e){
+            total += parseInt(e.textContent) || 0;
+          });
+          var tr = document.getElementById('total-reactions');
+          if (tr) tr.textContent = total;
+          var hr = document.getElementById('hero-reactions');
+          if (hr) hr.textContent = total >= 1000 ? (total/1000).toFixed(1)+'K' : total;
+        }).catch(function(){});
+
+      // Animate button
+      btn.style.transform = 'scale(1.2)';
+      setTimeout(function(){ btn.style.transform = ''; }, 300);
+    }
+  </script>
+
 
 </article>
