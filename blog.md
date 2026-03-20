@@ -126,6 +126,40 @@ permalink: /blog/
     .post-card { flex-direction: column; gap: 10px; }
     .post-cat-icon { display: none; }
   }
+
+  /* ── Card Share Buttons ── */
+  .card-share-row {
+    display: flex; align-items: center; gap: 8px;
+    margin-top: 12px; flex-wrap: wrap;
+  }
+  .card-share-label {
+    font-size: 0.72rem; font-weight: 700; color: #bbb;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    margin-right: 2px;
+  }
+  .card-share-btn {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 5px 13px; border-radius: 20px;
+    font-size: 0.75rem; font-weight: 700;
+    text-decoration: none; transition: all 0.2s;
+    border: none; cursor: pointer; font-family: inherit;
+  }
+  .card-share-btn:hover { transform: translateY(-2px); }
+  .csb-tg { background: #e8f5ff; color: #0088cc; border: 1px solid #c5e4ff; }
+  .csb-wa { background: #e8fff0; color: #25D366; border: 1px solid #b3f0cc; }
+  .csb-tw { background: #e8f0fe; color: #1DA1F2; border: 1px solid #c5d8fc; }
+  .csb-cp { background: #f5f3ff; color: #7c3aed; border: 1px solid #ddd6fe; }
+  .csb-tg:hover { background: #0088cc; color: white; }
+  .csb-wa:hover { background: #25D366; color: white; }
+  .csb-tw:hover { background: #1DA1F2; color: white; }
+  .csb-cp:hover { background: #7c3aed; color: white; }
+  .csb-cp.copied { background: #059669 !important; color: white !important; border-color: #059669 !important; }
+  .card-bottom-row {
+    display: flex; align-items: center;
+    justify-content: space-between; flex-wrap: wrap; gap: 10px;
+    margin-top: 12px;
+  }
+
 </style>
 
 <div class="blog-hero">
@@ -197,7 +231,35 @@ permalink: /blog/
       <p class="post-desc">{{ post.description }}</p>
       {% endif %}
 
-      <a class="read-more" href="{{ post.url }}">Read More <i class="fas fa-arrow-right"></i></a>
+      <div class="card-bottom-row">
+
+        <a class="read-more" href="{{ post.url }}">Read More <i class="fas fa-arrow-right"></i></a>
+
+        <div class="card-share-row">
+          <span class="card-share-label"><i class="fas fa-share-alt"></i></span>
+          <a class="card-share-btn csb-tg"
+             href="https://t.me/share/url?url={{ post.url | absolute_url | uri_escape }}&text={{ post.title | uri_escape }}"
+             target="_blank" rel="noopener" title="Share on Telegram">
+            <i class="fab fa-telegram-plane"></i> Telegram
+          </a>
+          <a class="card-share-btn csb-wa"
+             href="https://wa.me/?text={{ post.title | uri_escape }}%20{{ post.url | absolute_url | uri_escape }}"
+             target="_blank" rel="noopener" title="Share on WhatsApp">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+          <a class="card-share-btn csb-tw"
+             href="https://twitter.com/intent/tweet?text={{ post.title | uri_escape }}&url={{ post.url | absolute_url | uri_escape }}"
+             target="_blank" rel="noopener" title="Share on Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <button class="card-share-btn csb-cp"
+                  onclick="copyCardLink(this, '{{ post.url | absolute_url }}')"
+                  title="Copy link">
+            <i class="fas fa-link"></i>
+          </button>
+        </div>
+
+      </div>
 
     </div>
   </div>
@@ -214,6 +276,25 @@ permalink: /blog/
 </div>
 
 <script>
+  // Copy link for card share button
+  function copyCardLink(btn, url) {
+    navigator.clipboard.writeText(url).then(function() {
+      btn.classList.add('copied');
+      btn.innerHTML = '<i class="fas fa-check"></i>';
+      setTimeout(function() {
+        btn.classList.remove('copied');
+        btn.innerHTML = '<i class="fas fa-link"></i>';
+      }, 2000);
+    }).catch(function() {
+      var el = document.createElement('textarea');
+      el.value = url; document.body.appendChild(el);
+      el.select(); document.execCommand('copy');
+      document.body.removeChild(el);
+      btn.innerHTML = '<i class="fas fa-check"></i>';
+      setTimeout(function() { btn.innerHTML = '<i class="fas fa-link"></i>'; }, 2000);
+    });
+  }
+
   // Count posts per category and update tab badges
   function countPosts() {
     const cards = document.querySelectorAll('.post-card');
