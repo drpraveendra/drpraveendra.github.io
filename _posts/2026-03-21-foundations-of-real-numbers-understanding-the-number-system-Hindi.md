@@ -4,10 +4,12 @@ title: "वास्तविक संख्याओं की नींव: �
 date: 2026-03-21
 categories: [Real Analysis, Number Systems]
 tags: [वास्तविक संख्याएँ, संख्या प्रणाली, B.Sc Mathematics, M.Sc Mathematics, CSIR NET, GATE, IIT JAM]
+lang: hi
+lang_pair: "/blog/2026-03-21-foundations-of-real-numbers-understanding-the-number-system-Hindi/"
+permalink: /blog/2026-03-21-foundations-of-real-numbers-understanding-the-number-system/
 description: "वास्तविक संख्याओं की नींव — प्राकृत संख्याओं से लेकर वास्तविक संख्याओं तक की पूरी श्रृंखला, हल किए गए उदाहरण, Revision Cards और परीक्षा-तैयार सामग्री।"
 author: Dr. Praveendra Singh
 math: true
-lang: hi
 ---
 
 <style>
