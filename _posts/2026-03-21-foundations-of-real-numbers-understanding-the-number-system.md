@@ -477,535 +477,7 @@ description: "A beginner-friendly guide to how our number system grew from count
 
 </div>
 
-
-<!-- ═══════════════════════════════════════════════════════════
-     PDF GENERATION — html2pdf.js  (client-side, no upload needed)
-     The #pdf-content div is hidden on the page but becomes the
-     source for the PDF when the button is clicked.
-═══════════════════════════════════════════════════════════ -->
-
-<!-- PDF styles — only applied inside the hidden pdf-content div -->
-<style>
-/* ── Download button ─────────────────────────────────── */
-.pdf-section { text-align:center; margin:44px 0 28px; }
-.pdf-btn {
-  display:inline-flex; align-items:center; gap:14px;
-  background:linear-gradient(135deg,#1e3c72,#7c3aed);
-  color:white; text-decoration:none;
-  padding:15px 34px; border-radius:50px; border:none; cursor:pointer;
-  font-family:Georgia,serif; font-size:1rem; font-weight:700;
-  box-shadow:0 6px 22px rgba(30,60,114,0.38);
-  transition:transform .2s, box-shadow .2s;
-}
-.pdf-btn:hover { transform:translateY(-3px); box-shadow:0 10px 30px rgba(30,60,114,0.48); color:white; }
-.pdf-btn .pi { font-size:1.45rem; }
-.pdf-btn .pt { display:flex; flex-direction:column; text-align:left; line-height:1.3; }
-.pdf-btn .pt span:first-child { font-size:1rem; }
-.pdf-btn .pt span:last-child  { font-size:0.72rem; opacity:.82; font-weight:400; }
-.pdf-generating { opacity:.65; pointer-events:none; }
-/* ── PDF source div — hidden on page ────────────────── */
-#pdf-content { visibility:hidden; position:absolute; left:-9999px; top:0; height:0; overflow:hidden; pointer-events:none; }
-
-/* ── PDF internal styles ─────────────────────────────── */
-.pdoc {
-  font-family: 'Georgia', serif;
-  font-size: 11pt;
-  line-height: 1.7;
-  color: #1a1a2e;
-  width: 176mm;
-  margin: 0 auto;
-  padding: 0;
-}
-/* Hero */
-.pdoc .p-hero {
-  background: linear-gradient(135deg,#1e3c72 0%,#2a5298 55%,#7c3aed 100%);
-  border-radius: 10px;
-  padding: 22px 26px 18px;
-  color: white;
-  margin-bottom: 18px;
-  position: relative;
-  page-break-inside: avoid;
-}
-.pdoc .p-hero-bg {
-  position:absolute; right:14px; top:-6px;
-  font-size:72pt; color:rgba(255,255,255,0.07);
-  font-family:serif; line-height:1;
-}
-.pdoc .p-hero h1 { margin:0 0 6px; font-size:17pt; font-weight:800; color:white; line-height:1.25; }
-.pdoc .p-hero p  { margin:0 0 4px; font-size:10pt; opacity:.9; }
-.pdoc .p-hero .p-meta { font-size:8.5pt; opacity:.75; margin-top:6px; }
-/* Stats strip */
-.pdoc .p-stats {
-  display:flex; justify-content:space-around; flex-wrap:wrap;
-  background:linear-gradient(135deg,#1e3c72,#7c3aed);
-  border-radius:8px; padding:12px 10px; margin-bottom:18px;
-  color:white; text-align:center; gap:8px;
-  page-break-inside: avoid;
-}
-.pdoc .p-stats .ps { min-width:50px; }
-.pdoc .p-stats .ps-num { font-size:16pt; font-weight:900; display:block; line-height:1.1; }
-.pdoc .p-stats .ps-lbl { font-size:6.5pt; opacity:.8; text-transform:uppercase; letter-spacing:.4px; }
-/* Section headers */
-.pdoc .p-sec {
-  font-size:13pt; font-weight:800; color:#1e3c72;
-  margin:22px 0 10px; padding-bottom:6px;
-  border-bottom:2.5px solid #1e3c72;
-  page-break-after: avoid;
-}
-.pdoc .p-sub {
-  font-size:10.5pt; font-weight:700; color:#2a5298;
-  margin:14px 0 6px;
-}
-/* Body text */
-.pdoc p { margin:0 0 7px; }
-/* Pull quote */
-.pdoc .p-quote {
-  border-left:4px solid #7c3aed;
-  background:#f5f3ff;
-  padding:10px 14px;
-  margin:12px 0;
-  font-style:italic;
-  color:#4c1d95;
-  border-radius:0 8px 8px 0;
-  font-size:10.5pt;
-  page-break-inside:avoid;
-}
-/* Floor cards */
-.pdoc .p-floor {
-  display:flex; gap:12px; margin-bottom:10px;
-  border:1px solid #e5e7eb; border-radius:8px;
-  background:white; padding:12px 14px;
-  page-break-inside:avoid;
-}
-.pdoc .p-floor-badge {
-  width:34px; height:34px; border-radius:50%;
-  display:flex; align-items:center; justify-content:center;
-  font-weight:900; font-size:9pt; color:white; flex-shrink:0; margin-top:2px;
-}
-.pdoc .p-floor-badge.fn { background:linear-gradient(135deg,#1e3c72,#2a5298); }
-.pdoc .p-floor-badge.fw { background:linear-gradient(135deg,#059669,#10b981); }
-.pdoc .p-floor-badge.fz { background:linear-gradient(135deg,#7c3aed,#a855f7); }
-.pdoc .p-floor-badge.fq { background:linear-gradient(135deg,#d97706,#f59e0b); }
-.pdoc .p-floor-badge.fr { background:linear-gradient(135deg,#dc2626,#ff4b2b); }
-.pdoc .p-floor-body { flex:1; }
-.pdoc .p-floor-body h4 { margin:0 0 2px; font-size:10pt; font-weight:800; color:#1e3c72; }
-.pdoc .p-floor-body .p-set { font-size:8.5pt; color:#7c3aed; font-family:monospace; font-weight:700; margin-bottom:4px; }
-.pdoc .p-floor-body p { font-size:9.5pt; color:#333; margin:0 0 5px; }
-.pdoc .p-badge-red {
-  display:inline-block; background:#fff5f5; border:1px solid #fecaca;
-  border-radius:4px; padding:2px 8px; font-size:8pt; color:#dc2626; font-weight:700;
-}
-.pdoc .p-badge-green {
-  display:inline-block; background:#ecfdf5; border:1px solid #6ee7b7;
-  border-radius:4px; padding:2px 8px; font-size:8pt; color:#059669; font-weight:700;
-}
-/* Two-column proof */
-.pdoc .p-twocol { display:flex; gap:10px; margin:12px 0; page-break-inside:avoid; }
-.pdoc .p-twocol .p-col { flex:1; border-radius:8px; padding:12px; font-size:9.5pt; }
-.pdoc .p-twocol .p-col.blue  { background:#eff6ff; border:1.5px solid #93c5fd; }
-.pdoc .p-twocol .p-col.green { background:#ecfdf5; border:1.5px solid #6ee7b7; }
-.pdoc .p-twocol .p-col h4 { margin:0 0 6px; font-size:9.5pt; font-weight:700; }
-.pdoc .p-twocol .p-col.blue h4  { color:#1e40af; }
-.pdoc .p-twocol .p-col.green h4 { color:#065f46; }
-.pdoc .p-twocol .p-col ul { margin:0; padding-left:16px; }
-.pdoc .p-twocol .p-col li { margin-bottom:4px; }
-/* Info box */
-.pdoc .p-infobox {
-  border-radius:8px; margin:12px 0; overflow:hidden;
-  page-break-inside:avoid;
-}
-.pdoc .p-infobox-hd {
-  padding:7px 14px; font-size:8pt; font-weight:700;
-  text-transform:uppercase; letter-spacing:.5px; color:white;
-}
-.pdoc .p-infobox-body {
-  padding:12px 14px; font-size:9.5pt;
-}
-.pdoc .p-infobox-body ul { margin:6px 0 0; padding-left:18px; }
-.pdoc .p-infobox-body li { margin-bottom:4px; }
-.pdoc .p-infobox.gold   .p-infobox-hd   { background:#d97706; }
-.pdoc .p-infobox.gold   .p-infobox-body { background:#fffbeb; color:#78350f; }
-/* Spotlight box */
-.pdoc .p-spotlight {
-  background:linear-gradient(135deg,#1e3c72,#2a5298);
-  border-radius:8px; padding:14px 16px; color:white;
-  display:flex; gap:12px; margin:10px 0;
-  page-break-inside:avoid;
-}
-.pdoc .p-spotlight-icon { font-size:22pt; flex-shrink:0; }
-.pdoc .p-spotlight h4 { margin:0 0 5px; font-size:10pt; color:#fbbf24; font-weight:800; }
-.pdoc .p-spotlight p  { margin:0; font-size:9pt; color:#e2e8f0; line-height:1.6; }
-/* Example cards */
-.pdoc .p-example {
-  border:1px solid #e5e7eb; border-radius:8px;
-  margin:12px 0; overflow:hidden;
-  page-break-inside:avoid;
-}
-.pdoc .p-ex-hd {
-  padding:7px 14px; font-size:8.5pt; font-weight:700;
-  text-transform:uppercase; letter-spacing:.5px; color:white;
-}
-.pdoc .p-ex-body { padding:12px 14px; background:white; }
-.pdoc .p-ex-q { font-size:10pt; color:#1a1a2e; margin-bottom:8px; font-weight:600; }
-.pdoc .p-ex-sol { background:#f0fdf4; border-left:3px solid #059669; padding:10px 12px; border-radius:0 6px 6px 0; font-size:9.5pt; color:#1a5c38; }
-.pdoc .p-ex-sol strong { display:block; margin-bottom:4px; }
-.pdoc .p-ex-sol ul { margin:4px 0; padding-left:18px; }
-.pdoc .p-ex-sol li { margin-bottom:3px; }
-.pdoc .p-ex-sol p  { margin:0 0 4px; }
-/* Tip/Warning boxes */
-.pdoc .p-tip {
-  background:#fffbeb; border-left:4px solid #d97706;
-  padding:10px 14px; margin:12px 0; border-radius:0 8px 8px 0;
-  page-break-inside:avoid;
-}
-.pdoc .p-tip-hd   { font-size:8.5pt; font-weight:700; color:#92400e; text-transform:uppercase; letter-spacing:.4px; margin-bottom:7px; }
-.pdoc .p-tip ul   { margin:0; padding-left:16px; color:#78350f; font-size:9.5pt; }
-.pdoc .p-tip li   { margin-bottom:4px; }
-.pdoc .p-warn {
-  background:#fff5f5; border-left:4px solid #dc2626;
-  padding:10px 14px; margin:12px 0; border-radius:0 8px 8px 0;
-  page-break-inside:avoid;
-}
-.pdoc .p-warn-hd  { font-size:8.5pt; font-weight:700; color:#991b1b; text-transform:uppercase; letter-spacing:.4px; margin-bottom:7px; }
-.pdoc .p-warn ul  { margin:0; padding-left:16px; color:#7f1d1d; font-size:9.5pt; }
-.pdoc .p-warn li  { margin-bottom:4px; }
-/* Timeline table */
-.pdoc .p-table { width:100%; border-collapse:collapse; margin:12px 0; font-size:9pt; page-break-inside:avoid; }
-.pdoc .p-table th { background:#1e3c72; color:white; padding:7px 8px; text-align:left; }
-.pdoc .p-table td { padding:6px 8px; border-bottom:1px solid #e5e7eb; color:#333; vertical-align:top; }
-.pdoc .p-table tr:nth-child(even) td { background:#f8faff; }
-.pdoc .p-table td:first-child { font-style:italic; color:#1e3c72; }
-/* App grid */
-.pdoc .p-appgrid { display:flex; gap:8px; flex-wrap:wrap; margin:10px 0; }
-.pdoc .p-app { flex:1; min-width:80px; background:white; border:1px solid #e5e7eb; border-radius:8px; padding:10px; text-align:center; font-size:9pt; }
-.pdoc .p-app .p-app-icon { font-size:16pt; display:block; margin-bottom:4px; }
-.pdoc .p-app strong { color:#1e3c72; display:block; margin-bottom:3px; font-size:9pt; }
-/* Summary table */
-.pdoc .p-sum-table { width:100%; border-collapse:collapse; margin:12px 0; font-size:9pt; }
-.pdoc .p-sum-table th { background:linear-gradient(135deg,#1e3c72,#7c3aed); color:white; padding:7px 8px; text-align:left; }
-.pdoc .p-sum-table td { padding:6px 8px; border-bottom:1px solid #e5e7eb; color:#333; vertical-align:middle; }
-.pdoc .p-sum-table tr:nth-child(even) td { background:#f8faff; }
-.pdoc .p-sum-table tr:last-child td { background:#e0e7ff; font-weight:700; color:#1e3c72; }
-.pdoc .p-sum-table td:first-child { font-weight:700; color:#1e3c72; }
-/* Highlight result */
-.pdoc .p-highlight {
-  background:linear-gradient(135deg,#eff6ff,#e0e7ff);
-  border:2px solid #818cf8; border-radius:10px;
-  padding:14px 16px; text-align:center; margin:14px 0;
-  page-break-inside:avoid;
-}
-.pdoc .p-highlight .ph-main { font-size:13pt; font-weight:800; color:#1e3c72; margin-bottom:5px; }
-.pdoc .p-highlight .ph-sub  { font-size:9pt; color:#4338ca; }
-/* Watermark (drawn by JS, not CSS) */
-.pdoc .p-watermark-text { display:none; }
-/* Social footer */
-.pdoc .p-footer {
-  margin-top:20px; padding-top:12px;
-  border-top:1.5px solid #e5e7eb; text-align:center;
-  page-break-inside:avoid;
-}
-.pdoc .p-footer .pf-title { font-size:10.5pt; font-weight:800; color:#1e3c72; margin-bottom:6px; }
-.pdoc .p-footer .pf-links { display:flex; justify-content:center; gap:18px; flex-wrap:wrap; margin-bottom:6px; }
-.pdoc .p-footer .pf-links a { font-size:9pt; color:#2a5298; font-weight:600; text-decoration:none; }
-.pdoc .p-footer .pf-copy { font-size:8pt; color:#6b7280; }
-/* Ref note */
-.pdoc .p-ref { font-style:italic; font-size:8.5pt; color:#6b7280; margin-top:5px; }
-</style>
-
-<!-- ═══ HIDDEN PDF SOURCE CONTENT ════════════════════════ -->
-<div id="pdf-content">
-<div class="pdoc">
-
-  <!-- Hero -->
-  <div class="p-hero">
-    <div class="p-hero-bg">&#8477;</div>
-    <h1>The Infinite Architecture:<br>Foundations of Real Numbers</h1>
-    <p>Understanding the Number System — from Ancient Counting to &#8477;</p>
-    <div class="p-meta">Author: Dr. Praveendra Singh &nbsp;|&nbsp; Fractal Frontier Maths &nbsp;|&nbsp; B.Sc. / M.Sc. Mathematics &nbsp;|&nbsp; Real Analysis — Unit 1</div>
-  </div>
-
-  <!-- Stats strip -->
-  <div class="p-stats">
-    <div class="ps"><span class="ps-num">5</span><span class="ps-lbl">Number Systems</span></div>
-    <div class="ps"><span class="ps-num">3000+</span><span class="ps-lbl">Years of History</span></div>
-    <div class="ps"><span class="ps-num">4</span><span class="ps-lbl">Solved Examples</span></div>
-    <div class="ps"><span class="ps-num">&#9733;&#9733;&#9734;</span><span class="ps-lbl">Beginner Friendly</span></div>
-    <div class="ps"><span class="ps-num">&#8477;</span><span class="ps-lbl">The Final System</span></div>
-  </div>
-
-  <!-- Section 1 -->
-  <div class="p-sec">The Skyscraper Analogy</div>
-  <p>Have you ever stopped to ask: <em>what is a number, really?</em> For most people, numbers are just tools — for bank balances, recipes, and distances. But to a mathematician, the number system is a magnificent <strong>skyscraper</strong> built floor by floor over three thousand years of human thought.</p>
-  <div class="p-quote">"Every time humanity hit a wall — a problem that couldn't be solved — we didn't give up. We built a new floor."</div>
-  <p>The important thing is that <strong>each new type of number was born out of a real need</strong> — a problem the existing numbers simply could not solve. What began as counting sheep eventually grew into the most powerful mathematical system we have: the <strong>Real Number System (&#8477;)</strong>.</p>
-
-  <!-- Section 2: Five Floors -->
-  <div class="p-sec">The Five Floors: A Journey Through History</div>
-
-  <!-- Floor 1 -->
-  <div class="p-floor">
-    <div class="p-floor-badge fn">&#8469;</div>
-    <div class="p-floor-body">
-      <h4>Floor 1 — Natural Numbers &#8469; = {1, 2, 3, 4, &hellip;}</h4>
-      <div class="p-set">&#8469; = { 1, 2, 3, 4, &hellip; }</div>
-      <p>The first act of mathematics: <strong>counting</strong>. Ancient people counted cattle, days, and harvests. You can add and multiply naturals and always stay within the system. But subtraction quickly causes trouble.</p>
-      <span class="p-badge-red">&#10060; Gap: What is 3 &minus; 5? No natural number answer. We need a new floor.</span>
-    </div>
-  </div>
-
-  <!-- Floor 2 -->
-  <div class="p-floor">
-    <div class="p-floor-badge fw">&#120142;</div>
-    <div class="p-floor-body">
-      <h4>Floor 2 — Whole Numbers &#120142; = {0, 1, 2, 3, &hellip;}</h4>
-      <div class="p-set">&#120142; = { 0, 1, 2, 3, &hellip; }</div>
-      <p>We add <strong>zero</strong>. Zero is not just "nothing" — it holds a place and makes our entire decimal system work.</p>
-      <div class="p-spotlight">
-        <div class="p-spotlight-icon">&#127963;</div>
-        <div>
-          <h4>Aryabhata and the Power of Zero — Aryabhatiya (499 CE)</h4>
-          <p>Aryabhata used a decimal place-value system that made zero a proper working digit, not merely a blank space. His system made it possible to tell apart 42, 402, and 420 — impossible in Roman numerals. This contribution, spread via Arabic translations, transformed arithmetic worldwide.</p>
-        </div>
-      </div>
-      <span class="p-badge-red">&#10060; Gap: 5 &minus; 8 = ? Still no answer. We need numbers below zero.</span>
-    </div>
-  </div>
-
-  <!-- Floor 3 -->
-  <div class="p-floor">
-    <div class="p-floor-badge fz">&#8484;</div>
-    <div class="p-floor-body">
-      <h4>Floor 3 — Integers &#8484; = {&hellip;, &minus;2, &minus;1, 0, 1, 2, &hellip;}</h4>
-      <div class="p-set">&#8484; = { &hellip;, &minus;3, &minus;2, &minus;1, 0, 1, 2, 3, &hellip; }</div>
-      <p><strong>Negative numbers</strong> extend the number line in both directions. Now subtraction always has an answer. &#8484; comes from German <em>Zahlen</em> (numbers). Brahmagupta's <em>Brahmasphutasiddhanta</em> (628 CE) gave the first clear rules for arithmetic with negatives and zero.</p>
-      <span class="p-badge-red">&#10060; Gap: 1 &divide; 2 = ? No integer answer. We need fractions.</span>
-    </div>
-  </div>
-
-  <!-- Floor 4 -->
-  <div class="p-floor">
-    <div class="p-floor-badge fq">&#8474;</div>
-    <div class="p-floor-body">
-      <h4>Floor 4 — Rational Numbers &#8474; = { p/q : p, q &isin; &#8484;, q &ne; 0 }</h4>
-      <div class="p-set">&#8474; = { p/q : p, q integers, q &ne; 0 }</div>
-      <p>From Latin <em>ratio</em>. All fractions — every terminating or repeating decimal is rational. With &#8474; we can add, subtract, multiply, and divide (except by 0) and always stay within the system. Ancient Greeks were satisfied here — until a simple square broke everything.</p>
-      <span class="p-badge-red">&#10060; Gap: No fraction squares to exactly 2. The number line has holes!</span>
-    </div>
-  </div>
-
-  <!-- Floor 5 -->
-  <div class="p-floor">
-    <div class="p-floor-badge fr">&#8477;</div>
-    <div class="p-floor-body">
-      <h4>Floor 5 — Real Numbers &#8477; = &#8474; &cup; &#8474;<sup>c</sup> (Rationals + Irrationals)</h4>
-      <div class="p-set">&#8477; = &#8474; &cup; &#8474;<sup>c</sup></div>
-      <p>Every single point on the number line is a real number. <strong>No gaps. No holes.</strong> &radic;2, &pi;, <em>e</em> are all real. This is the number system used in calculus, physics, and all of higher mathematics.</p>
-      <span class="p-badge-green">&#10003; Complete: Every number that can be placed on a line is a real number.</span>
-    </div>
-  </div>
-
-  <!-- Section 3: Crisis -->
-  <div class="p-sec">The Crisis That Created Irrational Numbers</div>
-  <p>The ancient Greek Pythagorean school had a firm belief: <em>every quantity in nature can be written as a fraction</em>. Then one of their own made a discovery that shook the foundations of their philosophy.</p>
-
-  <div class="p-twocol">
-    <div class="p-col blue">
-      <h4>&#128208; The Problem: A Simple Square</h4>
-      <ul>
-        <li>Draw a square with each side exactly 1 unit long</li>
-        <li>By the Pythagorean theorem, the diagonal = &radic;2</li>
-        <li>Pythagoreans asked: can &radic;2 be written as p/q?</li>
-        <li>They were certain the answer was yes — and tried to prove it.</li>
-      </ul>
-    </div>
-    <div class="p-col green">
-      <h4>&#10007; The Shock: It Cannot Be a Fraction</h4>
-      <ul>
-        <li>Assume &radic;2 = p/q in simplest form (no shared factors)</li>
-        <li>p&sup2; = 2q&sup2; &rArr; p is even &rArr; write p = 2m</li>
-        <li>Then 4m&sup2; = 2q&sup2; &rArr; q is also even</li>
-        <li>Both even &rArr; share factor 2 &rArr; contradicts simplest form!</li>
-      </ul>
-    </div>
-  </div>
-
-  <p>So &radic;2 is <strong>irrational</strong> — a real number that cannot be any fraction. The legend says Hippasus (~5th century BCE), who revealed this, was thrown into the sea. Mathematical point: rational numbers alone cannot fill the number line.</p>
-
-  <!-- Irrational info box -->
-  <div class="p-infobox gold">
-    <div class="p-infobox-hd">&#128161; What Are Irrational Numbers?</div>
-    <div class="p-infobox-body">
-      <p>An <strong>irrational number</strong> is any real number that <em>cannot</em> be written as p/q where p and q are integers. In decimal form: they go on forever <em>without any repeating pattern</em>.</p>
-      <ul>
-        <li>&radic;2 = 1.41421356&hellip; &nbsp; (never ends, never repeats)</li>
-        <li>&pi; = 3.14159265&hellip; &nbsp; (ratio of circle's circumference to its diameter)</li>
-        <li><em>e</em> = 2.71828182&hellip; &nbsp; (Euler's number, used in growth and decay)</li>
-        <li>&radic;3, &radic;5, &radic;7 &nbsp; (square roots of non-perfect-squares)</li>
-      </ul>
-      <p><strong>Important:</strong> &radic;4 = 2 and &radic;9 = 3 are rational. Always simplify before deciding!</p>
-    </div>
-  </div>
-
-  <!-- Section 4: Timeline -->
-  <div class="p-sec">Historical Timeline — How the Number System Grew</div>
-  <p>This took thousands of years and contributions from many civilisations — each generation solving the problems left by the previous one.</p>
-
-  <table class="p-table">
-    <thead><tr><th>Period</th><th>Who</th><th>Contribution</th><th>System Reached</th></tr></thead>
-    <tbody>
-      <tr><td>~3000 BCE</td><td>Mesopotamia &amp; Egypt</td><td>Counting; tally marks and early numerals</td><td>&#8469; Natural Numbers</td></tr>
-      <tr><td>~500 BCE</td><td>Ancient Greece</td><td>Study of ratios and proportions in geometry</td><td>&#8474; Rational Numbers</td></tr>
-      <tr><td>~500 BCE</td><td>Pythagoreans (Greece)</td><td>&radic;2 cannot be a fraction — first known irrational</td><td>Need for irrationals</td></tr>
-      <tr><td>499 CE</td><td>Aryabhata (India)</td><td><em>Aryabhatiya</em> — decimal place-value, zero as working digit</td><td>&#120142; Whole Numbers</td></tr>
-      <tr><td>628 CE</td><td>Brahmagupta (India)</td><td><em>Brahmasphutasiddhanta</em> — rules for zero and negatives</td><td>&#8484; Integers</td></tr>
-      <tr><td>1872 CE</td><td>Dedekind (Germany)</td><td>Rigorous (logically complete) construction via Dedekind cuts</td><td>&#8477; Reals defined</td></tr>
-      <tr><td>1874 CE</td><td>Cantor (Germany)</td><td>Proved irrationals far outnumber rationals on the line</td><td>Full theory of &#8477;</td></tr>
-    </tbody>
-  </table>
-
-  <!-- Section 5: Examples -->
-  <div class="p-sec">Solved Examples</div>
-
-  <!-- Example 1 -->
-  <div class="p-example">
-    <div class="p-ex-hd" style="background:#1e3c72;">EXAMPLE 1 — Classify Each Number</div>
-    <div class="p-ex-body">
-      <div class="p-ex-q">For each number, state the smallest set it belongs to (&#8469;, &#120142;, &#8484;, &#8474;, or irrational):<br>7 &nbsp; &minus;3 &nbsp; 5/4 &nbsp; &radic;5 &nbsp; 0 &nbsp; &minus;2/7 &nbsp; &radic;9 &nbsp; 0.666&hellip;</div>
-      <div class="p-ex-sol">
-        <strong>Solution:</strong>
-        <ul>
-          <li>7 &rarr; <strong>Natural &#8469;</strong> (positive counting number)</li>
-          <li>0 &rarr; <strong>Whole &#120142;</strong> (not natural, but whole)</li>
-          <li>&minus;3 &rarr; <strong>Integer &#8484;</strong> (negative)</li>
-          <li>5/4 &rarr; <strong>Rational &#8474;</strong> (fraction of integers = 1.25)</li>
-          <li>&minus;2/7 &rarr; <strong>Rational &#8474;</strong> (negative fraction)</li>
-          <li>&radic;9 = 3 &rarr; <strong>Natural &#8469;</strong> (simplifies to 3 — rational!)</li>
-          <li>0.666&hellip; = 2/3 &rarr; <strong>Rational &#8474;</strong> (repeating decimal = fraction)</li>
-          <li>&radic;5 &rarr; <strong>Irrational</strong> (5 is not a perfect square) &#9632;</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- Example 2 -->
-  <div class="p-example">
-    <div class="p-ex-hd" style="background:#7c3aed;">EXAMPLE 2 — Prove that &radic;2 is Irrational</div>
-    <div class="p-ex-body">
-      <div class="p-ex-q">Prove that &radic;2 is irrational — it cannot be written as p/q where p and q are integers.</div>
-      <div class="p-ex-sol">
-        <strong>Solution — Proof by Contradiction:</strong>
-        <p><strong>Step 1.</strong> Suppose &radic;2 = p/q, where p, q are positive integers with no common factor (simplest form).</p>
-        <p><strong>Step 2.</strong> Squaring: p&sup2; = 2q&sup2;. So p&sup2; is even &rArr; p is even. Write p = 2m.</p>
-        <p><strong>Step 3.</strong> Substituting: (2m)&sup2; = 2q&sup2; &rArr; 4m&sup2; = 2q&sup2; &rArr; q&sup2; = 2m&sup2;. So q is also even.</p>
-        <p><strong>Step 4.</strong> Both p and q are even — they share factor 2. This contradicts our assumption of simplest form.</p>
-        <p><strong>Conclusion:</strong> No fraction p/q can equal &radic;2. Therefore &radic;2 is irrational. &#9632;</p>
-        <p class="p-ref">Reference: W. Rudin, Principles of Mathematical Analysis, 3rd ed. (McGraw-Hill, 1976), Example 1.1, p. 2</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Example 3 -->
-  <div class="p-example">
-    <div class="p-ex-hd" style="background:#d97706;">EXAMPLE 3 — Rational or Irrational?</div>
-    <div class="p-ex-body">
-      <div class="p-ex-q">Decide whether each is rational or irrational, with a brief reason:<br>(a) 0.142857142857&hellip; &nbsp; (b) &radic;2 + &radic;2 &nbsp; (c) &radic;2 &times; &radic;2 &nbsp; (d) &pi; &minus; &pi; &nbsp; (e) 2 + &radic;3</div>
-      <div class="p-ex-sol">
-        <strong>Solution:</strong>
-        <p><strong>(a)</strong> 0.142857&hellip; = 1/7 &rarr; <strong>Rational.</strong> Any repeating decimal is rational.</p>
-        <p><strong>(b)</strong> &radic;2 + &radic;2 = 2&radic;2 &rarr; <strong>Irrational.</strong> Irrational &times; non-zero rational stays irrational.</p>
-        <p><strong>(c)</strong> &radic;2 &times; &radic;2 = 2 &rarr; <strong>Rational!</strong> Key trap — product of two irrationals CAN be rational.</p>
-        <p><strong>(d)</strong> &pi; &minus; &pi; = 0 &rarr; <strong>Rational.</strong> Any number minus itself = 0 = 0/1.</p>
-        <p><strong>(e)</strong> 2 + &radic;3 &rarr; <strong>Irrational.</strong> If it were rational r, then &radic;3 = r &minus; 2 would be rational — contradiction. &#9632;</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Example 4 -->
-  <div class="p-example">
-    <div class="p-ex-hd" style="background:#dc2626;">EXAMPLE 4 — A Common Misconception about &pi;</div>
-    <div class="p-ex-body">
-      <div class="p-ex-q">A student says: "Since 22/7 is used for &pi; in calculations, &pi; must be rational." Is the student correct?</div>
-      <div class="p-ex-sol">
-        <strong>Solution:</strong> The student is <strong>incorrect.</strong>
-        <p>22/7 = 3.142857142857&hellip; (repeating, hence rational) is only an <em>approximation</em> of &pi;. The actual value &pi; = 3.14159265&hellip; never repeats and never ends — making it irrational.</p>
-        <p>The two numbers match only in the first two decimal places. Using 22/7 in calculations is practical but does not make &pi; rational.</p>
-        <p>&pi; was proved irrational by Johann Heinrich Lambert in 1761. &#9632;</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Section 6: Key Points -->
-  <div class="p-sec">Key Points to Remember</div>
-  <div class="p-tip">
-    <div class="p-tip-hd">&#128161; Things Worth Remembering</div>
-    <ul>
-      <li><strong>The hierarchy:</strong> &#8469; &sub; &#120142; &sub; &#8484; &sub; &#8474; &sub; &#8477;. Every natural number is also whole, integer, rational, and real.</li>
-      <li><strong>Not every square root is irrational:</strong> &radic;4 = 2, &radic;16 = 4, &radic;25 = 5 are rational. Only roots of non-perfect-squares are irrational.</li>
-      <li><strong>Repeating decimal = rational:</strong> 0.333&hellip; = 1/3, &nbsp; 0.142857&hellip; = 1/7.</li>
-      <li><strong>Product trap:</strong> &radic;2 &times; &radic;2 = 2 is rational. Product of two irrationals is NOT always irrational.</li>
-      <li><strong>22/7 is not &pi;:</strong> Only an approximation. &pi; is irrational — proved by Lambert, 1761.</li>
-      <li><strong><em>e</em> is also irrational:</strong> Euler's number <em>e</em> &asymp; 2.718 is irrational — proved by Hermite, 1873.</li>
-    </ul>
-  </div>
-
-  <!-- Section 7: Mistakes -->
-  <div class="p-sec">Common Mistakes</div>
-  <div class="p-warn">
-    <div class="p-warn-hd">&#9888; Avoid These Errors</div>
-    <ul>
-      <li><strong>"All decimals are irrational":</strong> 0.5 = 1/2 is rational. Only non-terminating, non-repeating decimals are irrational.</li>
-      <li><strong>"Every square root is irrational":</strong> &radic;9 = 3 &isin; &#8469;. Always simplify before deciding.</li>
-      <li><strong>"Irrational + Irrational = Irrational":</strong> &radic;2 + (&minus;&radic;2) = 0, which is rational.</li>
-      <li><strong>"Irrational &times; Irrational = Irrational":</strong> &radic;3 &times; &radic;3 = 3, which is rational.</li>
-      <li><strong>"22/7 = &pi;":</strong> Only an approximation. &pi; is irrational and equals no fraction exactly.</li>
-      <li><strong>"&#8469; includes 0":</strong> Most courses define &#8469; = {1, 2, 3, &hellip;}. Zero is whole, not natural.</li>
-    </ul>
-  </div>
-
-  <!-- Section 8: Applications -->
-  <div class="p-sec">Why Do Real Numbers Matter?</div>
-  <div class="p-appgrid">
-    <div class="p-app"><span class="p-app-icon">&#128208;</span><strong>Geometry</strong><p>The diagonal of a unit square (&radic;2) and circle ratio (&pi;) are irrational — exact measurement needs &#8477;.</p></div>
-    <div class="p-app"><span class="p-app-icon">&#9881;&#65039;</span><strong>Engineering</strong><p>Angles, waves, signals all use &pi; and &radic;2. Without &#8477;, modern engineering is impossible.</p></div>
-    <div class="p-app"><span class="p-app-icon">&#128200;</span><strong>Finance</strong><p>Compound interest uses <em>e</em> &asymp; 2.718. Every bank uses it.</p></div>
-    <div class="p-app"><span class="p-app-icon">&#9883;&#65039;</span><strong>Physics</strong><p>Speed, temperature, distance are continuous. &#8477; is the natural language for physical quantities.</p></div>
-  </div>
-
-  <!-- Section 9: Summary Table -->
-  <div class="p-sec">Summary — The Number System at a Glance</div>
-  <table class="p-sum-table">
-    <thead><tr><th>System</th><th>Symbol</th><th>Examples</th><th>New Idea</th><th>Problem Solved</th></tr></thead>
-    <tbody>
-      <tr><td>Natural</td><td>&#8469;</td><td>1, 2, 3</td><td>Counting</td><td>How many things?</td></tr>
-      <tr><td>Whole</td><td>&#120142;</td><td>0, 1, 2</td><td>Zero</td><td>How to show "none"?</td></tr>
-      <tr><td>Integers</td><td>&#8484;</td><td>&minus;3, 0, 5</td><td>Negatives</td><td>What is 3 &minus; 5?</td></tr>
-      <tr><td>Rational</td><td>&#8474;</td><td>1/2, &minus;3/4, 0.3&#773;</td><td>Fractions</td><td>What is 1 &divide; 2?</td></tr>
-      <tr><td>Irrational</td><td>&#8474;<sup>c</sup></td><td>&radic;2, &pi;, <em>e</em></td><td>Non-fraction lengths</td><td>Diagonal of unit square?</td></tr>
-      <tr><td>Real Numbers</td><td>&#8477;</td><td>All of the above</td><td>Gapless line</td><td>Every point has a number</td></tr>
-    </tbody>
-  </table>
-
-  <div class="p-highlight">
-    <div class="ph-main">&#8469; &sub; &#120142; &sub; &#8484; &sub; &#8474; &sub; &#8477;</div>
-    <div class="ph-sub">Every number system is contained inside the next. Real numbers include every number that can be placed on a straight line.</div>
-  </div>
-
-  <!-- Footer -->
-  <div class="p-footer">
-    <div class="pf-title">Fractal Frontier Maths &nbsp;&bull;&nbsp; Empowering students in Real Analysis, Topology, and beyond</div>
-    <div class="pf-links">
-      <a href="https://drpraveendra.github.io">&#127760; drpraveendra.github.io</a>
-      <a href="https://t.me/fractalfrontiermaths">&#9992; t.me/fractalfrontiermaths</a>
-      <a href="https://www.youtube.com/@FractalFrontierMaths">&#9654; YouTube: FractalFrontierMaths</a>
-      <a href="https://www.instagram.com/mathsworld007">&#128247; Instagram: mathsworld007</a>
-    </div>
-    <div class="pf-copy">&copy; 2026 Fractal Frontier Maths &nbsp;&bull;&nbsp; Dr. Praveendra Singh, Govt. College Kherwara, Rajasthan</div>
-  </div>
-
-</div><!-- .pdoc -->
-</div><!-- #pdf-content -->
-
-<!-- ═══ DOWNLOAD BUTTON ═══════════════════════════════════ -->
+<!-- ═══ PDF DOWNLOAD — jsPDF programmatic generation ══════════════ -->
 <style>
 .pdf-section { text-align:center; margin:44px 0 28px; }
 .pdf-btn {
@@ -1027,125 +499,936 @@ description: "A beginner-friendly guide to how our number system grew from count
 
 <div class="pdf-section">
   <button class="pdf-btn" id="pdfDownloadBtn" onclick="generatePDF()">
-    <span class="pi">📥</span>
+    <span class="pi">&#x1F4E5;</span>
     <span class="pt">
       <span class="pt1">Download PDF Notes</span>
-      <span class="pt2">Foundations of Real Numbers — Fractal Frontier Maths</span>
+      <span class="pt2">Foundations of Real Numbers &#8212; Fractal Frontier Maths</span>
     </span>
   </button>
 </div>
 
-<!-- html2pdf.js from CDN -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-
+<!-- jsPDF from CDN — no html2canvas needed -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script>
+// ─────────────────────────────────────────────────────────────────────────────
+// Fractal Frontier Maths — jsPDF programmatic PDF generator
+// Foundations of Real Numbers
+// ─────────────────────────────────────────────────────────────────────────────
+
 function generatePDF() {
   var btn = document.getElementById('pdfDownloadBtn');
   btn.classList.add('generating');
-  btn.querySelector('.pt1').textContent = 'Generating PDF…';
+  btn.querySelector('.pt1').textContent = 'Building PDF\u2026';
 
-  var source = document.getElementById('pdf-content');
-
-  // Clone the source so we never touch the original hidden div
-  var clone = source.cloneNode(true);
-  clone.removeAttribute('id');
-
-  // Create a full-screen overlay — html2canvas MUST be able to see the element
-  var overlay = document.createElement('div');
-  overlay.style.cssText = [
-    'position:fixed',
-    'top:0','left:0',
-    'width:210mm',
-    'min-height:100vh',
-    'background:#fff',
-    'z-index:99999',
-    'overflow:visible',
-    'padding:0',
-    'margin:0',
-    'box-sizing:border-box'
-  ].join(';');
-
-  overlay.appendChild(clone);
-  document.body.appendChild(overlay);
-
-  // Wait two animation frames so browser fully paints before capture
-  requestAnimationFrame(function() {
-    requestAnimationFrame(function() {
-
-      var opt = {
-        margin:      [12, 14, 16, 14],
-        filename:    'foundations-real-numbers-fractalfrontiermaths.pdf',
-        image:       { type: 'jpeg', quality: 0.97 },
-        html2canvas: {
-          scale: 2,
-          useCORS: true,
-          allowTaint: true,
-          letterRendering: true,
-          logging: false,
-          backgroundColor: '#ffffff',
-          windowWidth: 794,
-          scrollX: 0,
-          scrollY: 0
-        },
-        jsPDF: {
-          unit: 'mm',
-          format: 'a4',
-          orientation: 'portrait',
-          compress: true
-        },
-        pagebreak: { mode: ['css', 'legacy'] }
-      };
-
-      html2pdf()
-        .set(opt)
-        .from(clone)
-        .toPdf()
-        .get('pdf')
-        .then(function(pdf) {
-          var totalPages = pdf.internal.getNumberOfPages();
-          for (var i = 1; i <= totalPages; i++) {
-            pdf.setPage(i);
-            var pw = pdf.internal.pageSize.getWidth();
-            var ph = pdf.internal.pageSize.getHeight();
-
-            // Diagonal watermark
-            pdf.saveGraphicsState();
-            pdf.setGState(new pdf.GState({ opacity: 0.07 }));
-            pdf.setFont('helvetica', 'bold');
-            pdf.setFontSize(28);
-            pdf.setTextColor(30, 60, 114);
-            pdf.text('Fractal Frontier Maths', pw / 2, ph / 2, {
-              align: 'center', angle: 45
-            });
-            pdf.restoreGraphicsState();
-
-            // Footer separator line
-            pdf.setDrawColor(220, 220, 220);
-            pdf.setLineWidth(0.3);
-            pdf.line(14, ph - 11, pw - 14, ph - 11);
-
-            // Footer text
-            pdf.setFont('helvetica', 'normal');
-            pdf.setFontSize(7);
-            pdf.setTextColor(120, 120, 120);
-            pdf.text('drpraveendra.github.io  |  Fractal Frontier Maths', 14, ph - 7.5);
-            pdf.text('Page ' + i + ' of ' + totalPages, pw - 14, ph - 7.5, { align: 'right' });
-          }
-        })
-        .save()
-        .then(function() {
-          document.body.removeChild(overlay);
-          btn.classList.remove('generating');
-          btn.querySelector('.pt1').textContent = 'Download PDF Notes';
-        })
-        .catch(function(err) {
-          console.error('PDF error:', err);
-          document.body.removeChild(overlay);
-          btn.classList.remove('generating');
-          btn.querySelector('.pt1').textContent = 'Download PDF Notes';
-        });
-
-    }); // end second rAF
-  }); // end first rAF
+  // Small timeout so the button state renders before heavy work starts
+  setTimeout(function() {
+    try {
+      buildPDF();
+    } catch(e) {
+      console.error(e);
+      btn.classList.remove('generating');
+      btn.querySelector('.pt1').textContent = 'Download PDF Notes';
+    }
+  }, 80);
 }
+
+function buildPDF() {
+  var btn = document.getElementById('pdfDownloadBtn');
+
+  // ── jsPDF setup ────────────────────────────────────────────────────────────
+  var { jsPDF } = window.jspdf;
+  var doc = new jsPDF({ unit: 'mm', format: 'a4', orientation: 'portrait' });
+
+  var PW = 210, PH = 297;        // A4 dimensions mm
+  var ML = 14, MR = 14;          // left / right margin
+  var MT = 14, MB = 18;          // top / bottom margin
+  var CW = PW - ML - MR;         // content width = 182mm
+  var y = MT;                    // current Y cursor
+
+  // ── Colour palette ─────────────────────────────────────────────────────────
+  var NAVY   = [30,  60, 114];
+  var BLUE   = [42,  82, 152];
+  var PURPLE = [124, 58, 237];
+  var RED    = [220, 38,  38];
+  var GOLD   = [217,119,   6];
+  var GREEN  = [  5,150, 105];
+  var TEXT   = [ 45, 45,  45];
+  var GREY   = [107,114, 128];
+  var LGREY  = [229,231, 235];
+  var WHITE  = [255,255, 255];
+  var LBLUE  = [239,246, 255];
+  var LGREEN = [236,253, 245];
+  var LYELL  = [255,251, 235];
+  var LPUR   = [245,243, 255];
+  var LRED   = [255,245, 245];
+  var LINDIGO= [224,231, 255];
+
+  // ── Helper utilities ───────────────────────────────────────────────────────
+  function setFill(rgb)   { doc.setFillColor(rgb[0],rgb[1],rgb[2]); }
+  function setStroke(rgb) { doc.setDrawColor(rgb[0],rgb[1],rgb[2]); }
+  function setTxt(rgb)    { doc.setTextColor(rgb[0],rgb[1],rgb[2]); }
+
+  function rect(x, yy, w, h, fill, stroke, radius) {
+    if (fill)   setFill(fill);
+    if (stroke) setStroke(stroke);
+    var mode = fill && stroke ? 'FD' : fill ? 'F' : 'S';
+    if (radius) doc.roundedRect(x, yy, w, h, radius, radius, mode);
+    else        doc.rect(x, yy, w, h, mode);
+  }
+
+  // Wrap text to fit width, returns array of lines
+  function wrapText(txt, maxWidth, fontSize, bold) {
+    doc.setFontSize(fontSize);
+    doc.setFont('helvetica', bold ? 'bold' : 'normal');
+    return doc.splitTextToSize(txt, maxWidth);
+  }
+
+  // Draw wrapped text, return new Y after drawing
+  function drawText(txt, x, yy, maxWidth, fontSize, bold, colour, align) {
+    doc.setFontSize(fontSize);
+    doc.setFont('helvetica', bold ? 'bold' : 'normal');
+    setTxt(colour || TEXT);
+    var lines = doc.splitTextToSize(txt, maxWidth);
+    var lineH = fontSize * 0.4;  // ~mm per line
+    doc.text(lines, x, yy, { align: align || 'left' });
+    return yy + lines.length * lineH;
+  }
+
+  // Measure wrapped text height in mm
+  function textH(txt, maxWidth, fontSize) {
+    doc.setFontSize(fontSize);
+    var lines = doc.splitTextToSize(String(txt), maxWidth);
+    return lines.length * fontSize * 0.4;
+  }
+
+  // Check if we need a new page
+  function checkPage(needed) {
+    if (y + needed > PH - MB - 12) {
+      addFooter();
+      doc.addPage();
+      y = MT;
+    }
+  }
+
+  // ── Page footer (called on every page) ────────────────────────────────────
+  function addFooter() {
+    var pageNum = doc.internal.getCurrentPageInfo().pageNumber;
+    var totalPages = doc.internal.getNumberOfPages();
+
+    // Watermark — diagonal centre
+    doc.saveGraphicsState();
+    doc.setGState(doc.GState({ opacity: 0.06 }));
+    doc.setFont('helvetica','bold');
+    doc.setFontSize(28);
+    setTxt(NAVY);
+    doc.text('Fractal Frontier Maths', PW/2, PH/2, { align:'center', angle:45 });
+    doc.restoreGraphicsState();
+
+    // Footer line
+    doc.setLineWidth(0.25);
+    setStroke(LGREY);
+    doc.line(ML, PH - MB + 2, PW - MR, PH - MB + 2);
+
+    // Footer text
+    doc.setFont('helvetica','normal');
+    doc.setFontSize(7);
+    setTxt(GREY);
+    doc.text('drpraveendra.github.io  |  Fractal Frontier Maths', ML, PH - MB + 6);
+    doc.text('Page ' + pageNum + ' of ' + totalPages, PW - MR, PH - MB + 6, { align:'right' });
+  }
+
+  // ── Gradient simulation (fill rect in two halves with avg colour) ──────────
+  function gradRect(x, yy, w, h, c1, c2, radius) {
+    // Simulate gradient with 40 thin vertical strips
+    var steps = 40;
+    for (var i = 0; i < steps; i++) {
+      var t = i / (steps - 1);
+      var r = Math.round(c1[0] + t*(c2[0]-c1[0]));
+      var g = Math.round(c1[1] + t*(c2[1]-c1[1]));
+      var b = Math.round(c1[2] + t*(c2[2]-c1[2]));
+      doc.setFillColor(r,g,b);
+      if (radius && (i === 0 || i === steps-1)) {
+        // Just use plain rect for edge strips to avoid artefacts
+        doc.rect(x + i*(w/steps), yy, w/steps + 0.5, h, 'F');
+      } else {
+        doc.rect(x + i*(w/steps), yy, w/steps + 0.5, h, 'F');
+      }
+    }
+  }
+
+  // ── Section header ─────────────────────────────────────────────────────────
+  function sectionHeader(title) {
+    checkPage(14);
+    // Colour bar
+    gradRect(ML, y, CW, 2.5, NAVY, PURPLE);
+    y += 4;
+    doc.setFont('helvetica','bold');
+    doc.setFontSize(13);
+    setTxt(NAVY);
+    doc.text(title, ML, y + 4.5);
+    y += 10;
+    // Underline
+    doc.setLineWidth(0.4);
+    setStroke(NAVY);
+    doc.line(ML, y - 1, ML + CW, y - 1);
+    y += 3;
+  }
+
+  // ── Coloured box with title bar ────────────────────────────────────────────
+  function infoBox(title, lines, titleBg, bodyBg, borderCol, startY) {
+    var padding = 3;
+    var titleH  = 7;
+    var bodyLines = [];
+    lines.forEach(function(l) {
+      var wrapped = doc.splitTextToSize(l, CW - padding*2 - 4);
+      wrapped.forEach(function(wl){ bodyLines.push(wl); });
+    });
+    var bodyH   = bodyLines.length * 4.2 + padding * 2;
+    var totalH  = titleH + bodyH;
+    checkPage(totalH + 4);
+    var bx = ML, by = y;
+
+    // Body bg
+    if (borderCol) {
+      doc.setLineWidth(0.4);
+      setStroke(borderCol);
+    }
+    rect(bx, by, CW, totalH, bodyBg, borderCol, 2);
+
+    // Title bar
+    setFill(titleBg);
+    doc.roundedRect(bx, by, CW, titleH, 2, 2, 'F');
+    // Re-draw bottom of title bar as flat
+    setFill(titleBg);
+    doc.rect(bx, by + titleH - 2, CW, 2, 'F');
+
+    doc.setFont('helvetica','bold');
+    doc.setFontSize(8);
+    setTxt(WHITE);
+    doc.text(title, bx + 4, by + 4.8);
+
+    // Body text
+    doc.setFont('helvetica','normal');
+    doc.setFontSize(9.5);
+    setTxt(TEXT);
+    var ty = by + titleH + padding + 3.5;
+    bodyLines.forEach(function(line) {
+      doc.text(line, bx + padding + 2, ty);
+      ty += 4.2;
+    });
+    y = by + totalH + 4;
+  }
+
+  // ── Floor card ─────────────────────────────────────────────────────────────
+  function floorCard(sym, symColour, title, setNotation, bodyText, badgeText, badgeType) {
+    var wrapped = doc.splitTextToSize(bodyText, CW - 22);
+    var cardH = 10 + wrapped.length * 4.2 + 8;
+    checkPage(cardH + 4);
+
+    var bx = ML, by = y;
+    // Card background
+    rect(bx, by, CW, cardH, WHITE, LGREY, 2);
+
+    // Symbol circle
+    var cx = bx + 7, cy = by + 7;
+    setFill(symColour);
+    doc.circle(cx, cy, 5, 'F');
+    doc.setFont('helvetica','bold');
+    doc.setFontSize(7.5);
+    setTxt(WHITE);
+    doc.text(sym, cx, cy + 2.5, { align:'center' });
+
+    // Title
+    doc.setFont('helvetica','bold');
+    doc.setFontSize(9.5);
+    setTxt(NAVY);
+    doc.text(title, bx + 15, by + 5.5);
+
+    // Set notation
+    doc.setFont('courier','bold');
+    doc.setFontSize(8);
+    setTxt(PURPLE);
+    doc.text(setNotation, bx + 15, by + 10.5);
+
+    // Body text
+    doc.setFont('helvetica','normal');
+    doc.setFontSize(9);
+    setTxt(TEXT);
+    var ty = by + 16;
+    wrapped.forEach(function(line) {
+      doc.text(line, bx + 15, ty);
+      ty += 4.2;
+    });
+
+    // Badge
+    var badgeBg  = badgeType === 'problem' ? LRED   : LGREEN;
+    var badgeFg  = badgeType === 'problem' ? RED     : GREEN;
+    var badgeBor = badgeType === 'problem' ? [254,202,202] : [110,231,183];
+    var bw = CW - 17, bh = 5.5;
+    var badgeY = by + cardH - bh - 1.5;
+    rect(bx + 15, badgeY, bw, bh, badgeBg, badgeBor, 1.5);
+    doc.setFont('helvetica','bold');
+    doc.setFontSize(7.5);
+    setTxt(badgeFg);
+    doc.text(badgeText, bx + 18, badgeY + 3.8);
+
+    y = by + cardH + 3;
+  }
+
+  // ── Example card ───────────────────────────────────────────────────────────
+  function exampleCard(num, label, questionLines, solutionLines, accentCol) {
+    // Calculate height
+    var qH = questionLines.length * 4.2 + 2;
+    var sH = solutionLines.length * 4.2 + 6;
+    var cardH = 8 + qH + sH + 6;
+    checkPage(cardH + 6);
+
+    var bx = ML, by = y;
+    // Card outline
+    rect(bx, by, CW, cardH, WHITE, LGREY, 2);
+    // Top accent bar
+    setFill(accentCol);
+    doc.rect(bx, by, CW, 1.5, 'F');
+    // Rounded top corners manually
+    doc.roundedRect(bx, by, CW, 1.5, 2, 2, 'F');
+    doc.rect(bx, by + 1, CW, 0.7, 'F');  // fill bottom of rounded to make it flat
+
+    // Number circle
+    setFill(accentCol);
+    doc.circle(bx + 7, by + 8.5, 4.5, 'F');
+    doc.setFont('helvetica','bold');
+    doc.setFontSize(8.5);
+    setTxt(WHITE);
+    doc.text(String(num), bx + 7, by + 10.8, { align:'center' });
+
+    // Label
+    doc.setFont('helvetica','bold');
+    doc.setFontSize(7.5);
+    setTxt(GREY);
+    doc.text(label.toUpperCase(), bx + 15, by + 6.5);
+
+    // Question
+    doc.setFont('helvetica','bold');
+    doc.setFontSize(9.5);
+    setTxt(TEXT);
+    var ty = by + 12;
+    questionLines.forEach(function(line) {
+      doc.text(line, bx + 15, ty);
+      ty += 4.5;
+    });
+
+    // Solution box
+    var solY = ty + 1;
+    var solH = sH;
+    rect(bx + 4, solY, CW - 8, solH, LGREEN, null, 1.5);
+    doc.setLineWidth(0.8);
+    setStroke(GREEN);
+    doc.line(bx + 4, solY, bx + 4, solY + solH);
+
+    doc.setFont('helvetica','bold');
+    doc.setFontSize(9);
+    setTxt(GREEN);
+    doc.text('Solution:', bx + 8, solY + 4.5);
+
+    doc.setFont('helvetica','normal');
+    doc.setFontSize(9);
+    setTxt([26, 92, 56]);
+    var sy = solY + 4.5;
+    var isFirst = true;
+    solutionLines.forEach(function(line) {
+      if (isFirst) { isFirst = false; return; } // skip 'Solution:' placeholder
+      doc.text(line, bx + 8, sy + 4.2);
+      sy += 4.2;
+    });
+
+    y = by + cardH + 4;
+  }
+
+  // ── Two-column comparison ──────────────────────────────────────────────────
+  function twoColBox(leftTitle, leftLines, rightTitle, rightLines) {
+    var colW = (CW - 4) / 2;
+    var leftWrapped = [], rightWrapped = [];
+    leftLines.forEach(function(l) {
+      doc.splitTextToSize(l, colW - 6).forEach(function(w){ leftWrapped.push(w); });
+    });
+    rightLines.forEach(function(l) {
+      doc.splitTextToSize(l, colW - 6).forEach(function(w){ rightWrapped.push(w); });
+    });
+    var h = Math.max(leftWrapped.length, rightWrapped.length) * 4.2 + 14;
+    checkPage(h + 6);
+
+    var by = y;
+    // Left box (blue)
+    rect(ML, by, colW, h, LBLUE, [147,197,253], 2);
+    doc.setFont('helvetica','bold');
+    doc.setFontSize(9);
+    setTxt([30,64,175]);
+    doc.text(leftTitle, ML + 3, by + 5.5);
+    doc.setFont('helvetica','normal');
+    doc.setFontSize(9);
+    setTxt(TEXT);
+    var ty = by + 11;
+    leftWrapped.forEach(function(line) {
+      doc.text('\u2022 ' + line, ML + 4, ty);
+      ty += 4.2;
+    });
+
+    // Right box (green)
+    var rx = ML + colW + 4;
+    rect(rx, by, colW, h, LGREEN, [110,231,183], 2);
+    doc.setFont('helvetica','bold');
+    doc.setFontSize(9);
+    setTxt([6,95,70]);
+    doc.text(rightTitle, rx + 3, by + 5.5);
+    doc.setFont('helvetica','normal');
+    doc.setFontSize(9);
+    setTxt(TEXT);
+    ty = by + 11;
+    rightWrapped.forEach(function(line) {
+      doc.text('\u2022 ' + line, rx + 4, ty);
+      ty += 4.2;
+    });
+
+    y = by + h + 4;
+  }
+
+  // ── Bullet list box ────────────────────────────────────────────────────────
+  function bulletBox(headerText, items, bg, borderCol, textCol) {
+    var allLines = [];
+    items.forEach(function(item) {
+      var wrapped = doc.splitTextToSize(item, CW - 12);
+      wrapped.forEach(function(w, i){ allLines.push({ text: w, first: i === 0 }); });
+    });
+    var boxH = allLines.length * 4.5 + 12;
+    checkPage(boxH + 4);
+
+    var by = y;
+    rect(ML, by, CW, boxH, bg, borderCol, 2);
+    doc.setLineWidth(1);
+    setStroke(borderCol);
+    doc.line(ML, by, ML, by + boxH);
+
+    // Header
+    doc.setFont('helvetica','bold');
+    doc.setFontSize(8);
+    setTxt(textCol || TEXT);
+    doc.text(headerText.toUpperCase(), ML + 5, by + 5.5);
+
+    // Items
+    doc.setFont('helvetica','normal');
+    doc.setFontSize(9.5);
+    var ty = by + 11;
+    allLines.forEach(function(line) {
+      var prefix = line.first ? '\u2022 ' : '    ';
+      doc.text(prefix + line.text, ML + 5, ty);
+      ty += 4.5;
+    });
+    y = by + boxH + 4;
+  }
+
+  // ── Simple table ───────────────────────────────────────────────────────────
+  function drawTable(headers, rows, colWidths) {
+    var rowH = 7;
+    var tableH = (rows.length + 1) * rowH;
+    checkPage(tableH + 4);
+
+    var by = y;
+    var x = ML;
+
+    // Header row
+    gradRect(ML, by, CW, rowH, NAVY, PURPLE);
+    doc.setFont('helvetica','bold');
+    doc.setFontSize(8.5);
+    setTxt(WHITE);
+    var hx = ML;
+    headers.forEach(function(h, i) {
+      doc.text(String(h), hx + 2, by + 4.8);
+      hx += colWidths[i];
+    });
+    by += rowH;
+
+    // Data rows
+    rows.forEach(function(row, ri) {
+      var rowBg = ri % 2 === 0 ? WHITE : LBLUE;
+      rect(ML, by, CW, rowH, rowBg, null);
+
+      doc.setFont('helvetica','normal');
+      var cx = ML;
+      row.forEach(function(cell, ci) {
+        if (ci === 0) {
+          doc.setFont('helvetica','bolditalic');
+          doc.setFontSize(8);
+          setTxt(NAVY);
+        } else {
+          doc.setFont('helvetica','normal');
+          doc.setFontSize(8.5);
+          setTxt(TEXT);
+        }
+        var cellText = doc.splitTextToSize(String(cell), colWidths[ci] - 3);
+        doc.text(cellText[0], cx + 2, by + 4.8); // show first line only (fits in rowH)
+        cx += colWidths[ci];
+      });
+      by += rowH;
+    });
+
+    // Border
+    doc.setLineWidth(0.3);
+    setStroke([199,215,247]);
+    doc.rect(ML, y, CW, tableH, 'S');
+    // Column dividers
+    var divX = ML;
+    colWidths.slice(0,-1).forEach(function(w) {
+      divX += w;
+      doc.line(divX, y, divX, y + tableH);
+    });
+    // Row dividers
+    for (var r = 1; r <= rows.length; r++) {
+      doc.line(ML, y + r*rowH, ML + CW, y + r*rowH);
+    }
+
+    y = y + tableH + 4;
+  }
+
+  // ── Spotlight box (dark blue) ──────────────────────────────────────────────
+  function spotlightBox(title, bodyLines) {
+    var wrapped = [];
+    bodyLines.forEach(function(l) {
+      doc.splitTextToSize(l, CW - 20).forEach(function(w){ wrapped.push(w); });
+    });
+    var boxH = wrapped.length * 4.2 + 14;
+    checkPage(boxH + 4);
+
+    var by = y;
+    gradRect(ML, by, CW, boxH, NAVY, BLUE);
+
+    // Icon area
+    doc.setFont('helvetica','normal');
+    doc.setFontSize(20);
+    setTxt(WHITE);
+    doc.text('\uD83C\uDFDB', ML + 4, by + 12);
+
+    // Title
+    doc.setFont('helvetica','bold');
+    doc.setFontSize(9.5);
+    setTxt([251,191,36]); // gold
+    doc.text(title, ML + 18, by + 7);
+
+    // Body
+    doc.setFont('helvetica','normal');
+    doc.setFontSize(9);
+    setTxt([226,232,240]);
+    var ty = by + 13;
+    wrapped.forEach(function(line) {
+      doc.text(line, ML + 18, ty);
+      ty += 4.2;
+    });
+    y = by + boxH + 4;
+  }
+
+  // ── Highlight result box ───────────────────────────────────────────────────
+  function highlightBox(mainText, subText) {
+    var subWrapped = doc.splitTextToSize(subText, CW - 16);
+    var boxH = 10 + subWrapped.length * 4.2 + 6;
+    checkPage(boxH + 4);
+
+    var by = y;
+    rect(ML, by, CW, boxH, LINDIGO, [129,140,248], 3);
+    doc.setFont('helvetica','bold');
+    doc.setFontSize(13);
+    setTxt(NAVY);
+    doc.text(mainText, PW/2, by + 8, { align:'center' });
+
+    doc.setFont('helvetica','normal');
+    doc.setFontSize(9);
+    setTxt([67,56,202]);
+    var ty = by + 14;
+    subWrapped.forEach(function(line) {
+      doc.text(line, PW/2, ty, { align:'center' });
+      ty += 4.2;
+    });
+    y = by + boxH + 4;
+  }
+
+  // ═══════════════════════════════════════════════════════════════════════════
+  // ── PAGE 1: HERO + STATS + SECTION 1 ──────────────────────────────────────
+  // ═══════════════════════════════════════════════════════════════════════════
+
+  // Hero banner
+  gradRect(ML, y, CW, 52, NAVY, PURPLE);
+
+  // Decorative R (approximated)
+  doc.setFont('helvetica','bold');
+  doc.setFontSize(70);
+  doc.setTextColor(255,255,255);
+  doc.setGState && doc.setGState(doc.GState({ opacity: 0.06 }));
+  // Use R symbol
+  doc.setFont('helvetica','bold');
+  doc.setFontSize(55);
+  setTxt([255,255,255]);
+  doc.text('R', ML + CW - 22, y + 38, { align:'center' });
+
+  doc.setGState && doc.setGState(doc.GState({ opacity: 1.0 }));
+
+  // Hero text
+  doc.setFont('helvetica','bold');
+  doc.setFontSize(17);
+  setTxt(WHITE);
+  doc.text('The Infinite Architecture:', ML + 4, y + 13);
+  doc.text('Foundations of Real Numbers', ML + 4, y + 21);
+
+  doc.setFont('helvetica','normal');
+  doc.setFontSize(9.5);
+  setTxt([220,230,255]);
+  doc.text('Understanding the Number System — from Ancient Counting to R', ML + 4, y + 29);
+
+  doc.setFont('helvetica','normal');
+  doc.setFontSize(8);
+  setTxt([180,200,240]);
+  doc.text('Author: Dr. Praveendra Singh  |  Fractal Frontier Maths  |  B.Sc./M.Sc. Mathematics  |  Real Analysis Unit 1', ML + 4, y + 37);
+
+  // Red accent bar at bottom of hero
+  setFill(RED);
+  doc.rect(ML, y + 49, CW, 2, 'F');
+  y += 56;
+
+  // Stats strip
+  gradRect(ML, y, CW, 14, NAVY, PURPLE);
+  var stats = [
+    { num:'5',     lbl:'Number Systems' },
+    { num:'3000+', lbl:'Years of History' },
+    { num:'4',     lbl:'Solved Examples' },
+    { num:'★★☆',  lbl:'Beginner Friendly' },
+    { num:'R',     lbl:'The Final System' }
+  ];
+  var sw = CW / stats.length;
+  stats.forEach(function(s, i) {
+    var sx = ML + i * sw + sw/2;
+    doc.setFont('helvetica','bold');
+    doc.setFontSize(11);
+    setTxt(WHITE);
+    doc.text(s.num, sx, y + 6, { align:'center' });
+    doc.setFont('helvetica','normal');
+    doc.setFontSize(6);
+    setTxt([200,210,255]);
+    doc.text(s.lbl.toUpperCase(), sx, y + 11, { align:'center' });
+  });
+  y += 18;
+
+  // ── Section 1: Skyscraper Analogy ─────────────────────────────────────────
+  sectionHeader('The Skyscraper Analogy');
+
+  y = drawText(
+    'Have you ever stopped to ask: what is a number, really? For most people, numbers are just tools. But to a mathematician, the number system is a magnificent skyscraper built floor by floor over three thousand years of human thought.',
+    ML, y, CW, 10, false, TEXT
+  ) + 3;
+
+  // Pull quote
+  var pqLines = doc.splitTextToSize(
+    '"Every time humanity hit a wall — a problem that couldn\'t be solved — we didn\'t give up. We built a new floor."',
+    CW - 12
+  );
+  var pqH = pqLines.length * 4.5 + 8;
+  rect(ML, y, CW, pqH, LPUR, [167,139,250], 2);
+  doc.setLineWidth(3);
+  setStroke(PURPLE);
+  doc.line(ML, y, ML, y + pqH);
+  doc.setFont('helvetica','bolditalic');
+  doc.setFontSize(10);
+  setTxt([76,29,149]);
+  var qy = y + 6;
+  pqLines.forEach(function(l) { doc.text(l, ML + 6, qy); qy += 4.5; });
+  y += pqH + 5;
+
+  y = drawText(
+    'Each new type of number was born out of a real need — a problem the existing numbers simply could not solve. What began as counting sheep eventually grew into the most powerful mathematical system we have: the Real Number System (R).',
+    ML, y, CW, 10, false, TEXT
+  ) + 5;
+
+  // ── Section 2: Five Floors ─────────────────────────────────────────────────
+  sectionHeader('The Five Floors: A Journey Through History');
+
+  floorCard('N', NAVY, 'Floor 1 — Natural Numbers  N = {1, 2, 3, 4, ...}',
+    'N = { 1, 2, 3, 4, ... }',
+    'The first act of mathematics: counting. Ancient people counted cattle, days, and harvests. Addition and multiplication always stay within N. But subtraction quickly causes trouble.',
+    'Gap: What is 3 - 5?  No natural number answer. We need a new floor.', 'problem');
+
+  floorCard('W', GREEN, 'Floor 2 — Whole Numbers  W = {0, 1, 2, 3, ...}',
+    'W = { 0, 1, 2, 3, ... }',
+    'We add zero. Zero is not just "nothing" — it holds a place and makes our entire decimal system work. Aryabhata\'s Aryabhatiya (499 CE) established zero as a working digit.',
+    'Gap: 5 - 8 = ?  Still no answer. We need numbers below zero.', 'problem');
+
+  floorCard('Z', PURPLE, 'Floor 3 — Integers  Z = {..., -2, -1, 0, 1, 2, ...}',
+    'Z = { ..., -3, -2, -1, 0, 1, 2, 3, ... }',
+    'Negative numbers extend the line both ways. Now subtraction always works. Z comes from German Zahlen (numbers). Brahmagupta (628 CE) gave the first clear rules for arithmetic with negatives and zero.',
+    'Gap: 1 / 2 = ?  No integer answer. We need fractions.', 'problem');
+
+  floorCard('Q', GOLD, 'Floor 4 — Rational Numbers  Q = { p/q : p, q in Z, q not 0 }',
+    'Q = { p/q : p, q integers, q not equal 0 }',
+    'From Latin ratio. All fractions — every terminating or repeating decimal is rational. With Q we can add, subtract, multiply, and divide (except by 0) and always stay within Q. Ancient Greeks were satisfied here — until a simple square broke everything.',
+    'Gap: No fraction squares to exactly 2. The number line has holes!', 'problem');
+
+  floorCard('R', RED, 'Floor 5 — Real Numbers  R = Q union Q^c  (Rationals + Irrationals)',
+    'R = Q union Q^c  (all rationals + all irrationals)',
+    'Every single point on the number line is a real number. No gaps. No holes. sqrt(2), pi, e are all real. This is the number system used in all of calculus and physics.',
+    'Complete: Every number that can be placed on a line is a real number.', 'solved');
+
+  // ── Section 3: Irrational Crisis ──────────────────────────────────────────
+  sectionHeader('The Crisis That Created Irrational Numbers');
+
+  y = drawText(
+    'The ancient Greek Pythagorean school had a firm belief: every quantity in nature can be written as a fraction. Then one of their own made a discovery that shook the foundations of their philosophy.',
+    ML, y, CW, 10, false, TEXT
+  ) + 4;
+
+  twoColBox(
+    'The Problem: A Simple Square',
+    ['Draw a square with each side exactly 1 unit',
+     'By Pythagoras, the diagonal = sqrt(2)',
+     'Can sqrt(2) be written as p/q?',
+     'Pythagoreans believed yes — until they tried to prove it.'],
+    'The Shock: It Cannot Be a Fraction',
+    ['Assume sqrt(2) = p/q in simplest form (no shared factors)',
+     'p^2 = 2q^2  =>  p is even  =>  write p = 2m',
+     'Then 4m^2 = 2q^2  =>  q is also even',
+     'Both even => share factor 2 => contradicts simplest form!']
+  );
+
+  y = drawText(
+    'So sqrt(2) is irrational — a real number that cannot be any fraction. The legend says Hippasus (~5th century BCE), who revealed this, was thrown into the sea. Mathematical point: rational numbers alone cannot fill the number line.',
+    ML, y, CW, 10, false, TEXT
+  ) + 4;
+
+  infoBox(
+    'WHAT ARE IRRATIONAL NUMBERS?',
+    ['An irrational number is any real number that CANNOT be written as p/q where p and q are integers.',
+     'In decimal form: they go on forever WITHOUT any repeating pattern.',
+     '',
+     'sqrt(2) = 1.41421356...   (never ends, never repeats)',
+     'pi      = 3.14159265...   (ratio of a circle\'s circumference to its diameter)',
+     'e       = 2.71828182...   (Euler\'s number — used in growth and decay)',
+     'sqrt(3), sqrt(5), sqrt(7)  (square roots of non-perfect-squares)',
+     '',
+     'IMPORTANT: sqrt(4) = 2 and sqrt(9) = 3 are rational. Always simplify first!'],
+    GOLD, LYELL, GOLD
+  );
+
+  // ── Section 4: Historical Timeline ────────────────────────────────────────
+  sectionHeader('Historical Timeline — How the Number System Grew');
+
+  y = drawText(
+    'This took thousands of years and contributions from many civilisations — each generation solving the problems left by the previous one.',
+    ML, y, CW, 10, false, TEXT
+  ) + 4;
+
+  drawTable(
+    ['Period', 'Who', 'Contribution', 'System'],
+    [
+      ['~3000 BCE', 'Mesopotamia & Egypt',   'Counting; tally marks and early numerals',                       'N Natural'],
+      ['~500 BCE',  'Ancient Greece',         'Study of ratios and proportions in geometry',                    'Q Rationals'],
+      ['~500 BCE',  'Pythagoreans (Greece)',   'sqrt(2) cannot be a fraction — first known irrational',         'Irrationals needed'],
+      ['499 CE',    'Aryabhata (India)',        'Aryabhatiya — decimal place-value, zero as working digit',      'W Whole Numbers'],
+      ['628 CE',    'Brahmagupta (India)',      'Brahmasphutasiddhanta — rules for zero and negatives',          'Z Integers'],
+      ['1872 CE',   'Dedekind (Germany)',       'Rigorous construction of reals via Dedekind cuts',              'R defined'],
+      ['1874 CE',   'Cantor (Germany)',         'Proved irrationals far outnumber rationals on the line',        'R full theory'],
+    ],
+    [24, 38, 80, 40]
+  );
+
+  // ── Section 5: Solved Examples ─────────────────────────────────────────────
+  sectionHeader('Solved Examples');
+
+  exampleCard(1, 'Example 1 — Classify Each Number',
+    doc.splitTextToSize('For each number, state the smallest set it belongs to  (N, W, Z, Q, or irrational):   7,  -3,  5/4,  sqrt(5),  0,  -2/7,  sqrt(9),  0.666...', CW - 18),
+    ['Solution:',
+     '7  =>  Natural N  (positive counting number)',
+     '0  =>  Whole W  (not natural, but whole)',
+     '-3  =>  Integer Z  (negative)',
+     '5/4  =>  Rational Q  (fraction of integers = 1.25)',
+     '-2/7  =>  Rational Q  (negative fraction)',
+     'sqrt(9) = 3  =>  Natural N  (simplifies to 3 — rational!)',
+     '0.666... = 2/3  =>  Rational Q  (repeating decimal = fraction)',
+     'sqrt(5)  =>  Irrational  (5 is not a perfect square)'],
+    NAVY);
+
+  exampleCard(2, 'Example 2 — Prove that sqrt(2) is Irrational',
+    doc.splitTextToSize('Prove that sqrt(2) is irrational — it cannot be written as p/q where p and q are integers.  [W. Rudin, Principles of Mathematical Analysis, 3rd ed., Example 1.1, p.2]', CW - 18),
+    ['Solution — Proof by Contradiction:',
+     'Step 1. Suppose sqrt(2) = p/q, where p, q are positive integers with no common factor (simplest form).',
+     'Step 2. Squaring: p^2 = 2q^2.  So p^2 is even => p is even.  Write p = 2m.',
+     'Step 3. Substituting: (2m)^2 = 2q^2  =>  4m^2 = 2q^2  =>  q^2 = 2m^2.  So q is also even.',
+     'Step 4. Both p and q are even — they share factor 2. This contradicts simplest form.',
+     'Conclusion: No fraction p/q can equal sqrt(2). Therefore sqrt(2) is irrational.'],
+    PURPLE);
+
+  exampleCard(3, 'Example 3 — Rational or Irrational?',
+    doc.splitTextToSize('Decide whether each is rational or irrational, with a brief reason:  (a) 0.142857...   (b) sqrt(2)+sqrt(2)   (c) sqrt(2) x sqrt(2)   (d) pi - pi   (e) 2+sqrt(3)', CW - 18),
+    ['Solution:',
+     '(a) 0.142857142857... = 1/7  =>  Rational.  Any repeating decimal is rational.',
+     '(b) sqrt(2)+sqrt(2) = 2*sqrt(2)  =>  Irrational.  Irrational x non-zero rational stays irrational.',
+     '(c) sqrt(2) x sqrt(2) = 2  =>  Rational!  KEY TRAP: product of two irrationals CAN be rational.',
+     '(d) pi - pi = 0  =>  Rational.  Any number minus itself = 0 = 0/1.',
+     '(e) 2+sqrt(3)  =>  Irrational.  If rational r, then sqrt(3)=r-2 would be rational. Contradiction!'],
+    GOLD);
+
+  exampleCard(4, 'Example 4 — A Common Misconception about pi',
+    doc.splitTextToSize('A student says: "Since 22/7 is used for pi in calculations, pi must be rational." Is the student correct?', CW - 18),
+    ['Solution:  The student is incorrect.',
+     '22/7 = 3.142857142857...  (repeating, hence rational) is only an approximation of pi.',
+     'The actual value  pi = 3.14159265...  never repeats and never ends — making it irrational.',
+     'The two numbers match only in the first two decimal places.',
+     'pi was proved irrational by Johann Heinrich Lambert in 1761.'],
+    RED);
+
+  // ── Section 6: Key Points ──────────────────────────────────────────────────
+  sectionHeader('Key Points to Remember');
+
+  bulletBox('Things Worth Remembering',
+    ['The hierarchy: N is-subset-of W is-subset-of Z is-subset-of Q is-subset-of R.  Every natural number is also whole, integer, rational, and real.',
+     'Not every square root is irrational: sqrt(4)=2, sqrt(16)=4, sqrt(25)=5 are rational.  Only roots of non-perfect-squares are irrational.',
+     'Repeating decimal = rational: 0.333...=1/3,  0.142857...=1/7.  A pattern that repeats means the number is rational.',
+     'Product trap: sqrt(2) x sqrt(2) = 2 is rational.  Product of two irrationals is NOT always irrational.',
+     '22/7 is not pi: Only an approximation. pi is irrational — proved by Lambert, 1761.',
+     'e is also irrational: Euler\'s number e ≈ 2.718 is irrational — proved by Hermite, 1873.'],
+    LYELL, GOLD, [146,64,14]
+  );
+
+  // ── Section 7: Common Mistakes ─────────────────────────────────────────────
+  sectionHeader('Common Mistakes');
+
+  bulletBox('Avoid These Errors',
+    ['"All decimals are irrational": Not true.  0.5 = 1/2 is rational.  Only non-terminating, non-repeating decimals are irrational.',
+     '"Every square root is irrational": sqrt(9)=3 is a natural number.  Always simplify before deciding.',
+     '"Irrational + Irrational = Irrational": sqrt(2)+(-sqrt(2))=0 which is rational.',
+     '"Irrational x Irrational = Irrational": sqrt(3) x sqrt(3) = 3 which is rational.',
+     '"22/7 = pi": Only an approximation. pi is irrational and equals no fraction exactly.',
+     '"N includes 0": Most courses define N={1,2,3,...}. Zero is whole, not natural.'],
+    LRED, RED, [153,27,27]
+  );
+
+  // ── Section 8: Applications ────────────────────────────────────────────────
+  sectionHeader('Why Do Real Numbers Matter?');
+
+  var apps = [
+    ['Geometry',     'The diagonal of a unit square (sqrt(2)) and the ratio pi are irrational — exact measurement requires R.'],
+    ['Engineering',  'Angles, waves, and signals all use pi and sqrt(2). Without R, modern engineering is impossible.'],
+    ['Finance',      'Compound interest uses Euler\'s number e ≈ 2.718 (irrational). Every bank uses it.'],
+    ['Physics',      'Speed, temperature, and distance in nature are continuous. R is the natural language for every physical quantity.'],
+  ];
+
+  var appColW = (CW - 4) / 2;
+  for (var ai = 0; ai < apps.length; ai += 2) {
+    var app1 = apps[ai], app2 = apps[ai+1];
+    var h1Lines = doc.splitTextToSize(app1[1], appColW - 8);
+    var h2Lines = app2 ? doc.splitTextToSize(app2[1], appColW - 8) : [];
+    var rowH = Math.max(h1Lines.length, h2Lines.length) * 4.2 + 13;
+    checkPage(rowH + 4);
+
+    var by = y;
+    var accents = [NAVY, PURPLE, GOLD, GREEN];
+
+    // Box 1
+    rect(ML, by, appColW, rowH, WHITE, LGREY, 2);
+    setFill(accents[ai]);
+    doc.rect(ML, by, appColW, 2, 'F');
+    doc.roundedRect(ML, by, appColW, 2, 2, 2, 'F');
+    doc.setFont('helvetica','bold');
+    doc.setFontSize(9.5);
+    setTxt(NAVY);
+    doc.text(app1[0], ML + 4, by + 8);
+    doc.setFont('helvetica','normal');
+    doc.setFontSize(9);
+    setTxt(TEXT);
+    var ty = by + 13;
+    h1Lines.forEach(function(l){ doc.text(l, ML + 4, ty); ty += 4.2; });
+
+    // Box 2
+    if (app2) {
+      var bx2 = ML + appColW + 4;
+      rect(bx2, by, appColW, rowH, WHITE, LGREY, 2);
+      setFill(accents[ai+1]);
+      doc.rect(bx2, by, appColW, 2, 'F');
+      doc.roundedRect(bx2, by, appColW, 2, 2, 2, 'F');
+      doc.setFont('helvetica','bold');
+      doc.setFontSize(9.5);
+      setTxt(NAVY);
+      doc.text(app2[0], bx2 + 4, by + 8);
+      doc.setFont('helvetica','normal');
+      doc.setFontSize(9);
+      setTxt(TEXT);
+      ty = by + 13;
+      h2Lines.forEach(function(l){ doc.text(l, bx2 + 4, ty); ty += 4.2; });
+    }
+    y = by + rowH + 3;
+  }
+
+  // ── Section 9: Summary Table ───────────────────────────────────────────────
+  sectionHeader('Summary — The Number System at a Glance');
+
+  drawTable(
+    ['System', 'Symbol', 'Examples', 'New Idea', 'Problem Solved'],
+    [
+      ['Natural Numbers', 'N',   '1, 2, 3',           'Counting',            'How many things?'],
+      ['Whole Numbers',   'W',   '0, 1, 2',           'Zero',                'How to show "none"?'],
+      ['Integers',        'Z',   '-3, 0, 5',          'Negative numbers',    'What is 3 - 5?'],
+      ['Rational Numbers','Q',   '1/2, -3/4, 0.33...',  'Fractions',         'What is 1 / 2?'],
+      ['Irrational Nos.', 'Q^c', 'sqrt(2), pi, e',    'Non-fraction lengths','Diagonal of unit square?'],
+      ['Real Numbers',    'R',   'All of the above',  'Gapless number line', 'Every point has a number'],
+    ],
+    [34, 16, 38, 38, 56]
+  );
+
+  highlightBox(
+    'N  ⊂  W  ⊂  Z  ⊂  Q  ⊂  R',
+    'Every number system is contained inside the next. Real numbers include every number that can be placed on a straight line, with no gaps whatsoever.'
+  );
+
+  // ── Social footer ──────────────────────────────────────────────────────────
+  checkPage(30);
+  doc.setLineWidth(0.4);
+  setStroke(LGREY);
+  doc.line(ML, y, ML + CW, y);
+  y += 5;
+
+  doc.setFont('helvetica','bold');
+  doc.setFontSize(10);
+  setTxt(NAVY);
+  doc.text('Fractal Frontier Maths  |  Empowering students in Real Analysis, Topology, and beyond', PW/2, y, { align:'center' });
+  y += 6;
+
+  // Clickable links
+  var links = [
+    { text: 'drpraveendra.github.io',           url: 'https://drpraveendra.github.io' },
+    { text: 't.me/fractalfrontiermaths',         url: 'https://t.me/fractalfrontiermaths' },
+    { text: 'YouTube: FractalFrontierMaths',     url: 'https://www.youtube.com/@FractalFrontierMaths' },
+    { text: 'Instagram: mathsworld007',          url: 'https://www.instagram.com/mathsworld007' },
+  ];
+  var lw = CW / links.length;
+  links.forEach(function(link, i) {
+    var lx = ML + i * lw + lw/2;
+    doc.setFont('helvetica','bold');
+    doc.setFontSize(8.5);
+    setTxt(BLUE);
+    doc.textWithLink(link.text, lx, y, { url: link.url, align:'center' });
+  });
+  y += 5;
+
+  doc.setFont('helvetica','normal');
+  doc.setFontSize(7.5);
+  setTxt(GREY);
+  doc.text('© 2026 Fractal Frontier Maths  |  Dr. Praveendra Singh, Govt. College Kherwara, Rajasthan', PW/2, y, { align:'center' });
+
+  // ── Add watermark + footer to ALL pages ────────────────────────────────────
+  var totalPages = doc.internal.getNumberOfPages();
+  for (var p = 1; p <= totalPages; p++) {
+    doc.setPage(p);
+    addFooter();
+  }
+
+  // ── Save ───────────────────────────────────────────────────────────────────
+  doc.save('foundations-real-numbers-fractalfrontiermaths.pdf');
+
+  btn.classList.remove('generating');
+  btn.querySelector('.pt1').textContent = 'Download PDF Notes';
+}
+
 </script>
