@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introduction to Fields: Real Numbers, Rational Numbers, and Basic Field Properties"
-date: 2026-03-23
+date: 2026-03-21
 category: maths
 lang: en
 lang_pair: "/blog/field-axioms-of-real-numbers-hindi/"
