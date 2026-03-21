@@ -33,7 +33,7 @@ header_pages:
   - blog.md
   - contact.md
 
-future: false
+future: true
 defaults:
   - scope:
       path: ""
