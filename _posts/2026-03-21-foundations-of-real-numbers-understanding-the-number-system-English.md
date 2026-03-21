@@ -4,6 +4,9 @@ title: "Foundations of Real Numbers: Understanding the Number System"
 date: 2026-03-21
 categories: [Real Analysis, Number Systems]
 tags: [real numbers, number system, B.Sc Mathematics, M.Sc Mathematics, CSIR NET, GATE, IIT JAM]
+lang: en
+lang_pair: "/blog/2026-03-21-foundations-of-real-numbers-understanding-the-number-system-English/"
+permalink: /blog/2026-03-21-foundations-of-real-numbers-understanding-the-number-system/
 description: "A complete guide to the foundations of real numbers — the hierarchy of number systems from natural numbers to reals, with solved examples, Hindi explanation, and exam-ready revision cards."
 author: Dr. Praveendra Singh
 math: true
