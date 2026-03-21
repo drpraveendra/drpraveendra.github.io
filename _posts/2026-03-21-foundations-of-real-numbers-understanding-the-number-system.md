@@ -51,10 +51,10 @@ description: "A complete guide to the foundations of real numbers — from ancie
   .problem-badge { display: inline-block; background: #fff5f5; border: 1px solid #fecaca; border-radius: 6px; padding: 3px 10px; font-size: 0.78rem; color: #dc2626; font-weight: 700; }
   .solved-badge { display: inline-block; background: #ecfdf5; border: 1px solid #6ee7b7; border-radius: 6px; padding: 3px 10px; font-size: 0.78rem; color: #059669; font-weight: 700; }
   /* Aryabhata spotlight */
-  .spotlight { background: linear-gradient(135deg, #0f172a, #1e3c72); border-radius: 14px; padding: 22px 24px; margin: 14px 0 10px; color: white; display: flex; gap: 16px; align-items: flex-start; }
+  .spotlight { background: linear-gradient(135deg, #1e3c72, #2a5298); border-radius: 14px; padding: 24px 26px; margin: 14px 0 10px; color: white; display: flex; gap: 16px; align-items: flex-start; border: 1px solid rgba(255,255,255,0.15); }
   .spotlight-icon { font-size: 2.4rem; flex-shrink: 0; }
-  .spotlight h4 { margin: 0 0 6px; font-size: 1rem; color: #fbbf24; }
-  .spotlight p { margin: 0; font-size: 0.88rem; opacity: 0.9; line-height: 1.65; }
+  .spotlight h4 { margin: 0 0 8px; font-size: 1.05rem; color: #fbbf24; font-weight: 800; letter-spacing: 0.2px; }
+  .spotlight p { margin: 0; font-size: 0.95rem; opacity: 1; line-height: 1.75; color: #e2e8f0; }
   /* Axiom grid */
   .axiom-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 14px 0; }
   .axiom-chip { background: #f8faff; border: 1.5px solid #c7d7f7; border-radius: 10px; padding: 11px 14px; }
