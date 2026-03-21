@@ -162,20 +162,6 @@ permalink: /resources/digital-library/
         <span class="lib-tag">Free</span>
       </div>
     </a>
-
-    <a class="lib-card" href="https://www.gutenberg.org/ebooks/bookshelf/672" target="_blank" rel="noopener">
-      <div class="lib-card-header">
-        <span class="lib-card-icon">📜</span>
-        <div><h3>Project Gutenberg</h3><span class="lib-type">Classic Texts</span></div>
-      </div>
-      <p>Public domain mathematics books — including works by Euler, Gauss, and other historical mathematicians. Free to download in multiple formats.</p>
-      <div class="badges-row"><span class="student-badge for-all">All Students</span><span class="student-badge for-research">Researchers</span></div>
-      <div class="lib-card-footer" style="margin-top:12px;">
-        <span class="lib-visit">Visit Gutenberg <i class="fas fa-arrow-right"></i></span>
-        <span class="lib-tag">Public Domain</span>
-      </div>
-    </a>
-
   </div>
 </div>
 
