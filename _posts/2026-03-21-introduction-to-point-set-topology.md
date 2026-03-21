@@ -69,7 +69,7 @@ description: "A beginner-friendly introduction to Point Set Topology in ℝ — 
 
 <div class="post-hero">
   <h1>Introduction to Point Set Topology in ℝ</h1>
-  <p><strong>Point Set Topology</strong> is the study of the structure of subsets of ℝ using openness, closedness, limits, and continuity. It forms the rigorous foundation of all real analysis.</p>
+  <p><strong>Point Set Topology</strong> is the study of the structure of subsets of ℝ using neighbourhood, boundedness, openness, closedness, and related concepts. It forms the rigorous foundation of all real analysis.</p>
 </div>
 
 <div class="stats-strip">
@@ -88,7 +88,7 @@ description: "A beginner-friendly introduction to Point Set Topology in ℝ — 
   <ul>
     <li><strong>Ordered:</strong> For any $a, b \in \mathbb{R}$, exactly one of $a &lt; b$, $a = b$, $a &gt; b$ holds.</li>
     <li><strong>Field:</strong> Addition and multiplication are well-defined with inverses.</li>
-    <li><strong>Complete:</strong> Every non-empty subset bounded above has a <strong>least upper bound</strong> (supremum) in $\mathbb{R}$.</li>
+    <li><strong>Complete:</strong> Every non-empty bounded above subset has a <strong>least upper bound</strong> (supremum) in $\mathbb{R}$.</li>
   </ul>
 </div>
 
@@ -124,10 +124,28 @@ $$-(\lvert a\rvert+\lvert b\rvert) \leq a+b \leq \lvert a\rvert+\lvert b\rvert \
   <div class="info-card-header"><i class="fas fa-book"></i> Definition</div>
   The <strong>ε-neighbourhood</strong> of a point $a \in \mathbb{R}$ is:
   $$N_\varepsilon(a) = (a - \varepsilon,\, a + \varepsilon) = \{x \in \mathbb{R} : \lvert x - a\rvert < \varepsilon\}$$
-  This is the <strong>open ball</strong> of radius $\varepsilon$ centred at $a$.
+  This is an <strong>open interval</strong> of radius $\varepsilon$ centred at $a$.
 </div>
 
 <p><strong>Example:</strong> $N_{0.5}(3) = (2.5, 3.5)$ — all points within distance $0.5$ of $3$.</p>
+
+<div>
+  The <strong>supremum</strong> (least upper bound) of a set $A \subset \mathbb{R}$ is a number $s \in \mathbb{R}$ such that:
+  $$\text{(i) } x \leq s \quad \forall x \in A \quad \text{(upper bound)}$$
+  $$\text{(ii) } \forall \varepsilon > 0,\ \exists x \in A \text{ such that } x > s - \varepsilon \quad \text{(least property)}$$
+  We write:
+  $$s = \sup A$$
+</div>
+
+<div>
+  The <strong>infimum</strong> (greatest lower bound) of a set $A \subset \mathbb{R}$ is a number $t \in \mathbb{R}$ such that:
+  $$\text{(i) } x \geq t \quad \forall x \in A \quad \text{(lower bound)}$$
+  $$\text{(ii) } \forall \varepsilon > 0,\ \exists x \in A \text{ such that } x < t + \varepsilon \quad \text{(greatest property)}$$
+  We write:
+  $$t = \inf A$$
+</div>
+
+<p><strong>Example:</strong> Let $A = (0,1)$. Then $\sup A = 1$ and $\inf A = 0$, even though $0,1 \notin A$.</p>
 
 <h2 class="section-title"><span class="sec-icon" style="background:#fffbeb;color:#d97706;"><i class="fas fa-pencil-alt"></i></span> Solved Examples</h2>
 
