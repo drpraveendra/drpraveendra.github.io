@@ -132,6 +132,49 @@ permalink: /resources/digital-library/
   </div>
 </div>
 
+<!-- Indian Resources -->
+<div class="lib-section">
+  <div class="section-title"><i class="fas fa-flag" style="color:#ff4b2b;"></i> Indian Digital Resources</div>
+  <div class="lib-grid">
+
+    <a class="lib-card" href="https://ndl.iitkgp.ac.in/" target="_blank" rel="noopener">
+      <div class="lib-card-header">
+        <span class="lib-card-icon">🇮🇳</span>
+        <div><h3>National Digital Library of India</h3><span class="lib-type">Government Platform</span></div>
+      </div>
+      <p>India's largest digital repository — millions of free educational resources including mathematics textbooks, lecture notes, research papers, and exam materials from Indian universities and institutions.</p>
+      <div class="badges-row">
+        <span class="student-badge for-ug">B.Sc. Students</span>
+        <span class="student-badge for-pg">M.Sc. Students</span>
+        <span class="student-badge for-csir">CSIR NET / GATE</span>
+      </div>
+      <div class="lib-card-footer" style="margin-top:12px;">
+        <span class="lib-visit">Visit NDLI <i class="fas fa-arrow-right"></i></span>
+        <span class="lib-tag">Free</span>
+      </div>
+    </a>
+
+    <a class="lib-card" href="https://ncert.nic.in/textbook.php" target="_blank" rel="noopener">
+      <div class="lib-card-header">
+        <span class="lib-card-icon">📗</span>
+        <div><h3>NCERT Mathematics</h3><span class="lib-type">School & Foundation</span></div>
+      </div>
+      <p>Official NCERT mathematics textbooks from Class 6 to Class 12 — free to download as PDF. Essential for building strong foundations in calculus, algebra, and coordinate geometry before starting B.Sc. level content.</p>
+      <div class="badges-row">
+        <span class="student-badge for-school">Class 6–12</span>
+        <span class="student-badge for-ug">B.Sc. Foundation</span>
+        <span class="student-badge for-csir">IIT JAM Basics</span>
+      </div>
+      <div class="lib-card-footer" style="margin-top:12px;">
+        <span class="lib-visit">Download NCERT <i class="fas fa-arrow-right"></i></span>
+        <span class="lib-tag">Free PDF</span>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+
 <!-- Free Textbooks -->
 <div class="lib-section">
   <div class="section-title"><i class="fas fa-book-open" style="color:#059669;"></i> Free Textbooks & Open Books</div>
@@ -257,49 +300,6 @@ permalink: /resources/digital-library/
         <span class="lib-tag">Free</span>
       </div>
     </a>
-  </div>
-</div>
-
-
-<!-- Indian Resources -->
-<div class="lib-section">
-  <div class="section-title"><i class="fas fa-flag" style="color:#ff4b2b;"></i> Indian Digital Resources</div>
-  <div class="lib-grid">
-
-    <a class="lib-card" href="https://ndl.iitkgp.ac.in/" target="_blank" rel="noopener">
-      <div class="lib-card-header">
-        <span class="lib-card-icon">🇮🇳</span>
-        <div><h3>National Digital Library of India</h3><span class="lib-type">Government Platform</span></div>
-      </div>
-      <p>India's largest digital repository — millions of free educational resources including mathematics textbooks, lecture notes, research papers, and exam materials from Indian universities and institutions.</p>
-      <div class="badges-row">
-        <span class="student-badge for-ug">B.Sc. Students</span>
-        <span class="student-badge for-pg">M.Sc. Students</span>
-        <span class="student-badge for-csir">CSIR NET / GATE</span>
-      </div>
-      <div class="lib-card-footer" style="margin-top:12px;">
-        <span class="lib-visit">Visit NDLI <i class="fas fa-arrow-right"></i></span>
-        <span class="lib-tag">Free</span>
-      </div>
-    </a>
-
-    <a class="lib-card" href="https://ncert.nic.in/textbook.php" target="_blank" rel="noopener">
-      <div class="lib-card-header">
-        <span class="lib-card-icon">📗</span>
-        <div><h3>NCERT Mathematics</h3><span class="lib-type">School & Foundation</span></div>
-      </div>
-      <p>Official NCERT mathematics textbooks from Class 6 to Class 12 — free to download as PDF. Essential for building strong foundations in calculus, algebra, and coordinate geometry before starting B.Sc. level content.</p>
-      <div class="badges-row">
-        <span class="student-badge for-school">Class 6–12</span>
-        <span class="student-badge for-ug">B.Sc. Foundation</span>
-        <span class="student-badge for-csir">IIT JAM Basics</span>
-      </div>
-      <div class="lib-card-footer" style="margin-top:12px;">
-        <span class="lib-visit">Download NCERT <i class="fas fa-arrow-right"></i></span>
-        <span class="lib-tag">Free PDF</span>
-      </div>
-    </a>
-
   </div>
 </div>
 
