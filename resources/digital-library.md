@@ -162,6 +162,54 @@ permalink: /resources/digital-library/
         <span class="lib-tag">Free</span>
       </div>
     </a>
+
+        <a class="lib-card" href="https://openstax.org/subjects/math" target="_blank" rel="noopener">
+      <div class="lib-card-header">
+        <span class="lib-card-icon">📘</span>
+        <div><h3>OpenStax (Rice University)</h3><span class="lib-type">Peer-Reviewed Textbooks</span></div>
+      </div>
+      <p>High-quality, peer-reviewed, freely available textbooks from Rice University — covering Calculus (1, 2 &amp; 3), Algebra, Precalculus, Statistics, and more. Professionally written and regularly updated.</p>
+      <div class="badges-row">
+        <span class="student-badge for-ug">B.Sc. Students</span>
+        <span class="student-badge for-csir">CSIR NET / GATE Basics</span>
+      </div>
+      <div class="lib-card-footer" style="margin-top:12px;">
+        <span class="lib-visit">Browse OpenStax <i class="fas fa-arrow-right"></i></span>
+        <span class="lib-tag">Free PDF</span>
+      </div>
+    </a>
+
+    <a class="lib-card" href="https://open.umn.edu/opentextbooks/subjects/mathematics" target="_blank" rel="noopener">
+      <div class="lib-card-header">
+        <span class="lib-card-icon">📙</span>
+        <div><h3>Open Textbook Library</h3><span class="lib-type">University Textbooks</span></div>
+      </div>
+      <p>University-level mathematics textbooks with exercises, solutions, and lecture slides — peer-reviewed and freely available. Covers undergraduate and postgraduate mathematics topics comprehensively.</p>
+      <div class="badges-row">
+        <span class="student-badge for-ug">B.Sc. Students</span>
+        <span class="student-badge for-pg">M.Sc. Students</span>
+      </div>
+      <div class="lib-card-footer" style="margin-top:12px;">
+        <span class="lib-visit">Browse Library <i class="fas fa-arrow-right"></i></span>
+        <span class="lib-tag">Free</span>
+      </div>
+    </a>
+    <a class="lib-card" href="http://www.e-booksdirectory.com/mathematics.php" target="_blank" rel="noopener">
+      <div class="lib-card-header">
+        <span class="lib-card-icon">📂</span>
+        <div><h3>E-Books Directory (Mathematics)</h3><span class="lib-type">Categorised PDF Collection</span></div>
+      </div>
+      <p>A categorised collection of free mathematics PDFs — covering Algebra, Topology, Number Theory, Analysis, Geometry, and more. Quick to browse and download by topic. Ideal for targeted study.</p>
+      <div class="badges-row">
+        <span class="student-badge for-ug">B.Sc. Students</span>
+        <span class="student-badge for-pg">M.Sc. Students</span>
+        <span class="student-badge for-research">Researchers</span>
+      </div>
+      <div class="lib-card-footer" style="margin-top:12px;">
+        <span class="lib-visit">Browse PDFs <i class="fas fa-arrow-right"></i></span>
+        <span class="lib-tag">Free PDF</span>
+      </div>
+    </a>
     
     <a class="lib-card" href="https://www.ams.org/open-math-notes" target="_blank" rel="noopener">
       <div class="lib-card-header">
@@ -248,79 +296,6 @@ permalink: /resources/digital-library/
       </div>
       <div class="lib-card-footer" style="margin-top:12px;">
         <span class="lib-visit">Download NCERT <i class="fas fa-arrow-right"></i></span>
-        <span class="lib-tag">Free PDF</span>
-      </div>
-    </a>
-
-  </div>
-</div>
-
-<!-- Open Textbooks -->
-<div class="lib-section">
-  <div class="section-title"><i class="fas fa-book" style="color:#d97706;"></i> Open Textbooks</div>
-  <div class="lib-grid">
-
-    <a class="lib-card" href="https://openstax.org/subjects/math" target="_blank" rel="noopener">
-      <div class="lib-card-header">
-        <span class="lib-card-icon">📘</span>
-        <div><h3>OpenStax (Rice University)</h3><span class="lib-type">Peer-Reviewed Textbooks</span></div>
-      </div>
-      <p>High-quality, peer-reviewed, freely available textbooks from Rice University — covering Calculus (1, 2 &amp; 3), Algebra, Precalculus, Statistics, and more. Professionally written and regularly updated.</p>
-      <div class="badges-row">
-        <span class="student-badge for-ug">B.Sc. Students</span>
-        <span class="student-badge for-csir">CSIR NET / GATE Basics</span>
-      </div>
-      <div class="lib-card-footer" style="margin-top:12px;">
-        <span class="lib-visit">Browse OpenStax <i class="fas fa-arrow-right"></i></span>
-        <span class="lib-tag">Free PDF</span>
-      </div>
-    </a>
-
-    <a class="lib-card" href="https://open.umn.edu/opentextbooks/subjects/mathematics" target="_blank" rel="noopener">
-      <div class="lib-card-header">
-        <span class="lib-card-icon">📙</span>
-        <div><h3>Open Textbook Library</h3><span class="lib-type">University Textbooks</span></div>
-      </div>
-      <p>University-level mathematics textbooks with exercises, solutions, and lecture slides — peer-reviewed and freely available. Covers undergraduate and postgraduate mathematics topics comprehensively.</p>
-      <div class="badges-row">
-        <span class="student-badge for-ug">B.Sc. Students</span>
-        <span class="student-badge for-pg">M.Sc. Students</span>
-      </div>
-      <div class="lib-card-footer" style="margin-top:12px;">
-        <span class="lib-visit">Browse Library <i class="fas fa-arrow-right"></i></span>
-        <span class="lib-tag">Free</span>
-      </div>
-    </a>
-
-    <a class="lib-card" href="http://linear.ups.edu/html/fcla.html" target="_blank" rel="noopener">
-      <div class="lib-card-header">
-        <span class="lib-card-icon">📐</span>
-        <div><h3>Understanding Linear Algebra</h3><span class="lib-type">Interactive Textbook</span></div>
-      </div>
-      <p>A free, open-source, interactive Linear Algebra textbook by David Austin — built for conceptual understanding with detailed explanations, diagrams, and exercises. One of the best free resources for Linear Algebra.</p>
-      <div class="badges-row">
-        <span class="student-badge for-ug">B.Sc. Students</span>
-        <span class="student-badge for-csir">CSIR NET / GATE / IIT JAM</span>
-      </div>
-      <div class="lib-card-footer" style="margin-top:12px;">
-        <span class="lib-visit">Read Online <i class="fas fa-arrow-right"></i></span>
-        <span class="lib-tag">Free</span>
-      </div>
-    </a>
-
-    <a class="lib-card" href="http://www.e-booksdirectory.com/mathematics.php" target="_blank" rel="noopener">
-      <div class="lib-card-header">
-        <span class="lib-card-icon">📂</span>
-        <div><h3>E-Books Directory (Mathematics)</h3><span class="lib-type">Categorised PDF Collection</span></div>
-      </div>
-      <p>A categorised collection of free mathematics PDFs — covering Algebra, Topology, Number Theory, Analysis, Geometry, and more. Quick to browse and download by topic. Ideal for targeted study.</p>
-      <div class="badges-row">
-        <span class="student-badge for-ug">B.Sc. Students</span>
-        <span class="student-badge for-pg">M.Sc. Students</span>
-        <span class="student-badge for-research">Researchers</span>
-      </div>
-      <div class="lib-card-footer" style="margin-top:12px;">
-        <span class="lib-visit">Browse PDFs <i class="fas fa-arrow-right"></i></span>
         <span class="lib-tag">Free PDF</span>
       </div>
     </a>
