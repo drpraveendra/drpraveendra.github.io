@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "वास्तविक संख्याओं की नींव: संख्या प्रणाली की समझ"
-date: 2026-03-21
+date: 2026-03-22
 category: maths
 lang: hi
 lang_pair: "/blog/foundations-of-real-numbers-understanding-the-number-system/"
