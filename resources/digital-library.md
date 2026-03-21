@@ -162,6 +162,19 @@ permalink: /resources/digital-library/
         <span class="lib-tag">Free</span>
       </div>
     </a>
+    
+    <a class="lib-card" href="https://www.ams.org/open-math-notes" target="_blank" rel="noopener">
+      <div class="lib-card-header">
+        <span class="lib-card-icon">🏛️</span>
+        <div><h3>AMS Open Math Notes</h3><span class="lib-type">Lecture Notes</span></div>
+      </div>
+      <p>Free lecture notes from professors around the world — contributed to the American Mathematical Society's open repository. Graduate-level coverage.</p>
+      <div class="badges-row"><span class="student-badge for-pg">M.Sc. Students</span><span class="student-badge for-research">Researchers</span><span class="student-badge for-csir">CSIR NET</span></div>
+      <div class="lib-card-footer" style="margin-top:12px;">
+        <span class="lib-visit">View Notes <i class="fas fa-arrow-right"></i></span>
+        <span class="lib-tag">Free PDF</span>
+      </div>
+    </a>
   </div>
 </div>
 
@@ -169,6 +182,20 @@ permalink: /resources/digital-library/
 <div class="lib-section">
   <div class="section-title"><i class="fas fa-flask" style="color:#7c3aed;"></i> Research Papers & Preprints</div>
   <div class="lib-grid">
+
+      <a class="lib-card" href="https://scholar.google.com/" target="_blank" rel="noopener">
+      <div class="lib-card-header">
+        <span class="lib-card-icon">🔍</span>
+        <div><h3>Google Scholar</h3><span class="lib-type">Research Search</span></div>
+      </div>
+      <p>Search millions of research papers, theses, and books. Many papers have free PDF links. Essential for finding references for M.Sc. projects and research.</p>
+      <div class="badges-row"><span class="student-badge for-pg">M.Sc. Students</span><span class="student-badge for-research">Researchers</span></div>
+      <div class="lib-card-footer" style="margin-top:12px;">
+        <span class="lib-visit">Search Papers <i class="fas fa-arrow-right"></i></span>
+        <span class="lib-tag">Free</span>
+      </div>
+    </a>
+    
 
     <a class="lib-card" href="https://arxiv.org/archive/math" target="_blank" rel="noopener">
       <div class="lib-card-header">
@@ -182,33 +209,6 @@ permalink: /resources/digital-library/
         <span class="lib-tag">Free</span>
       </div>
     </a>
-
-    <a class="lib-card" href="https://scholar.google.com/" target="_blank" rel="noopener">
-      <div class="lib-card-header">
-        <span class="lib-card-icon">🔍</span>
-        <div><h3>Google Scholar</h3><span class="lib-type">Research Search</span></div>
-      </div>
-      <p>Search millions of research papers, theses, and books. Many papers have free PDF links. Essential for finding references for M.Sc. projects and research.</p>
-      <div class="badges-row"><span class="student-badge for-pg">M.Sc. Students</span><span class="student-badge for-research">Researchers</span></div>
-      <div class="lib-card-footer" style="margin-top:12px;">
-        <span class="lib-visit">Search Papers <i class="fas fa-arrow-right"></i></span>
-        <span class="lib-tag">Free</span>
-      </div>
-    </a>
-
-    <a class="lib-card" href="https://www.ams.org/open-math-notes" target="_blank" rel="noopener">
-      <div class="lib-card-header">
-        <span class="lib-card-icon">🏛️</span>
-        <div><h3>AMS Open Math Notes</h3><span class="lib-type">Lecture Notes</span></div>
-      </div>
-      <p>Free lecture notes from professors around the world — contributed to the American Mathematical Society's open repository. Graduate-level coverage.</p>
-      <div class="badges-row"><span class="student-badge for-pg">M.Sc. Students</span><span class="student-badge for-research">Researchers</span><span class="student-badge for-csir">CSIR NET</span></div>
-      <div class="lib-card-footer" style="margin-top:12px;">
-        <span class="lib-visit">View Notes <i class="fas fa-arrow-right"></i></span>
-        <span class="lib-tag">Free PDF</span>
-      </div>
-    </a>
-
   </div>
 </div>
 
