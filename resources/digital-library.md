@@ -137,7 +137,7 @@ permalink: /resources/digital-library/
   <div class="section-title"><i class="fas fa-book-open" style="color:#059669;"></i> Free Textbooks & Open Books</div>
   <div class="lib-grid">
 
-    <a class="lib-card" href="https://math.libretexts.org/" target="_blank" rel="noopener">
+    <a class="lib-card" href="https://math.libretexts.org/Bookshelves" target="_blank" rel="noopener">
       <div class="lib-card-header">
         <span class="lib-card-icon">📖</span>
         <div><h3>LibreTexts Mathematics</h3><span class="lib-type">Open Textbooks</span></div>
