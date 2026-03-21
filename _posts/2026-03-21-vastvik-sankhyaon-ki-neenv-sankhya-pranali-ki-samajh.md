@@ -503,7 +503,7 @@ description: "एक सरल और प्रभावी मार्गद�
 .pdf-btn .pt span:last-child  { font-size:0.72rem; opacity:.82; font-weight:400; }
 .pdf-generating { opacity:.65; pointer-events:none; }
 /* ── PDF source div — hidden on page ────────────────── */
-#pdf-content { display:none; }
+#pdf-content { visibility:hidden; position:absolute; left:-9999px; top:0; height:0; overflow:hidden; pointer-events:none; }
 
 /* ── PDF internal styles ─────────────────────────────── */
 .pdoc {
@@ -1034,69 +1034,92 @@ description: "एक सरल और प्रभावी मार्गद�
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
 <script>
 function generatePDF() {
   var btn = document.getElementById('pdfDownloadBtnHi');
   btn.classList.add('generating');
   btn.querySelector('.pt1').textContent = 'PDF बन रही है…';
 
-  var element = document.getElementById('pdf-content');
-  element.style.display = 'block';
-  element.style.position = 'absolute';
-  element.style.left = '-9999px';
-  element.style.top = '0';
-  element.style.width = '210mm';
-  element.style.background = 'white';
+  var source = document.getElementById('pdf-content');
+  var clone = source.cloneNode(true);
+  clone.removeAttribute('id');
 
-  var opt = {
-    margin:      [12, 14, 16, 14],
-    filename:    'foundations-real-numbers-fractalfrontiermaths.pdf',
-    image:       { type: 'jpeg', quality: 0.97 },
-    html2canvas: { scale: 2, useCORS: true, letterRendering: true,
-                   logging: false, backgroundColor: '#ffffff' },
-    jsPDF:       { unit: 'mm', format: 'a4', orientation: 'portrait', compress: true },
-    pagebreak:   { mode: ['avoid-all', 'css', 'legacy'] }
-  };
+  var overlay = document.createElement('div');
+  overlay.style.cssText = [
+    'position:fixed','top:0','left:0',
+    'width:210mm','min-height:100vh',
+    'background:#fff','z-index:99999',
+    'overflow:visible','padding:0','margin:0','box-sizing:border-box'
+  ].join(';');
 
-  html2pdf().set(opt).from(element).toPdf().get('pdf')
-    .then(function(pdf) {
-      var totalPages = pdf.internal.getNumberOfPages();
-      for (var i = 1; i <= totalPages; i++) {
-        pdf.setPage(i);
-        var pw = pdf.internal.pageSize.getWidth();
-        var ph = pdf.internal.pageSize.getHeight();
-        pdf.saveGraphicsState();
-        pdf.setGState(new pdf.GState({ opacity: 0.07 }));
-        pdf.setFont('helvetica', 'bold');
-        pdf.setFontSize(26);
-        pdf.setTextColor(30, 60, 114);
-        pdf.text('Fractal Frontier Maths', pw/2, ph/2, { align:'center', angle:45 });
-        pdf.restoreGraphicsState();
-        pdf.setDrawColor(229, 231, 235);
-        pdf.setLineWidth(0.3);
-        pdf.line(14, ph-10, pw-14, ph-10);
-        pdf.setFont('helvetica','normal');
-        pdf.setFontSize(7);
-        pdf.setTextColor(107,114,128);
-        pdf.text('drpraveendra.github.io  |  Fractal Frontier Maths', 14, ph-7);
-        pdf.text('Page ' + i + ' of ' + totalPages, pw-14, ph-7, { align:'right' });
-      }
-    })
-    .save()
-    .then(function() {
-      element.style.display = 'none';
-      element.style.position = '';
-      element.style.left = '';
-      element.style.top = '';
-      element.style.width = '';
-      btn.classList.remove('generating');
-      btn.querySelector('.pt1').textContent = 'PDF नोट्स डाउनलोड करें';
-    })
-    .catch(function(err) {
-      console.error(err);
-      element.style.display = 'none';
-      btn.classList.remove('generating');
-      btn.querySelector('.pt1').textContent = 'PDF नोट्स डाउनलोड करें';
+  overlay.appendChild(clone);
+  document.body.appendChild(overlay);
+
+  requestAnimationFrame(function() {
+    requestAnimationFrame(function() {
+
+      var opt = {
+        margin:      [12, 14, 16, 14],
+        filename:    'foundations-real-numbers-fractalfrontiermaths.pdf',
+        image:       { type: 'jpeg', quality: 0.97 },
+        html2canvas: {
+          scale: 2,
+          useCORS: true,
+          allowTaint: true,
+          letterRendering: true,
+          logging: false,
+          backgroundColor: '#ffffff',
+          windowWidth: 794,
+          scrollX: 0,
+          scrollY: 0
+        },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait', compress: true },
+        pagebreak: { mode: ['css', 'legacy'] }
+      };
+
+      html2pdf()
+        .set(opt)
+        .from(clone)
+        .toPdf()
+        .get('pdf')
+        .then(function(pdf) {
+          var totalPages = pdf.internal.getNumberOfPages();
+          for (var i = 1; i <= totalPages; i++) {
+            pdf.setPage(i);
+            var pw = pdf.internal.pageSize.getWidth();
+            var ph = pdf.internal.pageSize.getHeight();
+            pdf.saveGraphicsState();
+            pdf.setGState(new pdf.GState({ opacity: 0.07 }));
+            pdf.setFont('helvetica', 'bold');
+            pdf.setFontSize(28);
+            pdf.setTextColor(30, 60, 114);
+            pdf.text('Fractal Frontier Maths', pw/2, ph/2, { align:'center', angle:45 });
+            pdf.restoreGraphicsState();
+            pdf.setDrawColor(220, 220, 220);
+            pdf.setLineWidth(0.3);
+            pdf.line(14, ph-11, pw-14, ph-11);
+            pdf.setFont('helvetica','normal');
+            pdf.setFontSize(7);
+            pdf.setTextColor(120,120,120);
+            pdf.text('drpraveendra.github.io  |  Fractal Frontier Maths', 14, ph-7.5);
+            pdf.text('Page ' + i + ' of ' + totalPages, pw-14, ph-7.5, { align:'right' });
+          }
+        })
+        .save()
+        .then(function() {
+          document.body.removeChild(overlay);
+          btn.classList.remove('generating');
+          btn.querySelector('.pt1').textContent = 'PDF नोट्स डाउनलोड करें';
+        })
+        .catch(function(err) {
+          console.error('PDF error:', err);
+          document.body.removeChild(overlay);
+          btn.classList.remove('generating');
+          btn.querySelector('.pt1').textContent = 'PDF नोट्स डाउनलोड करें';
+        });
+
     });
+  });
 }
 </script>
