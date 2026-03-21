@@ -129,7 +129,10 @@ $$-(\lvert a\rvert+\lvert b\rvert) \leq a+b \leq \lvert a\rvert+\lvert b\rvert \
 
 <p><strong>Example:</strong> $N_{0.5}(3) = (2.5, 3.5)$ — all points within distance $0.5$ of $3$.</p>
 
-<div>
+<h2 class="section-title"><span class="sec-icon" style="background:#ecfdf5;color:#059669;"><i class="fas fa-circle"></i></span>Supremum and Infimum</h2>
+
+<div class="info-card green">
+  <div class="info-card-header"><i class="fas fa-book"></i> Definition</div>
   The <strong>supremum</strong> (least upper bound) of a set $A \subset \mathbb{R}$ is a number $s \in \mathbb{R}$ such that:
   $$\text{(i) } x \leq s \quad \forall x \in A \quad \text{(upper bound)}$$
   $$\text{(ii) } \forall \varepsilon > 0,\ \exists x \in A \text{ such that } x > s - \varepsilon \quad \text{(least property)}$$
