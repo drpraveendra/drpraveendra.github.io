@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ℝ में Point Set Topology का परिचय — मूल अवधारणाएँ"
-date: 2026-02-01
+date: 2026-03-21
 category: maths
 lang: hi
 lang_pair: "/blog/introduction-to-point-set-topology/"
