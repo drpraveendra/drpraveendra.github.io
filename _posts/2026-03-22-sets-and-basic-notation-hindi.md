@@ -139,7 +139,7 @@ description: "समुच्चय, समुच्चय-निर्माण
   $\emptyset$ (रिक्त समुच्चय)</p>
 </div>
 
-> 📖 सन्दर्भ: Rudin, W., <strong>Principles of Mathematical Analysis</strong>, 3rd ed., Ch. 1, §1.1–1.2. तथा Apostol, T.M., <strong>Mathematical Analysis</strong>, 2nd ed., Ch. 1, §1.1–1.2.
+📖 सन्दर्भ: Rudin, W., <strong>Principles of Mathematical Analysis</strong>, 3rd ed., Ch. 1, §1.1–1.2. तथा Apostol, T.M., <strong>Mathematical Analysis</strong>, 2nd ed., Ch. 1, §1.1–1.2.
 
 <div class="info-card purple">
   <div class="info-card-header purple">&#x1F4D0; उपसमुच्चय, समानता और घात-समुच्चय</div>
