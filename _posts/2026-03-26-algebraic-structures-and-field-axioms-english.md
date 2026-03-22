@@ -186,7 +186,7 @@ description: "Binary operations, the algebraic ladder from Group to Field, all n
   <p><strong>Non-example:</strong> $\mathbb{Z}$ fails (M4): $2 \in \mathbb{Z}$ has no multiplicative inverse in $\mathbb{Z}$. So $\mathbb{Z}$ is an integral domain, not a field.</p>
 </div>
 
-> 📖 **Reference:** Rudin, W., *Principles of Mathematical Analysis*, 3rd ed., Ch. 1, Definitions 1.12 & 1.17. Also: Apostol, T.M., *Mathematical Analysis*, 2nd ed., Ch. 1, §1.3–1.4.
+📖 <strong>Reference:</strong> Rudin, W., <strong>Principles of Mathematical Analysis</strong>, 3rd ed., Ch. 1, Definitions 1.12 & 1.17. Also: Apostol, T.M., <strong>Mathematical Analysis</strong>, 2nd ed., Ch. 1, §1.3–1.4.
 
 <div class="info-card gold">
   <div class="info-card-header gold">&#x1F517; Prerequisites</div>
