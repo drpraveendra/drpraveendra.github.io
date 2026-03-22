@@ -429,7 +429,7 @@ description: "A complete beginner-to-exam guide on sets, set-builder notation, s
 <div class="info-card gold">
   <div class="info-card-header gold">&#x1F4DA; Prerequisites &amp; Next Steps</div>
   <p><strong>&#x2190; Prerequisites:</strong> None — this is the first post in the series. No prior mathematical knowledge beyond secondary school arithmetic is required.</p>
-  <p><strong>&#x2192; Next Topic:</strong> <em>Relations and Functions</em> — ordered pairs, domain, range, injective, surjective, bijective maps; the language built directly on top of set theory developed here.</p>
+  <p><strong>&#x2192; Next Topic:</strong> <em>Logic and Proof Methods — The Language of Mathematics</em>; the language built directly on top of set theory developed here.</p>
   <p><strong>&#x1F4D6; Further Reading:</strong> Rudin, Ch. 1, §§1.1–1.12; Apostol, Ch. 1, §§1.1–1.4; Bartle &amp; Sherbert, Ch. 1.</p>
 </div>
 
