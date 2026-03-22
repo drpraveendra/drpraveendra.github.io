@@ -144,7 +144,7 @@ description: "A complete beginner-to-exam guide on sets, set-builder notation, s
   $\emptyset$ (empty set)</p>
 </div>
 
-> 📖 Reference: Rudin, W., <strong>Principles of Mathematical Analysis</strong>, 3rd ed., Ch. 1, §1.1–1.2. Also: Apostol, T.M., <strong>Mathematical Analysis</strong>, 2nd ed., Ch. 1, §1.1–1.2.
+📖 Reference: Rudin, W., <strong>Principles of Mathematical Analysis</strong>, 3rd ed., Ch. 1, §1.1–1.2. Also: Apostol, T.M., <strong>Mathematical Analysis</strong>, 2nd ed., Ch. 1, §1.1–1.2.
 
 <div class="info-card purple">
   <div class="info-card-header purple">&#x1F4D0; Subsets, Equality, and Power Sets</div>
