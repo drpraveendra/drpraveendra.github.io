@@ -6,7 +6,6 @@ category: maths
 lang: hi 
 lang_pair: "/blog/consequences-of-field-axioms-english/"
 permalink: /blog/consequences-of-field-axioms-hindi/
-listed: false
 description: "$0$ और $1$ की एकैकता, $a\cdot0=0$, $(-a)(-b)=ab$, शून्य-भाजक नहीं, लघुकरण नियम, घटाव और भाग — सभी केवल नौ Field अभिगृहीतों से सिद्ध — CSIR NET, GATE, IIT JAM के लिए।"
 ---
 
