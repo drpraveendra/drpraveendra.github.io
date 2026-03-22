@@ -137,7 +137,7 @@ description: "A complete guide to relations, equivalence relations, functions, i
   <p>Note: range $\subseteq$ codomain; equality holds if and only if $f$ is surjective.</p>
 </div>
 
-> 📖 **Reference:** Apostol, T.M., *Mathematical Analysis*, 2nd ed., Ch. 1, §1.3–1.5. Also: Rudin, W., *Principles of Mathematical Analysis*, 3rd ed., Ch. 2, §2.1.
+> 📖 <strong>Reference:</strong> Apostol, T.M., <strong>Mathematical Analysis</strong>, 2nd ed., Ch. 1, §1.3–1.5. Also: Rudin, W., <strong>Principles of Mathematical Analysis</strong>, 3rd ed., Ch. 2, §2.1.
 
 <div class="info-card gold">
   <div class="info-card-header gold">&#x1F517; Prerequisites</div>
@@ -174,7 +174,7 @@ description: "A complete guide to relations, equivalence relations, functions, i
 <div class="info-card purple">
   <div class="info-card-header purple">&#x1F4D0; Composition and Inverse</div>
   <p><strong>Composition:</strong> If $f \colon A \to B$ and $g \colon B \to C$, then $(g \circ f) \colon A \to C$ with $(g \circ f)(a) = g(f(a))$. Note: apply $f$ first, then $g$.</p>
-  <p><strong>Inverse:</strong> $f \colon A \to B$ has an inverse $f^{-1} \colon B \to A$ satisfying $f^{-1} \circ f = \mathrm{id}_A$ and $f \circ f^{-1} = \mathrm{id}_B$ <strong>if and only if</strong> $f$ is bijective.</p>
+  <p><strong>Inverse:</strong> $f \colon A \to B$ has an inverse $f^{-1} \colon B \to A$ satisfying $f^{-1} \circ f = \mathrm{id}_A$ and $f \circ f^{-1} = \mathrm{id}_B$ <strong>if and only if</strong> $f$ is bijective. Here, $\mathrm{id}_A$ is the identity mapping on the set A, i.e., $\mathrm{id}_A(x) = x $\forall x \in A$.</p>
   <p><strong>Composition inverse law:</strong> $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$ (order reverses).</p>
   <p><strong>Composition preserves type:</strong> If $f$ and $g$ are both injective (resp. surjective, bijective), then so is $g \circ f$.</p>
 </div>
