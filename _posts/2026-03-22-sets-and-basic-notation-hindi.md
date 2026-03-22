@@ -442,4 +442,31 @@ description: "समुच्चय, समुच्चय-निर्माण
   </a>
 </div>
 
+<div class="playlist-section">
+  <a class="playlist-btn" href="https://youtube.com/playlist?list=PLHoWYh3APMj7HlsYTXaO1_2qf7V1MPVkx&si=HDdquzN6BAxrhlX9" target="_blank" rel="noopener noreferrer">
+    <span class="yt-icon">
+      <svg viewBox="0 0 68 48" width="52" height="37" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C56 0 34 0 34 0S12 0 7.5 1.7a8.5 8.5 0 0 0-6 6C0 12.2 0 24 0 24s0 11.8 1.5 16.3a8.5 8.5 0 0 0 6 6C12 48 34 48 34 48s22 0 26.5-1.7a8.5 8.5 0 0 0 6-6C68 35.8 68 24 68 24s0-11.8-1.5-16.3z" fill="#FF0000"/>
+        <path d="M27 34l18-10-18-10v20z" fill="#fff"/>
+      </svg>
+    </span>
+    <span class="playlist-text">
+      <span class="playlist-label">&#x25A6; पूरी वीडियो प्लेलिस्ट</span>
+      <span class="playlist-title">समुच्चय सिद्धान्त — Fractal Frontier Maths</span>
+      <span class="playlist-sub">समुच्चय सिद्धान्त पर विस्तृत वीडियो लेक्चर देखें &rarr;</span>
+    </span>
+  </a>
+</div>
+
+<style>
+  .playlist-section{text-align:center;margin:36px 0 28px}
+  .playlist-btn{display:inline-flex;align-items:center;gap:18px;background:linear-gradient(135deg,#1B0A0A,#7f0000,#FF0000);color:white;padding:16px 34px;border-radius:12px;font-family:'Hind','Noto Sans Devanagari',Georgia,serif;font-size:1rem;font-weight:700;box-shadow:0 4px 22px rgba(255,0,0,.30);transition:transform .2s,box-shadow .2s;text-decoration:none;max-width:520px}
+  .playlist-btn:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(255,0,0,.45);color:white;text-decoration:none}
+  .yt-icon{flex-shrink:0;filter:drop-shadow(0 2px 6px rgba(0,0,0,.35))}
+  .playlist-text{display:flex;flex-direction:column;text-align:left;line-height:1.38}
+  .playlist-label{font-size:0.7rem;text-transform:uppercase;letter-spacing:.1em;opacity:.8;font-weight:600}
+  .playlist-title{font-size:1.02rem;font-weight:800}
+  .playlist-sub{font-size:0.75rem;opacity:.82;font-weight:400}
+</style>
+
 </div>
