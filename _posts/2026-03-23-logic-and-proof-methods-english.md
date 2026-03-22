@@ -149,7 +149,7 @@ description: "Master propositions, logical connectives, truth tables, quantifier
   <p>$$\neg\bigl(\forall x\in D,\;P(x)\bigr)\equiv\exists\,x\in D,\;\neg P(x) \qquad \neg\bigl(\exists\,x\in D,\;P(x)\bigr)\equiv\forall x\in D,\;\neg P(x)$$</p>
 </div>
 
-> 📖 **Reference:** Apostol, T.M., *Mathematical Analysis*, 2nd ed., Ch. 1, §1.1–1.2. Also: Rudin, W., *Principles of Mathematical Analysis*, 3rd ed., Ch. 1, §1.1.
+> 📖 <strong>Reference</strong>: Apostol, T.M., <strong>Mathematical Analysis</strong>, 2nd ed., Ch. 1, §1.1–1.2. Also: Rudin, W., <strong>Principles of Mathematical Analysis</strong>, 3rd ed., Ch. 1, §1.1.
 
 <div class="info-card gold">
   <div class="info-card-header gold">&#x1F517; Prerequisites</div>
