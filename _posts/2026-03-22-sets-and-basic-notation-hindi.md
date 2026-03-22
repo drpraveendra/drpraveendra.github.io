@@ -416,7 +416,7 @@ description: "समुच्चय, समुच्चय-निर्माण
 <div class="info-card gold">
   <div class="info-card-header gold">&#x1F4DA; पूर्वापेक्षा एवं अगले चरण</div>
   <p><strong>&#x2190; पूर्वापेक्षाएँ:</strong> यह श्रृंखला की पहली पोस्ट है। केवल माध्यमिक स्तर की गणित की जानकारी पर्याप्त है।</p>
-  <p><strong>&#x2192; अगला विषय:</strong> <em>सम्बन्ध और फलन (Relations and Functions)</em> — क्रमित युग्म, प्रांत, परास, एकैकी, आच्छादी, द्विएकैकी प्रतिचित्रण।</p>
+  <p><strong>&#x2192; अगला विषय:</strong> <em>Logic and Proof Methods — The Language of Mathematics</em></p>
   <p><strong>&#x1F4D6; अतिरिक्त पाठन:</strong> Rudin, Ch. 1, §§1.1–1.12; Apostol, Ch. 1, §§1.1–1.4; Bartle &amp; Sherbert, Ch. 1.</p>
 </div>
 
