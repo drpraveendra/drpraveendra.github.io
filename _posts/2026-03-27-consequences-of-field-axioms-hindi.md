@@ -3,10 +3,11 @@ layout: post
 title: "क्षेत्र अभिगृहीतों के परिणाम"
 date: 2026-03-27
 category: maths
-lang: hi 
+lang: hi
 lang_pair: "/blog/consequences-of-field-axioms-english/"
 permalink: /blog/consequences-of-field-axioms-hindi/
-description: "$0$ और $1$ की एकैकता, $a\cdot0=0$, $(-a)(-b)=ab$, शून्य-भाजक नहीं, लघुकरण नियम, घटाव और भाग — सभी केवल नौ Field अभिगृहीतों से सिद्ध — CSIR NET, GATE, IIT JAM के लिए।"
+listed: false
+description: "क्षेत्र अभिगृहीतों के परिणाम — शून्य का गुणनफल, चिह्न नियम, शून्य-भाजक नहीं, लघुकरण नियम, घटाव और भाग — सभी केवल नौ Field अभिगृहीतों से सिद्ध — CSIR NET, GATE, IIT JAM के लिए।"
 ---
 
 <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
