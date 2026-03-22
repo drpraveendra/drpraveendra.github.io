@@ -3,7 +3,7 @@ layout: post
 title: "क्षेत्र अभिगृहीतों के परिणाम"
 date: 2026-03-27
 category: maths
-lang: hi
+lang: hi 
 lang_pair: "/blog/consequences-of-field-axioms-english/"
 permalink: /blog/consequences-of-field-axioms-hindi/
 listed: false
