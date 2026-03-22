@@ -146,7 +146,7 @@ description: "Finite vs infinite; countably infinite ℕ, ℤ, ℚ; uncountable 
   </div>
 </div>
 
-> 📖 **Reference:** Rudin, W., *Principles of Mathematical Analysis*, 3rd ed., Ch. 2, §§2.1–2.14. Also: Apostol, T.M., *Mathematical Analysis*, 2nd ed., Ch. 1, §§1.14–1.16.
+> 📖 <strong>Reference:</strong> Rudin, W., <strong>Principles of Mathematical Analysis</strong>, 3rd ed., Ch. 2, §§2.1–2.14. Also: Apostol, T.M., <strong>Mathematical Analysis</strong>, 2nd ed., Ch. 1, §§1.14–1.16.
 
 <div class="info-card gold">
   <div class="info-card-header gold">&#x1F517; Prerequisites</div>
@@ -184,7 +184,7 @@ description: "Finite vs infinite; countably infinite ℕ, ℤ, ℚ; uncountable 
 
 <div class="info-card hindi">
   <div class="info-card-header gold">&#x1F1EE;&#x1F1F3; हिंदी में संक्षेप</div>
-  <p>दो समुच्चयों का <strong>समाङ्कता (Cardinality)</strong> Bijection से मापी जाती है। <strong>गणनीय (Countable)</strong> समुच्चय वे हैं जिनका $\mathbb{N}$ से Bijection हो: $\mathbb{N}, \mathbb{Z}, \mathbb{Q}$ सभी $\aleph_0$ हैं। <strong>अगणनीय (Uncountable)</strong> समुच्चय: $\mathbb{R}$ की Cardinality $\mathfrak{c} > \aleph_0$ है। Cantor का विकर्ण तर्क (Diagonal Argument) Contradiction द्वारा सिद्ध करता है कि $(0,1)$ अगणनीय है। $\mathbb{R}\setminus\mathbb{Q}$ (अपरिमेय संख्याएँ) भी अगणनीय हैं।</p>
+  <p>दो समुच्चयों का <strong>गणनांक (Cardinality)</strong> Bijection से मापा जाता है। <strong>गणनीय (Countable)</strong> समुच्चय वे हैं जिनका $\mathbb{N}$ से Bijection हो: $\mathbb{N}, \mathbb{Z}, \mathbb{Q}$ सभी $\aleph_0$ हैं। <strong>अगणनीय (Uncountable)</strong> समुच्चय: $\mathbb{R}$ की Cardinality $\mathfrak{c} > \aleph_0$ है। Cantor का विकर्ण तर्क (Diagonal Argument) Contradiction द्वारा सिद्ध करता है कि $(0,1)$ अगणनीय है। $\mathbb{R}\setminus\mathbb{Q}$ (अपरिमेय संख्याएँ) भी अगणनीय हैं।</p>
 </div>
 
 <!-- §4 SOLVED EXAMPLES -->
