@@ -147,7 +147,7 @@ description: "परिमित एवं अनंत समुच्चय; �
   </div>
 </div>
 
-> 📖 **सन्दर्भ:** Rudin, W., *Principles of Mathematical Analysis*, 3rd ed., Ch. 2, §§2.1–2.14. Apostol, T.M., *Mathematical Analysis*, 2nd ed., Ch. 1, §§1.14–1.16.
+📖 <strong>Reference:</strong> Rudin, W., <strong>Principles of Mathematical Analysis</strong>, 3rd ed., Ch. 2, §§2.1–2.14. Also: Apostol, T.M., <strong>Mathematical Analysis</strong>, 2nd ed., Ch. 1, §§1.14–1.16.
 
 <div class="info-card gold">
   <div class="info-card-header gold">&#x1F517; पूर्वापेक्षाएँ (Prerequisites)</div>
