@@ -160,7 +160,7 @@ description: "आंशिक क्रम, पूर्ण क्रम, कठ
   </div>
 </div>
 
-> 📖 **सन्दर्भ:** Rudin, W., *Principles of Mathematical Analysis*, 3rd ed., Ch. 1, Definitions 1.5–1.17. Apostol, T.M., *Mathematical Analysis*, 2nd ed., Ch. 1, §1.7–1.10.
+📖 <strong>Reference:</strong> Rudin, W., <strong>Principles of Mathematical Analysis</strong>, 3rd ed., Ch. 1, Definitions 1.5–1.17. Also: Apostol, T.M., </strong>Mathematical Analysis<strong>, 2nd ed., Ch. 1, §1.7–1.10.
 
 <div class="info-card gold">
   <div class="info-card-header gold">&#x1F517; पूर्वापेक्षाएँ (Prerequisites)</div>
