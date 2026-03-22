@@ -140,7 +140,7 @@ description: "Every familiar arithmetic rule — uniqueness of 0 and 1, a·0=0, 
   <span>(D)</span> $x(y+z)=xy+xz$
 </div>
 
-> 📖 **Reference:** Rudin, W., *Principles of Mathematical Analysis*, 3rd ed., Ch. 1, Propositions 1.14–1.16. Also: Apostol, T.M., *Mathematical Analysis*, 2nd ed., Ch. 1, §1.3–1.4.
+📖 <strong>Reference:</strong> Rudin, W., <strong>Principles of Mathematical Analysis</strong>, 3rd ed., Ch. 1, Propositions 1.14–1.16. Also: Apostol, T.M., <strong>Mathematical Analysis</strong>, 2nd ed., Ch. 1, §1.3–1.4.
 
 <div class="info-card gold">
   <div class="info-card-header gold">&#x1F517; Prerequisites</div>
