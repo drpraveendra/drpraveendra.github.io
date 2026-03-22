@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Foundations of Real Numbers: Understanding the Number System"
-date: 2026-03-21
+date: 2026-03-28
 category: maths
 lang: en
 lang_pair: "/blog/vastvik-sankhyaon-ki-neenv-sankhya-pranali-ki-samajh/"
