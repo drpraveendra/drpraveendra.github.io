@@ -138,7 +138,7 @@ description: "संबंध, तुल्यता संबंध, फलन,
   <p>Range ⊆ Codomain; समानता तभी होती है जब $f$ आच्छादी (Surjective) हो।</p>
 </div>
 
-> 📖 <strong>Reference:</strong> Apostol, T.M., <strong>Mathematical Analysis</strong>, 2nd ed., Ch. 1, §1.3–1.5. Also: Rudin, W., <strong>Principles of Mathematical Analysis</strong>, 3rd ed., Ch. 2, §2.1.
+📖 <strong>Reference:</strong> Apostol, T.M., <strong>Mathematical Analysis</strong>, 2nd ed., Ch. 1, §1.3–1.5. Also: Rudin, W., <strong>Principles of Mathematical Analysis</strong>, 3rd ed., Ch. 2, §2.1.
 
 <div class="info-card gold">
   <div class="info-card-header gold">&#x1F517; पूर्वापेक्षाएँ (Prerequisites)</div>
@@ -175,7 +175,7 @@ description: "संबंध, तुल्यता संबंध, फलन,
 <div class="info-card purple">
   <div class="info-card-header purple">&#x1F4D0; संयोजन और प्रतिलोम (Composition and Inverse)</div>
   <p><strong>संयोजन (Composition):</strong> $f\colon A\to B$ और $g\colon B\to C$ हों, तो $(g\circ f)\colon A\to C$, जहाँ $(g\circ f)(a)=g(f(a))$। पहले $f$ लगाएँ, फिर $g$।</p>
-  <p><strong>प्रतिलोम (Inverse):</strong> $f^{-1}\colon B\to A$ अस्तित्व में है जो $f^{-1}\circ f=\mathrm{id}_A$ और $f\circ f^{-1}=\mathrm{id}_B$ संतुष्ट करे — <strong>तभी और तब जब</strong> $f$ द्विएकैकी हो। जहाँ $\mathrm{id}_A$ समुच्चय $A$ पर परिभाषित इकाई फलन है, अर्थात, $\mathrm{id}_A(x) = x $\forall x \in A$.</p>
+  <p><strong>प्रतिलोम (Inverse):</strong> $f^{-1}\colon B\to A$ अस्तित्व में है जो $f^{-1}\circ f=\mathrm{id}_A$ और $f\circ f^{-1}=\mathrm{id}_B$ संतुष्ट करे — <strong>तभी और तब जब</strong> $f$ द्विएकैकी हो। जहाँ $\mathrm{id}_A$ समुच्चय $A$ पर परिभाषित इकाई फलन है, अर्थात, $\mathrm{id}_A(x) = x \forall x \in A$.</p>
   <p><strong>संयोजन का प्रतिलोम:</strong> $(g\circ f)^{-1}=f^{-1}\circ g^{-1}$ (क्रम उलट जाता है)।</p>
 </div>
 
