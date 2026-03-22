@@ -188,7 +188,7 @@ description: "द्विआधारी संक्रिया, Group से
   <p><strong>प्रतिउदाहरण:</strong> $\mathbb{Z}$ में (M4) असफल — $2\in\mathbb{Z}$ का गुणात्मक प्रतिलोम $\frac{1}{2}\notin\mathbb{Z}$। $\mathbb{Z}$ Integral Domain है, Field नहीं।</p>
 </div>
 
-> 📖 **सन्दर्भ:** Rudin, W., *Principles of Mathematical Analysis*, 3rd ed., Ch. 1, Definitions 1.12 & 1.17. Apostol, T.M., *Mathematical Analysis*, 2nd ed., Ch. 1, §1.3–1.4.
+📖 <strong>Reference:</strong> Rudin, W., <strong>Principles of Mathematical Analysis</strong>, 3rd ed., Ch. 1, Definitions 1.12 & 1.17. Also: Apostol, T.M., <strong>Mathematical Analysis</strong>, 2nd ed., Ch. 1, §1.3–1.4.
 
 <div class="info-card gold">
   <div class="info-card-header gold">&#x1F517; पूर्वापेक्षाएँ (Prerequisites)</div>
