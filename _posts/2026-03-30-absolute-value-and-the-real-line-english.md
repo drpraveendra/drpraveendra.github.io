@@ -146,7 +146,7 @@ description: "Definition of absolute value, four key properties, Triangle Inequa
   <p style="font-size:.85rem;color:#64748b;margin:8px 0 0;">$\lvert x \rvert$ = distance from $x$ to $0$; &nbsp; $\lvert x - y \rvert$ = distance between $x$ and $y$</p>
 </div>
 
-> 📖 **Reference:** Rudin, W., *Principles of Mathematical Analysis*, 3rd ed., Ch. 1, Definition 1.32 and Theorem 1.33. Also: Apostol, T.M., *Mathematical Analysis*, 2nd ed., Ch. 1, §1.11–1.12.
+📖 <strong>Reference:</strong> Rudin, W., <strong>Principles of Mathematical Analysis</strong>, 3rd ed., Ch. 1, Definition 1.32 and Theorem 1.33. Also: Apostol, T.M., <strong>Mathematical Analysis</strong>, 2nd ed., Ch. 1, §1.11–1.12.
 
 <div class="info-card gold">
   <div class="info-card-header gold">&#x1F517; Prerequisites</div>
