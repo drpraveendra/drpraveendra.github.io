@@ -129,7 +129,7 @@ description: "परम मान की परिभाषा, चार मु
   <p><strong>ज्यामितीय अर्थ:</strong> $\lvert x \rvert$ वास्तविक रेखा पर $x$ की $0$ से दूरी है। व्यापक रूप में $\lvert x - y \rvert$ बिंदुओं $x$ और $y$ के बीच की दूरी है: $d(x,y) = \lvert x-y \rvert$।</p>
 </div>
 
-> 📖 **सन्दर्भ:** Rudin, W., *Principles of Mathematical Analysis*, 3rd ed., Ch. 1, Definition 1.32 & Theorem 1.33. Apostol, T.M., *Mathematical Analysis*, 2nd ed., Ch. 1, §1.11–1.12.
+📖 <strong>Reference:</strong> Rudin, W., <strong>Principles of Mathematical Analysis</strong>, 3rd ed., Ch. 1, Definition 1.32 and Theorem 1.33. Also: Apostol, T.M., <strong>Mathematical Analysis</strong>, 2nd ed., Ch. 1, §1.11–1.12.
 
 <div class="info-card gold">
   <div class="info-card-header gold">&#x1F517; पूर्वापेक्षाएँ (Prerequisites)</div>
