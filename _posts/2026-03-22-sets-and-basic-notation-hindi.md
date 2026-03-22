@@ -139,7 +139,7 @@ description: "समुच्चय, समुच्चय-निर्माण
   $\emptyset$ (रिक्त समुच्चय)</p>
 </div>
 
-> 📖 **सन्दर्भ:** Rudin, W., *Principles of Mathematical Analysis*, 3rd ed., Ch. 1, §1.1–1.2. तथा Apostol, T.M., *Mathematical Analysis*, 2nd ed., Ch. 1, §1.1–1.2.
+> 📖 सन्दर्भ: Rudin, W., <strong>Principles of Mathematical Analysis</strong>, 3rd ed., Ch. 1, §1.1–1.2. तथा Apostol, T.M., <strong>Mathematical Analysis</strong>, 2nd ed., Ch. 1, §1.1–1.2.
 
 <div class="info-card purple">
   <div class="info-card-header purple">&#x1F4D0; उपसमुच्चय, समानता और घात-समुच्चय</div>
@@ -163,7 +163,7 @@ description: "समुच्चय, समुच्चय-निर्माण
     <p style="font-size:0.82rem;color:#475569;margin-top:6px;">दोनों समुच्चयों के सभी अवयव</p>
   </div>
   <div class="op-block" style="border-top-color:#059669;">
-    <h4 style="color:#059669;">&#x2229; प्रतिच्छेदन (Intersection)</h4>
+    <h4 style="color:#059669;">&#x2229; सर्वनिष्ठ (Intersection)</h4>
     <p>$A \cap B = \{x : x \in A$ और $x \in B\}$</p>
     <p style="font-size:0.82rem;color:#475569;margin-top:6px;">केवल उभयनिष्ठ अवयव</p>
   </div>
@@ -197,7 +197,7 @@ description: "समुच्चय, समुच्चय-निर्माण
   <h2>सरल स्पष्टीकरण — समुच्चय एक थैले जैसा है</h2>
 </div>
 
-<p>समुच्चय को एक <strong>थैले (bag)</strong> की तरह सोचें। आप वस्तुएँ थैले में डालते हैं (अवयव), दो थैले मिलाते हैं (संघ), केवल वह रखते हैं जो दोनों में हो (प्रतिच्छेदन), या एक थैले से वह निकाल देते हैं जो दूसरे में भी हो (अंतर)।</p>
+<p>समुच्चय को एक <strong>थैले (bag)</strong> की तरह सोचें। आप वस्तुएँ थैले में डालते हैं (अवयव), दो थैले मिलाते हैं (संघ), केवल वह रखते हैं जो दोनों में हो (सर्वनिष्ठ), या एक थैले से वह निकाल देते हैं जो दूसरे में भी हो (अंतर)।</p>
 
 <div class="info-card green">
   <div class="info-card-header green">&#x1F50D; डी मॉर्गन का अंतर्ज्ञान</div>
@@ -428,7 +428,7 @@ description: "समुच्चय, समुच्चय-निर्माण
     &#x25B6;&#xFE0F; <a href="https://www.youtube.com/@FractalFrontierMaths" target="_blank">YouTube: @FractalFrontierMaths</a><br>
     &#x1F4F8; <a href="https://www.instagram.com/mathsworld007" target="_blank">Instagram: @mathsworld007</a>
   </p>
-  <p><em>© Dr. Praveendra Singh — Government College Kherwara, Rajasthan</em></p>
+  <p><em>© Dr. Praveendra Singh, Assistant Professor, Mathematics</em></p>
 </div>
 
 <!-- §11 PDF डाउनलोड -->
