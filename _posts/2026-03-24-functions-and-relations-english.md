@@ -137,7 +137,7 @@ description: "A complete guide to relations, equivalence relations, functions, i
   <p>Note: range $\subseteq$ codomain; equality holds if and only if $f$ is surjective.</p>
 </div>
 
-> 📖 <strong>Reference:</strong> Apostol, T.M., <strong>Mathematical Analysis</strong>, 2nd ed., Ch. 1, §1.3–1.5. Also: Rudin, W., <strong>Principles of Mathematical Analysis</strong>, 3rd ed., Ch. 2, §2.1.
+📖 <strong>Reference:</strong> Apostol, T.M., <strong>Mathematical Analysis</strong>, 2nd ed., Ch. 1, §1.3–1.5. Also: Rudin, W., <strong>Principles of Mathematical Analysis</strong>, 3rd ed., Ch. 2, §2.1.
 
 <div class="info-card gold">
   <div class="info-card-header gold">&#x1F517; Prerequisites</div>
