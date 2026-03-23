@@ -519,7 +519,7 @@ description: "Every familiar arithmetic rule — uniqueness of 0 and 1, a·0=0, 
   <div class="info-card-header gold">&#x1F4DA; Prerequisites &amp; Next Steps</div>
   <p><strong>&#x2190; Direct prerequisite:</strong> <a href="/blog/algebraic-structures-and-field-axioms-english/"><strong>Algebraic Structures and Field Axioms</strong></a> — the nine axioms from which all sixteen consequences here are derived.</p>
   <p><strong>&#x2190; Proof toolkit:</strong> <a href="/blog/logic-and-proof-methods-english/"><strong>Logic and Proof Methods</strong></a> — every proof here is a direct axiomatic argument or uses proof by contradiction.</p>
-  <p><strong>&#x2192; Next Topic:</strong> <em>The Real Number Field and Ordered Fields</em> — adding the order axioms (O1–O3) to the field axioms, and the Completeness Axiom that makes $\mathbb{R}$ unique among ordered fields.</p>
+  <p><strong>&#x2192; Next Topic:</strong> <em>Foundations of Real Numbers.</p>
   <p><strong>&#x1F4D6; Further Reading:</strong> Rudin, Ch. 1, Prop. 1.14–1.16; Apostol, Ch. 1, §§1.3–1.5; Bartle &amp; Sherbert, Ch. 2, §2.1.</p>
 </div>
 
