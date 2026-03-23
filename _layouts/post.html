@@ -6,6 +6,67 @@ layout: default
 
 <style>
 
+  /* ── Hero Tag Chips ── */
+  .post-hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin: 14px 0 6px;
+  }
+  .post-hero-tag {
+    display: inline-block;
+    padding: 3px 11px;
+    border-radius: 20px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.95);
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    letter-spacing: 0.2px;
+  }
+
+  /* ── Tags Strip ── */
+  .post-tags-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin: 36px 0 24px;
+    padding: 18px 22px;
+    background: #f0f4ff;
+    border-radius: 12px;
+    border: 1px solid #dde5ff;
+  }
+  .post-tags-label {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #1e3c72;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .post-tag {
+    display: inline-block;
+    padding: 4px 13px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #1e3c72;
+    background: white;
+    border: 1.5px solid #b8c8f0;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+  }
+  .post-tag:hover {
+    background: #1e3c72;
+    color: white;
+    border-color: #1e3c72;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(30, 60, 114, 0.18);
+  }
+
   /* ── Language Switcher ── */
   .lang-switcher {
     display: flex;
@@ -558,6 +619,14 @@ layout: default
       {% endif %}
     </div>
 
+    {% if page.tags and page.tags.size > 0 %}
+    <div class="post-hero-tags">
+      {% for tag in page.tags limit:6 %}
+        <span class="post-hero-tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+
     <!-- Live stats strip -->
     <div class="post-stats-bar">
       <div class="post-stat-item">
@@ -708,6 +777,18 @@ layout: default
       }).catch(function() {});
     }
   </script>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- TAGS STRIP                                     -->
+  <!-- ══════════════════════════════════════════════ -->
+  {% if page.tags and page.tags.size > 0 %}
+  <div class="post-tags-wrap">
+    <span class="post-tags-label"><i class="fas fa-tags"></i> Tags:</span>
+    {% for tag in page.tags %}
+      <a href="/blog/?tag={{ tag | uri_escape }}" class="post-tag">{{ tag }}</a>
+    {% endfor %}
+  </div>
+  {% endif %}
 
   <!-- ══════════════════════════════════════════════ -->
   <!-- POST NAVIGATION                                -->
