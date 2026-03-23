@@ -146,7 +146,7 @@ description: "Finite vs infinite; countably infinite ℕ, ℤ, ℚ; uncountable 
   </div>
 </div>
 
-> 📖 <strong>Reference:</strong> Rudin, W., <strong>Principles of Mathematical Analysis</strong>, 3rd ed., Ch. 2, §§2.1–2.14. Also: Apostol, T.M., <strong>Mathematical Analysis</strong>, 2nd ed., Ch. 1, §§1.14–1.16.
+📖 <strong>Reference:</strong> Rudin, W., <strong>Principles of Mathematical Analysis</strong>, 3rd ed., Ch. 2, §§2.1–2.14. Also: Apostol, T.M., <strong>Mathematical Analysis</strong>, 2nd ed., Ch. 1, §§1.14–1.16.
 
 <div class="info-card gold">
   <div class="info-card-header gold">&#x1F517; Prerequisites</div>
@@ -399,7 +399,7 @@ description: "Finite vs infinite; countably infinite ℕ, ℤ, ℚ; uncountable 
     <a href="/blog/sets-and-basic-notation-english/"><strong>Sets and Basic Notation</strong></a> — set language and power sets &nbsp;|&nbsp;
     <a href="/blog/functions-and-relations-english/"><strong>Functions and Relations</strong></a> — bijections &nbsp;|&nbsp;
     <a href="/blog/logic-and-proof-methods-english/"><strong>Logic and Proof Methods</strong></a> — proof by contradiction.</p>
-  <p><strong>&#x2192; Next Topic:</strong> <em>Bounded Sets, Supremum and Infimum</em> — the completeness axiom of $\mathbb{R}$, which distinguishes $\mathbb{R}$ from $\mathbb{Q}$ analytically (just as uncountability distinguishes them set-theoretically).</p>
+  <p><strong>&#x2192; Next Topic:</strong> <em>Algebraic Structures</em> — Fields.</p>
   <p><strong>&#x1F4D6; Further Reading:</strong> Rudin, Ch. 2, §§2.1–2.14; Apostol, Ch. 1, §§1.14–1.16; Bartle &amp; Sherbert, Ch. 1, §1.3.</p>
 </div>
 
