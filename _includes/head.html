@@ -1,0 +1,199 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ══════════════════════════════════════════
+     PRIMARY SEO META TAGS
+════════════════════════════════════════════ -->
+{% if page.title %}
+  {% assign seo_title = page.title | strip_html | strip %}
+  <title>{{ seo_title }} | Dr. Praveendra Singh – Mathematics</title>
+  <meta name="title" content="{{ seo_title }} | Dr. Praveendra Singh – Mathematics">
+{% else %}
+  <title>Dr. Praveendra Singh | Mathematics Professor, IIT Roorkee PhD | Fractal Frontier Maths</title>
+  <meta name="title" content="Dr. Praveendra Singh | Mathematics Professor, IIT Roorkee PhD | Fractal Frontier Maths">
+{% endif %}
+
+{% if page.description %}
+  <meta name="description" content="{{ page.description }}">
+{% elsif page.excerpt %}
+  <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}">
+{% else %}
+  <meta name="description" content="Dr. Praveendra Singh – Assistant Professor of Mathematics at Government College Kherwara, Udaipur. PhD from IIT Roorkee. Free maths lectures in Hindi for BSc, MSc, CSIR NET, GATE, IIT JAM. Fractal Frontier Maths.">
+{% endif %}
+
+<meta name="keywords" content="
+  Dr Praveendra Singh, mathematics professor Rajasthan, IIT Roorkee mathematics PhD,
+  maths lectures Hindi, BSc mathematics lectures, MSc mathematics lectures,
+  CSIR NET mathematics, GATE mathematics, IIT JAM mathematics,
+  real analysis Hindi, set theory Hindi, mathematical logic Hindi,
+  inventory control mathematics, supply chain optimization, metaheuristic algorithms,
+  differential evolution algorithm, bat algorithm, deteriorating items inventory,
+  free mathematics notes, mathematics study material, Fractal Frontier Maths,
+  Government College Kherwara, Udaipur mathematics, Rajasthan mathematics professor
+">
+
+<meta name="author" content="Dr. Praveendra Singh">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+
+<!-- ══════════════════════════════════════════
+     OPEN GRAPH (Facebook, WhatsApp, LinkedIn)
+════════════════════════════════════════════ -->
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+<meta property="og:site_name" content="Fractal Frontier Maths – Dr. Praveendra Singh">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+
+{% if page.title %}
+  <meta property="og:title" content="{{ page.title | strip_html }} | Dr. Praveendra Singh">
+{% else %}
+  <meta property="og:title" content="Dr. Praveendra Singh | Mathematics Professor & Educator">
+{% endif %}
+
+{% if page.description %}
+  <meta property="og:description" content="{{ page.description }}">
+{% else %}
+  <meta property="og:description" content="Free mathematics lectures in Hindi for BSc, MSc, CSIR NET, GATE and IIT JAM. Research in inventory control and supply chain optimization. PhD from IIT Roorkee.">
+{% endif %}
+
+<meta property="og:image" content="{{ site.url }}/assets/images/profile.jpg">
+<meta property="og:image:width" content="400">
+<meta property="og:image:height" content="400">
+<meta property="og:image:alt" content="Dr. Praveendra Singh – Mathematics Professor">
+<meta property="og:locale" content="en_IN">
+
+{% if page.layout == 'post' %}
+  <meta property="article:author" content="Dr. Praveendra Singh">
+  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  {% if page.category %}<meta property="article:section" content="{{ page.category }}">{% endif %}
+{% endif %}
+
+<!-- ══════════════════════════════════════════
+     TWITTER / X CARD
+════════════════════════════════════════════ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@FractalFrontier">
+<meta name="twitter:creator" content="@FractalFrontier">
+{% if page.title %}
+  <meta name="twitter:title" content="{{ page.title | strip_html }} | Dr. Praveendra Singh">
+{% else %}
+  <meta name="twitter:title" content="Dr. Praveendra Singh | Mathematics Professor & Educator">
+{% endif %}
+{% if page.description %}
+  <meta name="twitter:description" content="{{ page.description }}">
+{% else %}
+  <meta name="twitter:description" content="Free mathematics lectures in Hindi for BSc, MSc, CSIR NET, GATE and IIT JAM.">
+{% endif %}
+<meta name="twitter:image" content="{{ site.url }}/assets/images/profile.jpg">
+
+<!-- ══════════════════════════════════════════
+     STRUCTURED DATA — Person (Google Knowledge Panel)
+════════════════════════════════════════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dr. Praveendra Singh",
+  "honorificPrefix": "Dr.",
+  "jobTitle": "Assistant Professor of Mathematics",
+  "worksFor": {
+    "@type": "CollegeOrUniversity",
+    "name": "Government College Kherwara",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kherwara",
+      "addressRegion": "Udaipur, Rajasthan",
+      "addressCountry": "IN"
+    }
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Indian Institute of Technology Roorkee",
+    "sameAs": "https://www.iitr.ac.in"
+  },
+  "url": "https://drpraveendra.github.io",
+  "image": "https://drpraveendra.github.io/assets/images/profile.jpg",
+  "email": "drpraveendra.singh@gmail.com",
+  "sameAs": [
+    "https://scholar.google.com/citations?user=xhzb-RoAAAAJ&hl=en",
+    "https://www.researchgate.net/profile/Praveendra-Singh",
+    "https://www.youtube.com/@FractalFrontierMaths",
+    "https://www.instagram.com/mathsworld007",
+    "https://t.me/fractalfrontiermaths",
+    "https://github.com/drpraveendra"
+  ],
+  "knowsAbout": [
+    "Real Analysis", "Set Theory", "Mathematical Logic",
+    "Inventory Control", "Supply Chain Optimization",
+    "Metaheuristic Algorithms", "Differential Evolution",
+    "Operations Research", "Higher Mathematics"
+  ],
+  "description": "Assistant Professor of Mathematics with PhD from IIT Roorkee. Specialises in inventory control, supply chain optimisation, and metaheuristic algorithms. Creator of Fractal Frontier Maths – free mathematics education in Hindi for BSc, MSc, CSIR NET, GATE and IIT JAM aspirants."
+}
+</script>
+
+<!-- ══════════════════════════════════════════
+     STRUCTURED DATA — WebSite (Sitelinks Searchbox)
+════════════════════════════════════════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Fractal Frontier Maths – Dr. Praveendra Singh",
+  "url": "https://drpraveendra.github.io",
+  "description": "Free mathematics lectures and notes in Hindi for BSc, MSc, CSIR NET, GATE and IIT JAM. Research in inventory control and supply chain optimisation.",
+  "inLanguage": ["en", "hi"],
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Praveendra Singh"
+  }
+}
+</script>
+
+<!-- ══════════════════════════════════════════
+     STRUCTURED DATA — BlogPosting (for posts)
+════════════════════════════════════════════ -->
+{% if page.layout == 'post' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ page.title | strip_html | escape }}",
+  "description": "{{ page.description | default: page.excerpt | strip_html | truncate: 160 | escape }}",
+  "image": "{{ site.url }}/assets/images/profile.jpg",
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Praveendra Singh",
+    "url": "{{ site.url }}"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Dr. Praveendra Singh",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.url }}/assets/images/profile.jpg"
+    }
+  },
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.date | date_to_xmlschema }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}{{ page.url }}"
+  },
+  "inLanguage": "{% if page.lang == 'hi' %}hi{% else %}en{% endif %}"
+}
+</script>
+{% endif %}
+
+<!-- ══════════════════════════════════════════
+     STYLESHEETS & FONTS
+════════════════════════════════════════════ -->
+<link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Preconnect for performance (also a ranking signal) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="{{ site.url }}/assets/images/profile.jpg">
