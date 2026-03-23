@@ -1,8 +1,17 @@
 ---
 layout: default
-title: Contact
 permalink: /contact/
+title: "Contact Dr. Praveendra Singh | Mathematics Professor Udaipur"
+description: "Contact Dr. Praveendra Singh — Assistant Professor of Mathematics at Government College Kherwara, Udaipur. Reach via email, Telegram or social media for academic queries, collaborations or lecture requests."
+keywords: "contact Dr Praveendra Singh, mathematics professor contact Udaipur, Fractal Frontier Maths contact, Government College Kherwara contact, mathematics collaboration India, academic contact mathematics professor Rajasthan"
+tags:
+  - "contact"
+  - "mathematics professor"
+  - "Udaipur"
+  - "collaboration"
+  - "Fractal Frontier Maths"
 ---
+
 
 <style>
   .contact-wrapper {

@@ -1,6 +1,21 @@
 ---
 layout: default
+title: "Dr. Praveendra Singh | Mathematics Professor & IIT Roorkee PhD"
+description: "Official website of Dr. Praveendra Singh — Assistant Professor of Mathematics at Government College Kherwara, Udaipur. IIT Roorkee PhD. Free maths lectures in Hindi for BSc, MSc, CSIR NET, GATE and IIT JAM. Fractal Frontier Maths."
+keywords: "Dr Praveendra Singh, mathematics professor Udaipur, IIT Roorkee mathematics PhD, Fractal Frontier Maths, maths lectures Hindi, BSc mathematics, MSc mathematics, CSIR NET mathematics, GATE mathematics, IIT JAM mathematics, Government College Kherwara, Rajasthan mathematics professor, inventory control research, supply chain optimization, metaheuristic algorithms"
+tags:
+  - "mathematics"
+  - "professor"
+  - "IIT Roorkee"
+  - "CSIR NET"
+  - "GATE"
+  - "IIT JAM"
+  - "Fractal Frontier Maths"
+  - "Hindi mathematics"
+  - "Udaipur"
+  - "Rajasthan"
 ---
+
 
 <style>
   /* Core Styles */

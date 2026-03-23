@@ -1,8 +1,21 @@
 ---
 layout: default
-title: Research
 permalink: /research/
+title: "Research | Inventory Control & Supply Chain Optimization | Dr. Praveendra Singh"
+description: "Research by Dr. Praveendra Singh on inventory control models for deteriorating items, supply chain optimization, and nature-inspired metaheuristic algorithms including Differential Evolution and Bat Algorithm."
+keywords: "inventory control research, supply chain optimization India, deteriorating items inventory model, metaheuristic algorithms mathematics, differential evolution optimization, bat algorithm inventory, nature-inspired optimization, operations research India, mathematical modelling supply chain, sustainability supply chain model, IIT Roorkee operations research"
+tags:
+  - "inventory control"
+  - "supply chain optimization"
+  - "metaheuristics"
+  - "differential evolution"
+  - "bat algorithm"
+  - "operations research"
+  - "deteriorating items"
+  - "sustainability"
+  - "mathematical modelling"
 ---
+
 
 <style>
   /* ── Hero Banner ── */

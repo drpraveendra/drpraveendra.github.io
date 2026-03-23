@@ -1,8 +1,20 @@
 ---
 layout: default
-title: '<i class="fas fa-user"></i> About Me'
 permalink: /about/
+title: "About Dr. Praveendra Singh | IIT Roorkee PhD Mathematician"
+description: "Learn about Dr. Praveendra Singh — IIT Roorkee PhD mathematician, Assistant Professor at Government College Kherwara, Udaipur. Research in inventory control, supply chain optimization and metaheuristic algorithms."
+keywords: "Dr Praveendra Singh biography, IIT Roorkee PhD mathematics, Assistant Professor Government College Kherwara, operations research Rajasthan, supply chain mathematician India, inventory optimization researcher, nature-inspired optimization, differential evolution algorithm, bat algorithm mathematics"
+tags:
+  - "about"
+  - "IIT Roorkee"
+  - "mathematics professor"
+  - "operations research"
+  - "supply chain"
+  - "inventory control"
+  - "Udaipur"
+  - "biography"
 ---
+
 
 Dr. Praveendra Singh is an Assistant Professor of Mathematics at **Government College Kherwara, Udaipur, Rajasthan, India**.
 

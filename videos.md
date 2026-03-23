@@ -1,8 +1,22 @@
 ---
 layout: default
-title: "🎥 Digital Classroom & Lecture Videos"
 permalink: /videos/
+title: "Free Mathematics Video Lectures in Hindi | Dr. Praveendra Singh | Fractal Frontier Maths"
+description: "Free mathematics video lectures in Hindi by Dr. Praveendra Singh on YouTube — Fractal Frontier Maths. Covers Real Analysis, Set Theory, Algebra and more for BSc, MSc, CSIR NET, GATE and IIT JAM students."
+keywords: "free mathematics lectures Hindi YouTube, Fractal Frontier Maths YouTube, real analysis video lectures Hindi, mathematics video lectures BSc MSc, CSIR NET video lectures Hindi, GATE mathematics video, IIT JAM mathematics lecture, animated mathematics Hindi, Dr Praveendra Singh YouTube, mathematics education Hindi India"
+tags:
+  - "video lectures"
+  - "Hindi mathematics"
+  - "YouTube"
+  - "Fractal Frontier Maths"
+  - "real analysis videos"
+  - "CSIR NET lectures"
+  - "GATE lectures"
+  - "IIT JAM"
+  - "free lectures"
+  - "BSc MSc"
 ---
+
 
 <style>
   .video-header {

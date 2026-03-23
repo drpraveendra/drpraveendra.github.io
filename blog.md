@@ -1,8 +1,23 @@
 ---
 layout: default
-title: "📝 Blog"
 permalink: /blog/
+title: "Mathematics Blog | Real Analysis, Set Theory, Proof Methods | Dr. Praveendra Singh"
+description: "Free mathematics blog by Dr. Praveendra Singh covering Real Analysis, Set Theory, Mathematical Logic, Functions, and more — in both English and Hindi. Ideal for BSc, MSc, CSIR NET, GATE and IIT JAM preparation."
+keywords: "mathematics blog Hindi English, real analysis blog India, set theory tutorial, mathematical logic explained, CSIR NET mathematics blog, GATE mathematics preparation, IIT JAM mathematics notes, BSc mathematics blog, MSc mathematics articles, free maths study material India, Fractal Frontier Maths blog"
+tags:
+  - "mathematics blog"
+  - "real analysis"
+  - "set theory"
+  - "mathematical logic"
+  - "CSIR NET"
+  - "GATE"
+  - "IIT JAM"
+  - "Hindi mathematics"
+  - "BSc"
+  - "MSc"
+  - "free study material"
 ---
+
 
 <style>
   .blog-hero {

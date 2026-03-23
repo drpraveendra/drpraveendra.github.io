@@ -1,8 +1,20 @@
 ---
 layout: default
-title: '<i class="fas fa-book"></i> Publications'
 permalink: /publications/
+title: "Publications | Dr. Praveendra Singh | Mathematics Research Papers"
+description: "Research publications by Dr. Praveendra Singh in journals including Knowledge and Information Systems and Soft Computing — covering inventory control, supply chain optimization and intelligent optimization."
+keywords: "Dr Praveendra Singh publications, inventory control research paper, supply chain optimization journal, Knowledge and Information Systems journal, Soft Computing journal, deteriorating items inventory paper, metaheuristic optimization publication, IIT Roorkee mathematics research, operations research publication India"
+tags:
+  - "publications"
+  - "research papers"
+  - "inventory control"
+  - "supply chain"
+  - "Knowledge and Information Systems"
+  - "Soft Computing"
+  - "journal articles"
+  - "IIT Roorkee research"
 ---
+
 
 <style>
   .pub-wrapper {

@@ -1,8 +1,20 @@
 ---
 layout: default
-title: "📚 Recommended Books"
 permalink: /recommended-books/
+title: "Best Mathematics Books for CSIR NET, GATE & IIT JAM | Dr. Praveendra Singh"
+description: "Recommended mathematics books by Dr. Praveendra Singh for BSc, MSc, CSIR NET, GATE and IIT JAM preparation — curated from years of teaching and research experience at IIT Roorkee."
+keywords: "best mathematics books CSIR NET, mathematics books GATE preparation, IIT JAM mathematics books, real analysis textbook recommendation, best BSc MSc mathematics book India, mathematics reference books, Rudin principles mathematical analysis, topology books, algebra textbook India, mathematics exam preparation books"
+tags:
+  - "recommended books"
+  - "mathematics textbooks"
+  - "CSIR NET books"
+  - "GATE books"
+  - "IIT JAM books"
+  - "real analysis textbook"
+  - "BSc MSc books"
+  - "mathematics reference"
 ---
+
 
 <style>
   .books-hero {

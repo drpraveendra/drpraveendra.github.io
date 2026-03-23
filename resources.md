@@ -1,8 +1,21 @@
 ---
 layout: default
-title: "Student Resources Hub"
 permalink: /resources/
+title: "Free Mathematics Study Material & Notes | Dr. Praveendra Singh"
+description: "Free mathematics study resources, notes and PDFs by Dr. Praveendra Singh — covering Real Analysis, Set Theory, Algebra and more. Designed for BSc, MSc, CSIR NET, GATE and IIT JAM aspirants."
+keywords: "free mathematics notes PDF India, real analysis notes PDF, mathematics study material CSIR NET, GATE mathematics notes free, IIT JAM mathematics resources, BSc mathematics notes Hindi, MSc mathematics material, mathematics handwritten notes India, Fractal Frontier Maths notes, mathematics PDF download free"
+tags:
+  - "study material"
+  - "mathematics notes"
+  - "PDF"
+  - "real analysis notes"
+  - "CSIR NET material"
+  - "GATE preparation"
+  - "IIT JAM resources"
+  - "free mathematics"
+  - "BSc MSc notes"
 ---
+
 
 <style>
   .resources-hero {

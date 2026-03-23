@@ -1,8 +1,20 @@
 ---
 layout: default
-title: "👨‍🏫 Teaching & Pedagogy"
 permalink: /teaching/
+title: "Teaching & Pedagogy | Mathematics Courses | Dr. Praveendra Singh"
+description: "Mathematics courses taught by Dr. Praveendra Singh — Engineering Mathematics, Probability & Statistics, Numerical Optimization, and Soft Computing. University-level curriculum at Government College Kherwara."
+keywords: "mathematics teaching India, engineering mathematics course, probability statistics university, numerical optimization course, soft computing mathematics, Government College Kherwara curriculum, university mathematics Rajasthan, mathematics pedagogy India, BSc MSc mathematics course syllabus"
+tags:
+  - "teaching"
+  - "mathematics courses"
+  - "engineering mathematics"
+  - "probability statistics"
+  - "numerical optimization"
+  - "soft computing"
+  - "university curriculum"
+  - "Government College Kherwara"
 ---
+
 
 # Teaching
 
