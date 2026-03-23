@@ -272,15 +272,15 @@
   </div>
 
   <script>
-    // Fetch visitor counts from countapi.xyz (free, no signup)
+    // Fetch visitor counts from counterapi.dev (free, no signup)
     (function() {
       var site = 'drpraveendra.github.io';
 
       // All-time counter
-      fetch('https://api.countapi.xyz/hit/' + site + '/visits')
+      fetch('https://api.counterapi.dev/v1/' + site + '/visits/up')
         .then(function(r){ return r.json(); })
         .then(function(d){
-          var n = d.value || 0;
+          var n = d.count || 0;
           document.getElementById('vc-total').textContent =
             n >= 1000 ? (n/1000).toFixed(1) + 'K' : n.toLocaleString();
         })
@@ -288,11 +288,11 @@
 
       // Today counter — keyed by date
       var today = new Date().toISOString().slice(0,10).replace(/-/g,'');
-      fetch('https://api.countapi.xyz/hit/' + site + '/day-' + today)
+      fetch('https://api.counterapi.dev/v1/' + site + '/day-' + today + '/up')
         .then(function(r){ return r.json(); })
         .then(function(d){
           document.getElementById('vc-today').textContent =
-            (d.value || 0).toLocaleString();
+            (d.count || 0).toLocaleString();
         })
         .catch(function(){ document.getElementById('vc-today').textContent = '—'; });
     })();
