@@ -514,7 +514,7 @@ description: "क्षेत्र अभिगृहीतों के पर
   <div class="info-card-header gold">&#x1F4DA; पूर्वापेक्षा एवं अगले चरण</div>
   <p><strong>&#x2190; प्रत्यक्ष पूर्वापेक्षा:</strong> <a href="/blog/algebraic-structures-and-field-axioms-english/"><strong>Algebraic Structures and Field Axioms</strong></a> — नौ अभिगृहीत जिनसे यहाँ सभी परिणाम व्युत्पन्न हैं।</p>
   <p><strong>&#x2190; Proof toolkit:</strong> <a href="/blog/logic-and-proof-methods-english/"><strong>Logic and Proof Methods</strong></a> — Direct Axiomatic Argument और Contradiction Proof।</p>
-  <p><strong>&#x2192; अगला विषय:</strong> <em>The Real Number Field and Ordered Fields</em> — Field अभिगृहीतों में क्रम अभिगृहीत (O1–O3) और Completeness Axiom जोड़ना।</p>
+  <p><strong>&#x2192; Next Topic:</strong> <em>Foundations of Real Numbers.</p>
   <p><strong>&#x1F4D6; अतिरिक्त पाठन:</strong> Rudin, Ch. 1, Prop. 1.14–1.16; Apostol, Ch. 1, §§1.3–1.5; Bartle &amp; Sherbert, Ch. 2, §2.1.</p>
 </div>
 
