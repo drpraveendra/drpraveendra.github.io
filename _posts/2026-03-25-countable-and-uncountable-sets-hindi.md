@@ -388,7 +388,7 @@ description: "परिमित एवं अनंत समुच्चय; �
     <a href="/blog/sets-and-basic-notation-english/"><strong>Sets and Basic Notation</strong></a> — समुच्चय भाषा &nbsp;|&nbsp;
     <a href="/blog/functions-and-relations-english/"><strong>Functions and Relations</strong></a> — Bijections &nbsp;|&nbsp;
     <a href="/blog/logic-and-proof-methods-english/"><strong>Logic and Proof Methods</strong></a> — Contradiction Proof।</p>
-  <p><strong>&#x2192; अगला विषय:</strong> <em>Bounded Sets, Supremum and Infimum</em> — $\mathbb{R}$ का Completeness Axiom, जो $\mathbb{R}$ को $\mathbb{Q}$ से विश्लेषणात्मक रूप से अलग करता है।</p>
+  <p><strong>&#x2192; Next Topic:</strong> <em>Algebraic Structures</em> — Fields.</p>
   <p><strong>&#x1F4D6; अतिरिक्त पाठन:</strong> Rudin, Ch. 2, §§2.1–2.14; Apostol, Ch. 1, §§1.14–1.16; Bartle &amp; Sherbert, Ch. 1, §1.3.</p>
 </div>
 
