@@ -7,8 +7,20 @@ lang: hi
 lang_pair: "/blog/functions-and-relations-english/"
 permalink: /blog/functions-and-relations-hindi/
 listed: false
-description: "संबंध, तुल्यता संबंध, फलन, एकैकी, आच्छादी, द्विएकैकी प्रतिचित्रण, संयोजन और प्रतिलोम — B.Sc., M.Sc., CSIR NET, GATE एवं IIT JAM के लिए सम्पूर्ण मार्गदर्शिका।"
+keywords: "फलन और संबंध हिंदी, तुल्यता संबंध हिंदी, एकैकी आच्छादी फलन, द्विएकैकी प्रतिचित्रण, फलन संयोजन प्रतिलोम हिंदी, CSIR NET फलन हिंदी, GATE functions Hindi, IIT JAM functions relations Hindi, BSc mathematics functions Hindi"
+tags:
+  - "फलन"
+  - "संबंध"
+  - "हिंदी गणित"
+  - "तुल्यता संबंध"
+  - "एकैकी फलन"
+  - "CSIR NET"
+  - "GATE"
+  - "IIT JAM"
+  - "functions Hindi"
+  - "relations Hindi"
 ---
+
 
 <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 

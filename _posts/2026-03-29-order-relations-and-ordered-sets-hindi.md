@@ -7,8 +7,19 @@ lang: hi
 lang_pair: "/blog/order-relations-and-ordered-sets-english/"
 permalink: /blog/order-relations-and-ordered-sets-hindi/
 listed: false
-description: "आंशिक क्रम, पूर्ण क्रम, कठोर और अकठोर क्रम-संबंध, क्रमित क्षेत्र और वास्तविक संख्याएँ एक क्रमित क्षेत्र के रूप में — CSIR NET, GATE, IIT JAM के लिए।"
+keywords: "क्रम संबंध हिंदी, आंशिक पूर्ण क्रम हिंदी, क्रमित क्षेत्र वास्तविक संख्याएँ, CSIR NET order relations Hindi, GATE ordered sets Hindi, IIT JAM partial order Hindi, order relations notes Hindi"
+tags:
+  - "क्रम संबंध"
+  - "आंशिक क्रम"
+  - "पूर्ण क्रम"
+  - "हिंदी गणित"
+  - "क्रमित क्षेत्र"
+  - "CSIR NET"
+  - "GATE"
+  - "IIT JAM"
+  - "order relations Hindi"
 ---
+
 
 <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 

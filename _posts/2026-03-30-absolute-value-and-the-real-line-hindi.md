@@ -7,8 +7,19 @@ lang: hi
 lang_pair: "/blog/absolute-value-and-the-real-line-english/"
 permalink: /blog/absolute-value-and-the-real-line-hindi/
 listed: false
-description: "परम मान की परिभाषा, चार मुख्य गुण, त्रिभुज असमिका, उत्क्रम त्रिभुज असमिका और वास्तविक रेखा पर दूरी — CSIR NET, GATE, IIT JAM के लिए।"
+keywords: "परम मान हिंदी, त्रिभुज असमिका हिंदी, वास्तविक संख्या रेखा, उत्क्रम त्रिभुज असमिका, CSIR NET absolute value Hindi, GATE triangle inequality Hindi, IIT JAM real analysis Hindi, परम मान गुण"
+tags:
+  - "परम मान"
+  - "त्रिभुज असमिका"
+  - "हिंदी गणित"
+  - "वास्तविक रेखा"
+  - "CSIR NET"
+  - "GATE"
+  - "IIT JAM"
+  - "absolute value Hindi"
+  - "triangle inequality Hindi"
 ---
+
 
 <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 

@@ -6,8 +6,19 @@ category: history
 lang: en
 lang_pair: "/blog/ramanujan-hindi/"
 permalink: /blog/ramanujan-english/
-description: "A detailed account of Ramanujan's life, mathematical genius, family bonds, spiritual roots, struggles, and his lasting legacy in modern mathematics."
+keywords: "Srinivasa Ramanujan biography, Ramanujan mathematics genius, Ramanujan Hardy collaboration, infinite series Ramanujan, mock theta functions, Ramanujan notebook, man who knew infinity, Indian mathematician history, Ramanujan number 1729 taxicab, mathematics history India"
+tags:
+  - "Ramanujan"
+  - "mathematics history"
+  - "Indian mathematician"
+  - "Hardy"
+  - "infinite series"
+  - "mock theta functions"
+  - "number theory"
+  - "biography"
+  - "Cambridge mathematics"
 ---
+
 
 <style>
   .ramanujan-post {

@@ -6,8 +6,21 @@ category: maths
 lang: en
 lang_pair: "/blog/sets-and-basic-notation-hindi/"
 permalink: /blog/sets-and-basic-notation-english/
-description: "A complete beginner-to-exam guide on sets, set-builder notation, subsets, power sets, union, intersection, De Morgan's laws — with 4 worked examples."
+keywords: "set theory basics, set builder notation explained, subsets power sets, union intersection sets, De Morgan laws proof, set theory CSIR NET, set theory GATE mathematics, set notation BSc mathematics, Venn diagram set operations, set theory IIT JAM, ZFC set theory introduction"
+tags:
+  - "set theory"
+  - "set notation"
+  - "subsets"
+  - "power set"
+  - "union intersection"
+  - "De Morgan laws"
+  - "CSIR NET"
+  - "GATE"
+  - "IIT JAM"
+  - "BSc mathematics"
+  - "foundations of mathematics"
 ---
+
 
 <style>
   .math-post{font-family:Georgia,serif;font-size:1.05rem;line-height:1.9;color:#2d2d2d;max-width:860px;margin:0 auto}

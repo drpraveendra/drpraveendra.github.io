@@ -6,8 +6,21 @@ category: maths
 lang: en
 lang_pair: "/blog/logic-and-proof-methods-hindi/"
 permalink: /blog/logic-and-proof-methods-english/
-description: "Master propositions, logical connectives, truth tables, quantifiers, and the four core proof methods — direct, contrapositive, contradiction, and induction."
+keywords: "mathematical logic proof methods, propositions logical connectives, truth tables explained, quantifiers mathematics, direct proof method, proof by contradiction, proof by contrapositive, mathematical induction, CSIR NET mathematical logic, GATE proof techniques, logic IIT JAM mathematics"
+tags:
+  - "mathematical logic"
+  - "proof methods"
+  - "truth tables"
+  - "quantifiers"
+  - "direct proof"
+  - "proof by contradiction"
+  - "mathematical induction"
+  - "contrapositive"
+  - "CSIR NET"
+  - "GATE"
+  - "IIT JAM"
 ---
+
 
 <style>
   .math-post{font-family:Georgia,serif;font-size:1.05rem;line-height:1.9;color:#2d2d2d;max-width:860px;margin:0 auto}

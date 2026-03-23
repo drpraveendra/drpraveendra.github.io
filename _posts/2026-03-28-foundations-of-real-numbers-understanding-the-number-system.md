@@ -6,8 +6,21 @@ category: maths
 lang: en
 lang_pair: "/blog/vastvik-sankhyaon-ki-neenv-sankhya-pranali-ki-samajh/"
 permalink: /blog/foundations-of-real-numbers-understanding-the-number-system/
-description: "A beginner-friendly guide to how our number system grew from counting to the real number line — the story of ℕ, ℤ, ℚ, irrationals, and ℝ with history, examples, and motivation."
+keywords: "real number system foundations, natural numbers integers rationals, irrational numbers real line, number system history mathematics, real numbers construction, rational irrational numbers explained, completeness real numbers, CSIR NET real numbers, GATE number system, IIT JAM real analysis foundations"
+tags:
+  - "real numbers"
+  - "number system"
+  - "natural numbers"
+  - "rational numbers"
+  - "irrational numbers"
+  - "real line"
+  - "foundations"
+  - "CSIR NET"
+  - "GATE"
+  - "IIT JAM"
+  - "real analysis"
 ---
+
 
 <style>
   .math-post { font-family: Georgia, serif; font-size: 1.05rem; line-height: 1.9; color: #2d2d2d; max-width: 860px; margin: 0 auto; }

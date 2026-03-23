@@ -6,8 +6,21 @@ category: maths
 lang: en
 lang_pair: "/blog/consequences-of-field-axioms-hindi/"
 permalink: /blog/consequences-of-field-axioms-english/
-description: "Every familiar arithmetic rule — uniqueness of 0 and 1, a·0=0, (−a)(−b)=ab, no zero divisors, cancellation laws, subtraction and division — proved rigorously from the nine field axioms alone."
+keywords: "consequences field axioms, uniqueness zero identity, cancellation laws fields, zero divisors field, arithmetic rules proved axioms, field theory proofs, abstract algebra proofs CSIR NET, GATE field axioms, IIT JAM field theory, rigorous arithmetic proofs"
+tags:
+  - "field axioms"
+  - "consequences"
+  - "cancellation laws"
+  - "zero divisors"
+  - "uniqueness identity"
+  - "rigorous proofs"
+  - "abstract algebra"
+  - "CSIR NET"
+  - "GATE"
+  - "IIT JAM"
+  - "real analysis"
 ---
+
 
 <style>
   .math-post{font-family:Georgia,serif;font-size:1.05rem;line-height:1.9;color:#2d2d2d;max-width:860px;margin:0 auto}

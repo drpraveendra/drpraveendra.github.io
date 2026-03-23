@@ -7,8 +7,19 @@ lang: hi
 lang_pair: "/blog/foundations-of-real-numbers-understanding-the-number-system/"
 permalink: /blog/vastvik-sankhyaon-ki-neenv-sankhya-pranali-ki-samajh/
 listed: false
-description: "एक सरल और प्रभावी मार्गदर्शिका — संख्या प्रणाली का विकास ℕ से ℝ तक, इतिहास, उदाहरण, और परिमेय-अपरिमेय संख्याओं की समझ।"
+keywords: "वास्तविक संख्या प्रणाली हिंदी, प्राकृत पूर्णांक परिमेय संख्याएँ, अपरिमेय संख्याएँ वास्तविक रेखा, संख्या प्रणाली इतिहास हिंदी, real number system Hindi, CSIR NET real analysis Hindi, GATE number system Hindi, IIT JAM real numbers Hindi"
+tags:
+  - "वास्तविक संख्याएँ"
+  - "संख्या प्रणाली"
+  - "हिंदी गणित"
+  - "परिमेय संख्याएँ"
+  - "अपरिमेय संख्याएँ"
+  - "CSIR NET"
+  - "GATE"
+  - "IIT JAM"
+  - "real analysis Hindi"
 ---
+
 
 <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 

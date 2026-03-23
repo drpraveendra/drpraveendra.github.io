@@ -7,8 +7,17 @@ lang: hi
 lang_pair: "/blog/ramanujan-english/"
 permalink: /blog/ramanujan-hindi/
 listed: false
-description: "श्रीनिवास रामानुजन् के जीवन, संघर्षों, गणितीय खोजों और भारतीय संस्कृति से गहरे जुड़ाव की विस्तृत कहानी — हिंदी में।"
+keywords: "श्रीनिवास रामानुजन जीवनी हिंदी, रामानुजन गणित, रामानुजन अनंत, भारतीय गणितज्ञ इतिहास, रामानुजन हार्डी, रामानुजन संख्या 1729, मॉक थीटा फलन हिंदी, रामानुजन नोटबुक, Ramanujan biography Hindi, Indian mathematician Hindi"
+tags:
+  - "रामानुजन"
+  - "गणित इतिहास"
+  - "भारतीय गणितज्ञ"
+  - "हिंदी"
+  - "अनंत श्रेणी"
+  - "जीवनी"
+  - "Ramanujan Hindi"
 ---
+
 
 <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
 

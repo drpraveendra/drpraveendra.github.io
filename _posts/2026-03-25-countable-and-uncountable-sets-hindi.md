@@ -7,8 +7,19 @@ lang: hi
 lang_pair: "/blog/countable-and-uncountable-sets-english/"
 permalink: /blog/countable-and-uncountable-sets-hindi/
 listed: false
-description: "परिमित एवं अनंत समुच्चय; गणनीय ℕ, ℤ, ℚ; अगणनीय ℝ; Cantor का विकर्ण तर्क; Schroeder–Bernstein प्रमेय — CSIR NET, GATE, IIT JAM के लिए।"
+keywords: "गणनीय अगणनीय समुच्चय हिंदी, Cantor विकर्ण तर्क हिंदी, Schroeder Bernstein प्रमेय हिंदी, अनंत समुच्चय, वास्तविक संख्याएँ अगणनीय, CSIR NET countable sets Hindi, GATE uncountable Hindi, IIT JAM cardinality Hindi"
+tags:
+  - "गणनीय समुच्चय"
+  - "अगणनीय समुच्चय"
+  - "हिंदी गणित"
+  - "Cantor"
+  - "CSIR NET"
+  - "GATE"
+  - "IIT JAM"
+  - "countable sets Hindi"
+  - "cardinality Hindi"
 ---
+
 
 <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 

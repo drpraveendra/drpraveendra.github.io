@@ -6,8 +6,21 @@ category: maths
 lang: en
 lang_pair: "/blog/absolute-value-and-the-real-line-hindi/"
 permalink: /blog/absolute-value-and-the-real-line-english/
-description: "Definition of absolute value, four key properties, Triangle Inequality, Reverse Triangle Inequality, and distance on the real line — with proofs and worked examples."
+keywords: "absolute value real numbers, triangle inequality proof, reverse triangle inequality, distance real line, absolute value properties, metric real line, CSIR NET absolute value, GATE triangle inequality, IIT JAM real analysis, absolute value worked examples, modulus function mathematics"
+tags:
+  - "absolute value"
+  - "triangle inequality"
+  - "real line"
+  - "distance"
+  - "reverse triangle inequality"
+  - "modulus"
+  - "CSIR NET"
+  - "GATE"
+  - "IIT JAM"
+  - "real analysis"
+  - "metric"
 ---
+
 
 <style>
   .math-post{font-family:Georgia,serif;font-size:1.05rem;line-height:1.9;color:#2d2d2d;max-width:860px;margin:0 auto}

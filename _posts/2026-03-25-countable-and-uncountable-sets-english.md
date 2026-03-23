@@ -6,8 +6,21 @@ category: maths
 lang: en
 lang_pair: "/blog/countable-and-uncountable-sets-hindi/"
 permalink: /blog/countable-and-uncountable-sets-english/
-description: "Finite vs infinite; countably infinite ℕ, ℤ, ℚ; uncountable ℝ; Cantor's diagonal argument; Schroeder–Bernstein theorem — with 4 worked examples for CSIR NET, GATE, IIT JAM."
+keywords: "countable uncountable sets, Cantor diagonal argument, Schroeder Bernstein theorem, countably infinite sets, uncountable real numbers, cardinality sets mathematics, countability CSIR NET, GATE uncountable sets, IIT JAM countable sets, bijection natural numbers, cardinality of continuum"
+tags:
+  - "countable sets"
+  - "uncountable sets"
+  - "Cantor diagonal argument"
+  - "Schroeder Bernstein"
+  - "cardinality"
+  - "real numbers uncountable"
+  - "CSIR NET"
+  - "GATE"
+  - "IIT JAM"
+  - "real analysis"
+  - "set theory"
 ---
+
 
 <style>
   .math-post{font-family:Georgia,serif;font-size:1.05rem;line-height:1.9;color:#2d2d2d;max-width:860px;margin:0 auto}

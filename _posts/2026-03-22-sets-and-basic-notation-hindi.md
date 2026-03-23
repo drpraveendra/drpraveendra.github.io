@@ -7,8 +7,19 @@ lang: hi
 lang_pair: "/blog/sets-and-basic-notation-english/"
 permalink: /blog/sets-and-basic-notation-hindi/
 listed: false
-description: "समुच्चय, समुच्चय-निर्माण संकेतन, उपसमुच्चय, घात-समुच्चय, संघ, प्रतिच्छेदन, डी मॉर्गन के नियम — B.Sc., M.Sc., CSIR NET, GATE एवं IIT JAM के लिए।"
+keywords: "समुच्चय सिद्धांत हिंदी, समुच्चय निर्माण संकेतन, उपसमुच्चय घात समुच्चय, संघ प्रतिच्छेदन, डी मॉर्गन नियम हिंदी, CSIR NET समुच्चय, GATE गणित हिंदी, IIT JAM set theory Hindi, BSc mathematics Hindi, set theory notes Hindi"
+tags:
+  - "समुच्चय सिद्धांत"
+  - "हिंदी गणित"
+  - "CSIR NET"
+  - "GATE"
+  - "IIT JAM"
+  - "BSc गणित"
+  - "set theory Hindi"
+  - "उपसमुच्चय"
+  - "डी मॉर्गन"
 ---
+
 
 <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 

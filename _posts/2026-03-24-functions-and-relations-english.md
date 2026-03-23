@@ -6,8 +6,21 @@ category: maths
 lang: en
 lang_pair: "/blog/functions-and-relations-hindi/"
 permalink: /blog/functions-and-relations-english/
-description: "A complete guide to relations, equivalence relations, functions, injective/surjective/bijective maps, composition, and inverse — with 4 worked examples for CSIR NET, GATE, IIT JAM."
+keywords: "functions relations mathematics, equivalence relations explained, injective surjective bijective functions, function composition inverse, one-to-one onto functions, mappings between sets, CSIR NET functions, GATE functions relations, IIT JAM functions mathematics, bijection proof examples"
+tags:
+  - "functions"
+  - "relations"
+  - "equivalence relations"
+  - "injective surjective bijective"
+  - "function composition"
+  - "inverse function"
+  - "mappings"
+  - "CSIR NET"
+  - "GATE"
+  - "IIT JAM"
+  - "real analysis"
 ---
+
 
 <style>
   .math-post{font-family:Georgia,serif;font-size:1.05rem;line-height:1.9;color:#2d2d2d;max-width:860px;margin:0 auto}

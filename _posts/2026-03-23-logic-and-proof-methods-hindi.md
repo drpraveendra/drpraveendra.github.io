@@ -7,8 +7,19 @@ lang: hi
 lang_pair: "/blog/logic-and-proof-methods-english/"
 permalink: /blog/logic-and-proof-methods-hindi/
 listed: false
-description: "कथन, तार्किक संयोजक, सत्य-सारणी, परिमाणक और चार Proof विधियाँ — B.Sc., M.Sc., CSIR NET, GATE एवं IIT JAM के लिए सम्पूर्ण मार्गदर्शिका।"
+keywords: "गणितीय तर्क हिंदी, उपपत्ति विधियाँ हिंदी, सत्य सारणी हिंदी, परिमाणक गणित, प्रत्यक्ष उपपत्ति, विरोधाभास द्वारा उपपत्ति, गणितीय आगमन हिंदी, CSIR NET तर्क हिंदी, GATE mathematical logic Hindi, IIT JAM proof methods Hindi"
+tags:
+  - "गणितीय तर्क"
+  - "उपपत्ति विधियाँ"
+  - "हिंदी गणित"
+  - "सत्य सारणी"
+  - "CSIR NET"
+  - "GATE"
+  - "IIT JAM"
+  - "mathematical logic Hindi"
+  - "proof methods Hindi"
 ---
+
 
 <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 

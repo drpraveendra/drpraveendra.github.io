@@ -6,8 +6,21 @@ category: maths
 lang: en
 lang_pair: "/blog/order-relations-and-ordered-sets-hindi/"
 permalink: /blog/order-relations-and-ordered-sets-english/
-description: "Partial and total orders, strict vs non-strict relations, ordered fields, and ℝ as a concrete ordered field — verified from axioms for CSIR NET, GATE, IIT JAM."
+keywords: "order relations mathematics, partial order total order, ordered field real numbers, strict non-strict order relations, ordered sets CSIR NET, GATE order relations, IIT JAM ordered sets, partial order axioms, real numbers ordered field proof, lattice theory introduction"
+tags:
+  - "order relations"
+  - "partial order"
+  - "total order"
+  - "ordered field"
+  - "ordered sets"
+  - "strict order"
+  - "real numbers"
+  - "CSIR NET"
+  - "GATE"
+  - "IIT JAM"
+  - "real analysis"
 ---
+
 
 <style>
   .math-post{font-family:Georgia,serif;font-size:1.05rem;line-height:1.9;color:#2d2d2d;max-width:860px;margin:0 auto}

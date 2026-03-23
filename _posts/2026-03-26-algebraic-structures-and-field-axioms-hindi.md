@@ -7,8 +7,20 @@ lang: hi
 lang_pair: "/blog/algebraic-structures-and-field-axioms-english/"
 permalink: /blog/algebraic-structures-and-field-axioms-hindi/
 listed: false
-description: "द्विआधारी संक्रिया, Group से Field तक बीजगणितीय सोपान, नौ Field अभिगृहीत, ℚ और ℝ उदाहरण, व्युत्पन्न गुण — CSIR NET, GATE, IIT JAM के लिए।"
+keywords: "बीजगणितीय संरचनाएँ हिंदी, क्षेत्र अभिगृहीत हिंदी, ग्रुप रिंग फील्ड हिंदी, द्विआधारी संक्रिया, CSIR NET abstract algebra Hindi, GATE field axioms Hindi, IIT JAM algebraic structures Hindi, field theory notes Hindi"
+tags:
+  - "बीजगणितीय संरचनाएँ"
+  - "क्षेत्र अभिगृहीत"
+  - "हिंदी गणित"
+  - "ग्रुप"
+  - "रिंग"
+  - "फील्ड"
+  - "CSIR NET"
+  - "GATE"
+  - "IIT JAM"
+  - "abstract algebra Hindi"
 ---
+
 
 <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 

@@ -7,8 +7,19 @@ lang: hi
 lang_pair: "/blog/consequences-of-field-axioms-english/"
 permalink: /blog/consequences-of-field-axioms-hindi/
 listed: false
-description: "क्षेत्र अभिगृहीतों के परिणाम — शून्य का गुणनफल, चिह्न नियम, शून्य-भाजक नहीं, लघुकरण नियम, घटाव और भाग — सभी केवल नौ Field अभिगृहीतों से सिद्ध — CSIR NET, GATE, IIT JAM के लिए।"
+keywords: "क्षेत्र अभिगृहीत परिणाम हिंदी, शून्य गुणनफल सिद्धांत, लघुकरण नियम क्षेत्र, चिह्न नियम गणित हिंदी, CSIR NET field theory Hindi, GATE abstract algebra Hindi, IIT JAM field axioms Hindi"
+tags:
+  - "क्षेत्र अभिगृहीत"
+  - "परिणाम"
+  - "हिंदी गणित"
+  - "शून्य"
+  - "CSIR NET"
+  - "GATE"
+  - "IIT JAM"
+  - "field axioms Hindi"
+  - "abstract algebra Hindi"
 ---
+
 
 <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
