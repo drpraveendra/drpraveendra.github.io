@@ -20,9 +20,6 @@ kramdown:
 sass:
   style: compressed
 
-plugins:
-  - jekyll-sitemap
-
 header_pages:
   - about.md
   - research.md
