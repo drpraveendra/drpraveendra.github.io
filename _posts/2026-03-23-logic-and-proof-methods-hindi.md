@@ -150,7 +150,7 @@ description: "कथन, तार्किक संयोजक, सत्य-
   <p>$$\neg(\forall x\in D,\;P(x))\equiv\exists\,x\in D,\;\neg P(x) \qquad \neg(\exists\,x\in D,\;P(x))\equiv\forall x\in D,\;\neg P(x)$$</p>
 </div>
 
-> 📖 <strong>Reference:</strong> Apostol, T.M., <strong>Mathematical Analysis</strong>, 2nd ed., Ch. 1, §1.1–1.2. Rudin, W., <strong>Principles of Mathematical Analysis</strong>, 3rd ed., Ch. 1, §1.1.
+📖 <strong>Reference:</strong> Apostol, T.M., <strong>Mathematical Analysis</strong>, 2nd ed., Ch. 1, §1.1–1.2. Rudin, W., <strong>Principles of Mathematical Analysis</strong>, 3rd ed., Ch. 1, §1.1.
 
 <div class="info-card gold">
   <div class="info-card-header gold">&#x1F517; पूर्वापेक्षा (Prerequisite)</div>
