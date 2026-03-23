@@ -1,0 +1,311 @@
+<!-- ═══════════════════════════════════════════════════
+     MATHEMATICAL BACKGROUND ANIMATION
+     Include: _includes/math-bg.html
+     Add to _layouts/default.html inside <body>
+     Dark navy + gold floating symbols
+═══════════════════════════════════════════════════ -->
+
+<canvas id="math-bg" aria-hidden="true"></canvas>
+
+<style>
+  /* ── Canvas sits behind everything ── */
+  #math-bg {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 1;
+  }
+
+  /* ── All page content floats above the canvas ── */
+  .custom-site-header { position: relative; z-index: 100; }
+  .page-content        { position: relative; z-index: 10;  }
+  .custom-site-footer  { position: relative; z-index: 10;  }
+
+  /* ── Page background: deep navy ── */
+  body {
+    background: #080f22 !important;
+    color: #e8ecf4;
+  }
+
+  /* ── Content wrapper: translucent card so text stays readable ── */
+  .wrapper {
+    background: rgba(8, 15, 34, 0.72);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 12px;
+    padding: 32px 40px;
+    margin: 24px auto;
+    border: 0.5px solid rgba(212, 165, 40, 0.12);
+  }
+
+  /* ── Header glass effect ── */
+  .custom-site-header {
+    background: rgba(8, 15, 34, 0.88) !important;
+    border-bottom: 1px solid rgba(212, 165, 40, 0.18) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 2px 24px rgba(0,0,0,0.4) !important;
+  }
+
+  /* ── Header text colours on dark bg ── */
+  .custom-site-title {
+    color: #f0c850 !important;
+    text-shadow: 0 0 28px rgba(240,200,80,0.25);
+  }
+  .custom-site-title:hover { color: #ffd966 !important; }
+
+  .custom-nav-list li a {
+    color: #c8d4e8 !important;
+  }
+  .custom-nav-list li a:hover {
+    background: rgba(212, 165, 40, 0.12) !important;
+    color: #f0c850 !important;
+    box-shadow: none !important;
+  }
+
+  /* ── Footer dark ── */
+  .custom-site-footer {
+    background: rgba(5, 10, 24, 0.9) !important;
+    border-top: 1px solid rgba(212, 165, 40, 0.15) !important;
+    color: #a8b4c8 !important;
+  }
+  .footer-col h3 { color: #f0c850 !important; }
+  .footer-col h3::after { background: #d4a528 !important; }
+  .footer-links a { color: #8896aa !important; }
+  .footer-links a:hover { color: #f0c850 !important; }
+  .footer-bottom { color: #556070 !important; border-top-color: rgba(212,165,40,0.1) !important; }
+  .footer-bottom a { color: #556070 !important; }
+  .footer-bottom a:hover { color: #f0c850 !important; }
+
+  /* ── Footer socials ── */
+  .footer-socials a {
+    background: rgba(255,255,255,0.05) !important;
+    color: #c8d4e8 !important;
+    box-shadow: none !important;
+    border: 0.5px solid rgba(212,165,40,0.2) !important;
+  }
+  .footer-socials a:hover { border-color: currentColor !important; }
+
+  /* ── Visitor counter on dark ── */
+  .visitor-counter-wrap { opacity: 0.92; }
+
+  /* ── Cards & sections on dark bg ── */
+  .card {
+    background: rgba(255,255,255,0.04) !important;
+    border: 0.5px solid rgba(212,165,40,0.15) !important;
+    color: #e8ecf4 !important;
+  }
+  .card h3 { color: #e8ecf4 !important; }
+  .card p  { color: #8896aa !important; }
+  .card:hover {
+    background: rgba(212,165,40,0.07) !important;
+    border-color: rgba(212,165,40,0.35) !important;
+    box-shadow: 0 6px 24px rgba(212,165,40,0.1) !important;
+  }
+
+  .nav-card {
+    background: rgba(255,255,255,0.04) !important;
+    color: #c8d4e8 !important;
+    border: 0.5px solid rgba(212,165,40,0.12) !important;
+    box-shadow: none !important;
+  }
+  .nav-card:hover {
+    background: rgba(212,165,40,0.14) !important;
+    color: #f0c850 !important;
+    border-color: rgba(212,165,40,0.4) !important;
+  }
+
+  .pub-card {
+    background: rgba(255,255,255,0.03) !important;
+    border-left-color: #d4a528 !important;
+  }
+
+  /* ── Gold accents on headings ── */
+  h2 {
+    border-bottom-color: rgba(212,165,40,0.25) !important;
+    color: #e8ecf4;
+  }
+
+  /* ── Profile header ── */
+  .profile-header {
+    background: rgba(255,255,255,0.03) !important;
+    border: 0.5px solid rgba(212,165,40,0.12) !important;
+    box-shadow: none !important;
+  }
+  .profile-info h1 {
+    background: linear-gradient(90deg, #f0c850, #e8a020, #f0c850) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-size: 200% auto;
+    animation: gold-shimmer 4s linear infinite;
+  }
+  @keyframes gold-shimmer {
+    0%   { background-position: 0% center; }
+    100% { background-position: 200% center; }
+  }
+  .designation { color: #8896aa !important; border-left-color: #d4a528 !important; }
+
+  /* ── Hero links on dark ── */
+  .hero-links a {
+    background: rgba(255,255,255,0.04) !important;
+    border-color: rgba(255,255,255,0.12) !important;
+    color: #c8d4e8 !important;
+  }
+  .hero-links a:hover {
+    background: rgba(212,165,40,0.1) !important;
+    border-color: rgba(212,165,40,0.4) !important;
+    box-shadow: 0 4px 16px rgba(212,165,40,0.15) !important;
+  }
+
+  /* ── Tools badges ── */
+  .tools-badge {
+    background: rgba(212,165,40,0.1) !important;
+    color: #f0c850 !important;
+    border: 0.5px solid rgba(212,165,40,0.25) !important;
+  }
+
+  /* ── Mobile wrapper padding ── */
+  @media (max-width: 768px) {
+    .wrapper { padding: 20px 16px; border-radius: 0; }
+  }
+</style>
+
+<script>
+(function() {
+  var canvas = document.getElementById('math-bg');
+  var ctx    = canvas.getContext('2d');
+  var W, H, raf;
+
+  /* ── Symbol set — mathematics across traditions ── */
+  var SYMBOLS = [
+    '∑','∫','∂','∇','∞','π','√','Δ',
+    'λ','α','β','γ','φ','θ','ε','ζ',
+    'η','μ','σ','τ','ψ','Ω','Λ','Γ',
+    '∈','∉','⊂','⊃','∀','∃','⊕','⊗',
+    '∏','∧','∨','¬','≡','≈','≠','≤',
+    '≥','∓','±','×','÷','∘','∝','⌀',
+    'lim','sup','inf','det','ker','dim',
+    'dx','dy','df','d²','∇²','∮','∯'
+  ];
+
+  /* ── Gold colour palette ── */
+  var COLOURS = [
+    'rgba(240,200,80,',   /* bright gold    */
+    'rgba(212,165,40,',   /* warm gold      */
+    'rgba(255,215,100,',  /* pale gold      */
+    'rgba(180,140,30,',   /* deep gold      */
+    'rgba(255,245,180,',  /* ivory gold     */
+    'rgba(200,170,60,',   /* antique gold   */
+  ];
+
+  var particles = [];
+
+  function rand(a, b) { return a + Math.random() * (b - a); }
+
+  function makeParticle() {
+    return {
+      x:      rand(0, W),
+      y:      rand(0, H),
+      vx:     rand(-0.18, 0.18),
+      vy:     rand(-0.22, -0.06),      /* drift upward gently */
+      sym:    SYMBOLS[Math.floor(Math.random() * SYMBOLS.length)],
+      size:   rand(11, 22),
+      alpha:  rand(0.04, 0.22),
+      col:    COLOURS[Math.floor(Math.random() * COLOURS.length)],
+      phase:  rand(0, Math.PI * 2),
+      pulseSpeed: rand(0.006, 0.016),
+      rotV:   rand(-0.003, 0.003),
+      rot:    rand(0, Math.PI * 2),
+      life:   0,
+      maxLife: rand(400, 900)
+    };
+  }
+
+  function resize() {
+    W = canvas.width  = window.innerWidth;
+    H = canvas.height = window.innerHeight;
+  }
+
+  function init() {
+    resize();
+    var count = Math.min(55, Math.floor(W * H / 22000));
+    particles = [];
+    for (var i = 0; i < count; i++) {
+      var p = makeParticle();
+      p.life = Math.floor(rand(0, p.maxLife)); /* stagger ages */
+      particles.push(p);
+    }
+  }
+
+  var last = 0;
+  function loop(ts) {
+    var dt = Math.min(ts - last, 50);
+    last = ts;
+
+    ctx.clearRect(0, 0, W, H);
+
+    particles.forEach(function(p, i) {
+      p.life++;
+      p.phase += p.pulseSpeed;
+      p.rot   += p.rotV;
+      p.x     += p.vx;
+      p.y     += p.vy;
+
+      /* fade in / out at birth and death */
+      var lifeRatio = p.life / p.maxLife;
+      var fade = lifeRatio < 0.08
+        ? lifeRatio / 0.08
+        : lifeRatio > 0.88
+          ? (1 - lifeRatio) / 0.12
+          : 1;
+
+      var pulse = 0.75 + 0.25 * Math.sin(p.phase);
+      var a = p.alpha * fade * pulse;
+
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate(p.rot);
+      ctx.globalAlpha = a;
+      ctx.font = p.size + 'px "Georgia", "Times New Roman", serif';
+      ctx.fillStyle = p.col + '1)';
+      ctx.textAlign  = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(p.sym, 0, 0);
+      ctx.restore();
+
+      /* recycle off-screen or dead particles */
+      if (p.life >= p.maxLife || p.y < -40 || p.x < -60 || p.x > W + 60) {
+        particles[i] = makeParticle();
+        particles[i].y = H + rand(10, 40); /* enter from bottom */
+      }
+    });
+
+    raf = requestAnimationFrame(loop);
+  }
+
+  window.addEventListener('resize', function() {
+    resize();
+    /* reposition particles inside new bounds */
+    particles.forEach(function(p) {
+      if (p.x > W) p.x = rand(0, W);
+      if (p.y > H) p.y = rand(0, H);
+    });
+  });
+
+  /* pause when tab is hidden — saves CPU */
+  document.addEventListener('visibilitychange', function() {
+    if (document.hidden) {
+      cancelAnimationFrame(raf);
+    } else {
+      last = performance.now();
+      raf = requestAnimationFrame(loop);
+    }
+  });
+
+  init();
+  last = performance.now();
+  raf = requestAnimationFrame(loop);
+})();
+</script>
