@@ -433,7 +433,7 @@ description: "द्विआधारी संक्रिया, Group से
     <a href="/blog/sets-and-basic-notation-english/"><strong>Sets and Basic Notation</strong></a> — वाहक समुच्चय &nbsp;|&nbsp;
     <a href="/blog/logic-and-proof-methods-english/"><strong>Logic and Proof Methods</strong></a> — Direct Proof और Contradiction &nbsp;|&nbsp;
     <a href="/blog/functions-and-relations-english/"><strong>Functions and Relations</strong></a> — Binary Operations।</p>
-  <p><strong>&#x2192; अगला विषय:</strong> <em>The Real Number Field and Ordered Fields</em> — Field अभिगृहीतों में क्रम-सम्बन्ध जोड़ना; Least Upper Bound Property जो $\mathbb{R}$ को $\mathbb{Q}$ से अलग करती है।</p>
+ <p><strong>&#x2192; Next Topic:</strong> <em>Concequences of field axioms.</p>
   <p><strong>&#x1F4D6; अतिरिक्त पाठन:</strong> Rudin, Ch. 1, §§1.12–1.38; Apostol, Ch. 1, §§1.3–1.6; Bartle &amp; Sherbert, Ch. 2, §2.1.</p>
 </div>
 
