@@ -1,7 +1,14 @@
-title: Dr. Praveendra Singh
-description: Assistant Professor of Mathematics
+title: "Dr. Praveendra Singh | Mathematics Professor & Educator"
+tagline: "IIT Roorkee PhD | Fractal Frontier Maths | Free Maths in Hindi"
+description: >
+  Dr. Praveendra Singh – Assistant Professor of Mathematics at Government College
+  Kherwara, Udaipur. PhD from IIT Roorkee. Free mathematics lectures in Hindi for
+  BSc, MSc, CSIR NET, GATE and IIT JAM aspirants. Research in inventory control,
+  supply chain optimisation and metaheuristic algorithms.
 url: "https://drpraveendra.github.io"
 theme: minima
+lang: en
+timezone: Asia/Kolkata
 
 # Author Details
 author: Dr. Praveendra Singh
