@@ -439,7 +439,7 @@ description: "Binary operations, the algebraic ladder from Group to Field, all n
     <a href="/blog/sets-and-basic-notation-english/"><strong>Sets and Basic Notation</strong></a> — carrier sets of algebraic structures &nbsp;|&nbsp;
     <a href="/blog/logic-and-proof-methods-english/"><strong>Logic and Proof Methods</strong></a> — direct proof and contradiction &nbsp;|&nbsp;
     <a href="/blog/functions-and-relations-english/"><strong>Functions and Relations</strong></a> — binary operations as functions.</p>
-  <p><strong>&#x2192; Next Topic:</strong> <em>The Real Number Field and Ordered Fields</em> — adding an order relation to the field axioms; the Least Upper Bound property that distinguishes $\mathbb{R}$ from $\mathbb{Q}$.</p>
+  <p><strong>&#x2192; Next Topic:</strong> <em>Concequences of field axioms.</p>
   <p><strong>&#x1F4D6; Further Reading:</strong> Rudin, Ch. 1, §§1.12–1.38; Apostol, Ch. 1, §§1.3–1.6; Bartle &amp; Sherbert, Ch. 2, §2.1.</p>
 </div>
 
